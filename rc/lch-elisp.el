@@ -32,6 +32,13 @@
 ;;; Code
 (message "=> lch-elisp: loading...")
 
+;;; Print for w32
+(if lch-win32-p
+    (progn
+      (require 'w32-winprint)
+      (define-key global-map (kbd "<f2> p") 'w32-winprint-print-buffer-htmlize)
+      (define-key global-map (kbd "<f2> P") 'w32-winprint-print-buffer-notepad)))
+
 ;;; LaTeX-pretty-symbol
 ;; (require 'latex-pretty-symbols)
 ;;; Bookmark+
@@ -128,8 +135,8 @@
 (key-chord-define-global "QQ"     "The ")
 
 ;;; Bash-completion
-(require 'bash-completion)
-(bash-completion-setup)
+;; (require 'bash-completion)
+;; (bash-completion-setup)
 
 ;; Or autoload it:
 ;; (autoload 'bash-completion-dynamic-complete

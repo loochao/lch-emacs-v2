@@ -86,7 +86,6 @@
 
 
 ;;; VARs
-
 (defvar emacs-lib-dir (concat emacs-dir "/library"))
 (defvar emacs-doc-dir (concat emacs-dir "/doc"))
 (defvar git-dir (concat dropbox-path "/REPO/GIT") "git dir")
@@ -113,7 +112,6 @@
 
 
 ;;; INFO
-
 (defvar emacs-info-dir (concat emacs-dir "/info"))
 ;(add-to-list 'Info-default-directory-list emacs-info-dir)
 (dolist (dir `(,emacs-info-dir
@@ -124,7 +122,6 @@
 
 
 ;;; KEYMAP
-
 (define-prefix-command 'm-f1-map)
 (define-key global-map (kbd "M-<f1>") 'm-f1-map)
 

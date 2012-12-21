@@ -35,7 +35,7 @@
 
 ;; (require 'lch-autoloads)
 (require 'lch-init)
-(require 'one-key)
+;; (require  'one-key)
 (require 'lch-ui)
 (require 'lch-ui-theme)
 (require 'lch-elisp)
@@ -58,7 +58,7 @@
 (require 'lch-bmk)
 (require 'lch-tex)
 (require 'lch-org)
-;(require 'lch-org-latex)
+;;(require 'lch-org-latex)
 (require 'lch-org-export)
 (require 'lch-org-agenda)
 (require 'lch-erc)
@@ -68,7 +68,7 @@
 (if lch-mac-p (require 'lch-mac))
 (if (and lch-mac-p lch-aquamacs-p) (require 'lch-aquamacs))
 
-;(eval-after-load 'dired '(progn (require 'lch-dired)))
+;;(eval-after-load 'dired '(progn (require 'lch-dired)))
 
 ;(require 'lch-hl-line)
 ;(require 'xwl-shell)

@@ -1,8 +1,8 @@
 
 ;; ----- smex-history -----
 (
+ save-buffer
  org-mode
- org-goto
  goto-line
  list-packages
  print-buffer
@@ -19,4 +19,5 @@
  (goto-line . 1)
  (org-goto . 1)
  (org-mode . 1)
+ (save-buffer . 2)
 )
