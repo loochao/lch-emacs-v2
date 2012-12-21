@@ -1,0 +1,17 @@
+
+;; ----- smex-history -----
+(
+ view-mode
+ comment-region
+ cd
+ lm
+ 5x5
+ afm
+ arp
+)
+
+;; ----- smex-data -----
+(
+ (comment-region . 1)
+ (view-mode . 1)
+)

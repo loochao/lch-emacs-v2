@@ -1,0 +1,8 @@
+#name : #+begin_...#+end_
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+**** $0
+    :PROPERTIES:
+    :BEAMER_env: block
+    :END:
+

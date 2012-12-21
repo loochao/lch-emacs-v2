@@ -1,0 +1,8 @@
+@article{${1:bibkey,}
+        Author = {$2,},
+        Journal = {$3,},
+        Pages = {$4,},
+        Title = {$5,},
+        Year = {$6},
+        Keywords = {$7},
+        }

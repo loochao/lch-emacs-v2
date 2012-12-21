@@ -1,0 +1,22 @@
+
+;; ----- smex-history -----
+(
+ org-mode
+ org-goto
+ goto-line
+ list-packages
+ print-buffer
+ view-mode
+ comment-region
+)
+
+;; ----- smex-data -----
+(
+ (comment-region . 1)
+ (view-mode . 1)
+ (print-buffer . 3)
+ (list-packages . 1)
+ (goto-line . 1)
+ (org-goto . 1)
+ (org-mode . 1)
+)

@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("lch-elisp.el"
+ (filename . "~/Dropbox/.emacs.d/rc/lch-elisp.el")
+ (front-context-string . ";; (require 'e2w")
+ (rear-context-string . "ems to be buggy\n")
+ (position . 1164))
+("org-capture-last-stored"
+ (filename . "~/Dropbox/Org/org/iPrv.org")
+ (front-context-string . "*** learn dancin")
+ (rear-context-string . "ND:\n** TODO-#B-\n")
+ (position . 9816))
+)

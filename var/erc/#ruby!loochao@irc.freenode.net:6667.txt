@@ -1,0 +1,1879 @@
+
+[Thu Nov  8 2012]
+*** You have joined channel #ruby                                       [14:24]
+*** Topic for #ruby: Ruby 1.9.3-p286: http://ruby-lang.org || Paste >3 lines
+    of text on http://gist.github.com
+*** #ruby: topic set by apeiros_!~apeiros_@77-58-114-9.dclient.hispeed.ch,
+    09:16:46 2012/10/12
+*** Users on #ruby: LooChao rakl arturaz erichmenge thone ChampS666 ltsstar
+    ibash iaj ryanlecompte mpereira tchebb deavid bitZero__ nachooo timonv
+    insulator scx jonathanwallace jaygen slainer68 c0rn ericwood berserkr
+    emptyflask Xeago u89 skcin7 Tarential stkowski otters ilyam elico
+    brianpWins bricker viktor_ codecaster _________ Russell^^ Ry_ BSaboia
+    judd7 artOfWar tenmilestereo ViperMaul|_ whomp_ nateberkopec BoomCow
+    aquaranto Tuxist GoGoGarrett voodoofish430 philcrissman
+*** Users on #ruby: apok_ csaunders Jdubs ndrei kil0byte sepp2k1 niklasb
+    beneggett tjbiddle alfism horofox kbeddingfield centipedefarmer
+    mahmoudimus clj_newb apeiros_ vickaita JeanMert_ theRoUS maletor
+    C0deMaver1ck cibs _adeponte davidcelis punkrawkR Amirh maxmanders aantix
+    sailias nitti khakimov mrsolo bradhe eph3meral zcreative wallerdev
+    darthdeus kkh jgrevich jake__ answer_42 minijupe SpamapS anachronistic
+    thinkdevcode baroquebobcat headius Rydefalk_ warb0 mityaz
+*** Users on #ruby: Serial_Killer_C sts tUze sterNiX mercwithamouth fantazo
+    axl_ rafter casheew Kudos lkba mmikeym blazes816 jbw ananthakumaran
+    mikepack _alejandro joshman_ jakob- rippa AndChat- tommyvyo_ servidorv
+    BrianJ tombar CamonZ Roa phantasm66 hotovson SCommette gpalmier aetcore
+    stopbit bbttxu mmitchell dmerrick Guest36125 geekbri jeffreybaird linoj
+    Guest10501 Cultofmetatron TommyBlue Nanuq enroxorz-work nemesit notwen
+    haxrbyte_ carlyle nanderoo macabre psycho_one
+*** Users on #ruby: xsbeats burgestrand seanyo vectorshelve cakehero krawchyk
+    invisime tommyvyo mark_locklear iamjarvo Guest89414 x0F cascalheira margle
+    ffranz skaczor Mon_Ouie quazimodo bier carloslopes francisfish pen yeban
+    clocKwize maetthew arietis jbpros caveat- AllStruck_ FlyingFoXy dv__
+    yxhuvud2 uxp_ swex_ zaki[] LouisGB monkegj__ beilabs hackerdu_ Villadelfia
+    SeySayux araujo Jork1 wchun Shrink statarb3 Virunga blacktulip TheFuzzball
+    elentras wf2f areil Asher Fraeon zf_
+*** Users on #ruby: classix greenarrow jxriddle Morkel KnowTheLedge chendo
+    fuho SmoothSage wargasm ZubKonst_ mvangala_ amacgregor_osx luminous radic_
+    vitor-br Whackatre atmosx Ruler_Of_Heaven_ Hanmac undersc0re97 Grieg
+    jblack L0L0L0L0L digifiv5e manizzle stnly frogstarr78 ij LucidDreamZzZ
+    moshee sebastianb lucaspiller_ Shamgar alanp jmeeuwen ddd hemanth
+    tommylommykins madhatter array_ hiroyuki_ _bry4n RudyValencia- _cheney
+    theoros Bosma shevy jamescarr stenno\splat SJr ewag
+*** Users on #ruby: Drewch mattsgarrison werdnativ arielpts stat1x Danielpk
+    lobak kiddy56842 nomenkun katherinem13 zodiak wwalker brendan` nasso
+    alvaro_o Trioke juarlex crankycoder mr-rich drbawb KindTwo Katniss
+    asobrasil Lemtzas robinbowes ddv Vert wicky pigoz txdv Jellyg00se alup
+    pavilionXP ottbot sejo Beoran_ tris __miha__ {^_^}_______ icooba jphpsf
+    mattp_ gregorg eldariof queequeg1 sphera straind ping-pong monkegjinni
+    wmoxam bapa tnk1 infinite_ Koshian__ DefV Raboo_ dpk
+*** Users on #ruby: combataircraft sh1nji alexwh dominikh bigmcq77 nyuszika7h
+    nazty crazymykl ezra kzrl Gadgetoid andrew12_ wookiehangover locriani dnyy
+    forced_request hsbt_away JustinCampbell etank wereHamster Dwarf kapowaz
+    lele GeekOnCoffee moted BadLarry koshii crodas s0ber jalcine eregon_ xkx
+    Daman shammancer Liothen jhowarth Spaceghost|cloud ctevie NimeshNeema MoMo
+    pkondzior_ dkannan anildigital_work krazyj Mchl perun_ awarner mnaser
+    alienvenom wallmani csmrfx gurps
+*** Users on #ruby: TheNumb dcope ben_alman withnale telling lushious jasond
+    xclite Debolaz m_3 devdazed Coolhand voodoofish fooo ionte Cool_Fire
+    ninegrid hoelzro|away jsaak Drager spacebug Rix bigkevmcd Cork verma
+    Emmanuel_Chanel busybox42 DarthGandalf thomasfedb alee Nisstyre methoddk
+    THE_GFR|WORK failingkid earthquake mfridh QKO canton7 mmercer goraxe
+    palyboy Nowaker BeLucid passbe irclog0 samuelkadolph tomku weeb1e_ sr___
+    justinweiss sixtenei1hty cheez0r joppe_ zaiste_
+*** Users on #ruby: undyingr1ge Skelz0r_ tessi spanner_ KarlHungus juha_
+    issyl0 Sargun lupine_85 tekacs spo12 seich zigidias mkillebrew joast barce
+    Guest41156 DarkFoxDK _veer Apocalypse klip jord_ apmacwrk SoonerBourne
+    hakunin thorncp dross joukokar stigmux Luceo philips_ cespare CodeVision
+    companion waxjar froy TTilus wedgeV pignata catepillar dash_ schwap
+    drPoggs g_bleezy_ kaneda__ flagg0204 dubz Gm4n tectonic JStoker ksk
+    Poapfel zipkid preller shikamaru Todd TomRone
+*** Users on #ruby: deadalus Paradox Voxxit BombStrike strcrzy_ JohnTeddy
+    yellow5 ahuman levicole pcarrier matled croz lahwran joschi tomaw yeltzooo
+    SecretAgent vjt drnfx klaas X-Jester Balthek beandip aflynn andynu maddog_
+    jeekl Bish asuka moeSeth ElderFain emdub Kov|abx jrist nricciar
+    TheMoonMaster Guest54783 dimka kuzushi d-snp plains nimred pcboy_ EPIK
+    Azure fbernier Mathieu mariooo fasta felipe yugui_zzz zz_chrismcg
+    elaptics`away drizz chiel wang Muz kaleido al-ol joni
+*** Users on #ruby: pavelz willb kstephens nopper aetaric musl im0b davidboy
+    PhilK msch MissionCritical Sp4rKy tils elspeth thomas epitron Eiam
+    crazedpsyc _br_ idoru ged mahlon ozzloy mikekelly joelio ccooke faulkner
+    rking nick_h RubyPanther fcoury FDj spathi dpn` mtfk davorb rtl
+    patricksroberts SeanTAllen randym nw sirecote benwoody jaredrhine bjeanes
+    Guedes adamblac1well rcs epochwolf sj26 realniko malcolmva anekos jayne
+    elektronaut Vinz_ __main__ JoeTheGuest shadewind
+*** Users on #ruby: WhereIsMySpoon bakedb_ framling Caius jeedey hackeron dekz
+    namidark sweet_kid matti lectrick dreamfall notbrent rcsheets octarine G
+    Spaceghostc2c alta rcj_ plu Jb__ UdontKnow Norrin LiquidInsect _axx
+    acrocity mikalv poRz fatninja xsdg naquad RailWolf Kovensky brunchpoems
+    gyre007 faen marienz Rious ixx wunz SegFaultAX __class__ mosez
+    justinabrahms soulcake linnea Drakevr KillerFox ohcibi swistak35 parus egn
+    estan Derander timtux shaman42 happosade banseljaj
+*** Users on #ruby: tos9 lorn elliottcable mephux Spitfire jonasac Whoop
+    _whitelogger__ babinho brian-_ undert- barzogh Y_Ichiro russfrank ichilton
+    Boohbah darkc0met ejnahc NuclearL1cifer dagobah_ jtcoon kisoku patronus_
+    jhunter fearoffish new299 Jck_true cjk101010 no_i_wont clop oz Veejay
+    rotor gianlucadv taec iosctr fred rmc3 Hien SirFunk Gate aef DrWhax kiela
+    TommyBotten Elfix thebastl akl ph^^ mrmist oddraisin xea tr4656 Schmidt
+    willcodeforfoo conceal_rs_ Sigma00 xybre_
+*** Users on #ruby: phrame cout psino regedarek phreax sunhay edenc
+    reactormonk dubios acies kenichi affix yosafbridge nuba JodaZ inimino
+    verto
+<servidorv> hey guys
+<servidorv> sorry to bother once again
+*** #ruby modes: +Ccnt
+*** #ruby was created on Sunday 2006/11/26 01:42:45
+*** icole (~icole@63-211-239-34.teliax.com) has joined channel #ruby
+<servidorv> but how can i group_by into arrays, so for example, all month 11
+            into one array, and month 10 into another array
+*** qwerxy (~qwerxy@46-65-25-88.zone16.bethere.co.uk) has joined channel #ruby
+<servidorv> if i use group_by it groups them but by hash, i need them into
+            arrays                                                      [14:25]
+*** becom33 (~becom33@112.135.130.246) has joined channel #ruby
+<servidorv> what will be the best way to do it
+*** senny (~senny@84-72-61-96.dclient.hispeed.ch) has joined channel #ruby
+<blazes816> make arrays from the hash?
+<servidorv> can anyone point me in the right direcction??
+*** dmiller_ (~dmiller@148-100-183-12.WIRELESS.STUDENTS.NAT-POOL.MARIST.EDU)
+    has joined channel #ruby
+*** dmiller_ (~dmiller@148-100-183-12.WIRELESS.STUDENTS.NAT-POOL.MARIST.EDU)
+    has quit: Remote host closed the connection
+*** und3f (~und3f@178.73.210.152) has joined channel #ruby              [14:26]
+*** eignerchris (~eignerchr@75-148-87-174-Oregon.hfc.comcastbusiness.net) has
+    joined channel #ruby
+*** heftig (jan@archlinux/developer/heftig) has joined channel #ruby
+<servidorv> im using this
+<servidorv> arr.group_by{|o| [o['date'].year,o['date'].month]}
+<becom33> when the site is not available Im getting this error getaddress':
+          getaddrinfo: Name or service not known (SocketError)
+<blazes816> arr=[]; hash.keys.map{|k| arr << hash[k] }
+<servidorv> but that groups them into a hash
+*** eignerchris (~eignerchr@75-148-87-174-Oregon.hfc.comcastbusiness.net) has
+    quit: Client Quit
+*** eignerchris (~eignerchr@75-148-87-174-Oregon.hfc.comcastbusiness.net) has
+    joined channel #ruby                                                [14:27]
+*** rippa (~flak@host-176-100-246-253.masterbit.su) has quit: Ping timeout:
+    246 seconds
+<becom33> http://pastebin.com/v8EdxVTc is the code
+*** sepp2k1 (~sexy@g224101004.adsl.alicedsl.de) has quit: Remote host closed
+    the connection                                                      [14:28]
+<servidorv> how can i do it so arr.group_by{|o|
+            [o['date'].year,o['date'].month]} instead of grouping them into
+            hash group them into arrays??
+*** ethicalhack3r (~ethicalha@unaffiliated/ethicalhack3r) has joined channel
+    #ruby
+*** ananthakumaran (~Adium@117.192.128.127) has quit: Quit: Leaving.
+<apeiros_> servidorv: huh?
+*** horofox (~horo@200-158-125-170.dsl.telesp.net.br) has quit: Quit: horofox
+<apeiros_> can you make an example in-/output
+<ethicalhack3r> Hi, is there a way in Ruby to get the size of a Hash in MB or
+                similar?                                                [14:29]
+<becom33> anyone for me ?
+<servidorv> yeah this arr.group_by{|o| [o['date'].year,o['date'].month]} does
+            this
+<apeiros_> servidorv: I mean data
+<servidorv>
+            http://72.249.22.210:8000/pages/posts?id=58128939954&access_token=AAAFOklG4wnEBAIi8DwIaXOfZBUoZAHjXdqcyhzBrys2gZCiFdbBef77iVrZBJskUAHJF6O1ZAgjhK6FqQGCTSSa7n75kVt5uE0g6oYYM5xwZDZD#
+<apeiros_> the array as it is before the group by and how it should look after
+*** horofox (~horo@200-158-125-170.dsl.telesp.net.br) has joined channel #ruby
+*** alfism (~alfism@2620:149:4:1201:bc15:4f2e:e2da:612) has quit: Quit: alfism
+*** horofox (~horo@200-158-125-170.dsl.telesp.net.br) has quit: Client Quit
+<servidorv> that is with the group                                      [14:30]
+*** nachooo (~nacho@host193.190-230-194.telecom.net.ar) has quit: Ping
+    timeout: 240 seconds
+*** daniel_-_ (~daniel_-@g227251127.adsl.alicedsl.de) has joined channel #ruby
+*** SuperrMann (~SuperrMan@host-92-17-231-70.as13285.net) has joined channel
+    #ruby
+<servidorv> what i need is to instead of grouping them on hashes i need to
+            group them by array
+<apeiros_> servidorv: yes, and I'd like to see that
+*** cousine (~cousine@41.233.226.229) has joined channel #ruby          [14:31]
+<apeiros_> i.e., take a small bit of your current data, show how it is now,
+           and show how you want it to look
+*** monkegj__ (~monkegjin@176.41.232.106) has quit: Remote host closed the
+    connection
+<servidorv> ok                                                          [14:32]
+*** nachooo (~nacho@host217.181-1-129.telecom.net.ar) has joined channel #ruby
+*** ckrailo (~ckrailo@208.86.167.247) has joined channel #ruby          [14:33]
+<servidorv> right now it is -[2012, 11]: [{name:ss,id:aaa,date:2012-11-08}],
+            -[2012, 10]: [{name:ss,id:aaa,date:2012-11-08}]
+<servidorv> but i need it to look like -[2012, 11]:
+            {{name:ss,id:aaa,date:2012-11-08}}
+<apeiros_> servidorv: {{ makes no sense                                 [14:34]
+<apeiros_> {} is a hash. a hash has keys and values. your example doesn't.
+<servidorv> -[2012, 11]: {{name:ss,id:aaa,date:2012-11-08},
+            {name:ss,id:aaa,date:2012-11-08},
+            {name:ss,id:aaa,date:2012-11-08},
+            {name:ss,id:aaa,date:2012-11-08}}
+*** hotovson (~hotovson@91.219.242.15) has quit: Remote host closed the
+    connection
+<becom33> when the site is not available Im getting this error getaddress':
+          getaddrinfo: Name or service not known (SocketError)
+<becom33> http://pastebin.com/v8EdxVTc is the code
+<becom33> anyone for me ?
+<servidorv> oh ok                                                       [14:35]
+<servidorv> ok bro thanks
+<servidorv> i guess i already have it in array then
+<servidorv> never mind
+<servidorv> another question
+<servidorv> [{name:ss,id:aaa,date:2012-11-08}]                          [14:36]
+<servidorv> [04:31.22] <servidorv> but i need it to look like -[2012, 11]:
+            {{name:ss,id:aaa,date:2012-11-08}}
+<servidorv> [{name:ss,id:aaa,date:2012-11-08}]
+<servidorv> [04:31.22] <servidorv> but i need it to look like -[2012, 11]:
+            {{name:ss,id:aaa,date:2012-11-08}}
+<servidorv> i have this  -[2012, 11]:
+            [{name:ss,id:aaa,date:2012-11-08},{name:ss,id:aaa,date:2012-11-08}],
+            -[2012, 10]:
+            [{name:ss,id:aaa,date:2012-11-08},{name:ss,id:aaa,date:2012-11-08}],
+<servidorv> how can i eliminate the duplicates
+<servidorv> ??
+<apeiros_> .uniq!                                                       [14:37]
+<servidorv> cause ive been trying for the past hour or so and uniq wont work
+*** reset (~reset@209.133.52.233) has joined channel #ruby
+<apeiros_> servidorv: why don't you remove the duplicates before grouping?
+<servidorv> arr.uniq!{|x, v| v['id']}                                   [14:38]
+<apeiros_> arr.uniq.group_by { ë°≠
+<apeiros_> why |x,v| ?
+<servidorv> because i need to eliminate the duplicate inside each month
+*** jslowe (~jslowe@94-192-111-207.zone6.bethere.co.uk) has joined channel
+    #ruby
+<apeiros_> show the full code please. pastie.org or gist
+<becom33> anyone for me ??                                              [14:39]
+<apeiros_> complete with the pp/yaml of a small set of data before
+           grouping/uniqueing
+<servidorv> https://gist.github.com/4041023
+*** kil0byte (~kil0byte@203.82.37.90) has quit: Remote host closed the
+    connection
+<becom33> when the site is not available Im getting this error getaddress':
+          getaddrinfo: Name or service not known (SocketError)          [14:40]
+<servidorv> there is the gist
+<becom33> http://pastebin.com/v8EdxVTc is the code
+*** Vinz_ (~Vinz_@www.sataninc.tk) has quit: Quit: J'aime les noobs. ó¶æ
+*** nachooo (~nacho@host217.181-1-129.telecom.net.ar) has quit: Ping timeout:
+    246 seconds
+<servidorv> i need to remove the duplicates only inside each date array
+<apeiros_> servidorv: err, yes, that makes no sense
+<apeiros_> group_by *returns* the grouped data                          [14:41]
+*** arturaz (~arturas@88-222-158-4.meganet.lt) has quit: Ping timeout: 255
+    seconds
+<apeiros_> yet you make absolutely no use of it. you just throw it away.
+<servidorv> ok
+<apeiros_> and then you call uniq! on the original array againë°≠
+<apeiros_> servidorv: again, why don't you remove the duplicates before
+           grouping?
+*** pestouille (~adrien@ALagny-153-1-83-51.w90-3.abo.wanadoo.fr) has joined
+    channel #ruby
+<apeiros_> an item will never end up in more than one group
+<servidorv> because i need to eliminate duplicated only inside each month
+            group                                                       [14:42]
+<apeiros_> arr.uniq { |o| o.values_at('id', 'month', 'year') }.group_by { |o|
+           o.values_at('month', 'year') }
+<servidorv> well if the person posted on sep and october i need to have both,
+            but i cant have the same person voted 2 times in the same month
+                                                                        [14:43]
+*** kirun (~kirun@78-86-154-194.zone2.bethere.co.uk) has joined channel #ruby
+<atmosx> this ebox 3350mx is really good, it handles an awfull lot of load
+         hmmm
+*** nachooo (~nacho@host199.190-230-199.telecom.net.ar) has joined channel
+    #ruby                                                               [14:44]
+*** freakazoid0223 (~matt@pool-173-75-233-172.phlapa.fios.verizon.net) has
+    joined channel #ruby
+*** pnbeast (~pnbeast@70.sub-75-195-99.myvzw.com) has joined channel #ruby
+<apeiros_> servidorv: if he posted in sept and oct, those are hardly
+           duplicates of each other - are they?
+<apeiros_> servidorv: also, you can easily just state month & year to be part
+           of the uniq block - just as I did
+<servidorv> oh i c                                                      [14:45]
+<servidorv> then my problem is the way i was loking into it
+<servidorv> sorry bro i still have php on my head
+<servidorv> :(
+*** theRoUS (KenCoar@apache/committer/coar) has quit: Quit: Leaving     [14:46]
+*** insulator (~insulator@gateway/tor-sasl/insulator) has quit: Remote host
+    closed the connection
+*** wicky (~wicky@pdpc/supporter/active/wicky) has quit: Quit: leaving
+*** thinkdevcode (~thinkdevc@mcf5536d0.tmodns.net) has quit: Remote host
+    closed the connection
+*** theRoUS (KenCoar@nat/redhat/x-qxrprqlliixvyecg) has joined channel #ruby
+*** theRoUS (KenCoar@nat/redhat/x-qxrprqlliixvyecg) has quit: Changing host
+*** theRoUS (KenCoar@apache/committer/coar) has joined channel #ruby
+*** kirun_ (~kirun@78-86-154-194.zone2.bethere.co.uk) has joined channel #ruby
+                                                                        [14:47]
+*** kirun_ (~kirun@78-86-154-194.zone2.bethere.co.uk) has quit: Read error:
+    Connection reset by peer
+*** darthdeus (~darthdeus@81.231.146.47) has quit: Ping timeout: 246 seconds
+*** thinkdevcode (~thinkdevc@m905536d0.tmodns.net) has joined channel #ruby
+                                                                        [14:48]
+*** jamescarr (427045c7@gateway/web/freenode/ip.66.112.69.199) has quit: Quit:
+    Page closed
+*** nachooo (~nacho@host199.190-230-199.telecom.net.ar) has quit: Ping
+    timeout: 248 seconds
+*** nachooo_ (~nacho@host153.190-230-40.telecom.net.ar) has joined channel
+    #ruby
+*** Jork1 (~Jork1@108.Red-83-34-160.dynamicIP.rima-tde.net) has quit: Quit:
+    Jork1                                                               [14:49]
+*** kirun (~kirun@78-86-154-194.zone2.bethere.co.uk) has quit: Ping timeout:
+    260 seconds
+*** axl_ (~axl_@75-161-238-76.mpls.qwest.net) has quit: Quit: axl_
+*** kirun (~kirun@78-86-154-194.zone2.bethere.co.uk) has joined channel #ruby
+                                                                        [14:50]
+*** butblack
+    (~butblack@CPE0018f85e8c59-CM001ac3168f66.cpe.net.cable.rogers.com) has
+    joined channel #ruby
+*** BrianJ (~brianjako@115.sub-70-192-199.myvzw.com) has quit: Read error:
+    Connection reset by peer                                            [14:51]
+*** psycho_one (~psycho_on@92.61.65.151) has quit: Remote host closed the
+    connection                                                          [14:52]
+<shevy> hmm if I have a ruby file in my gem project bin/foo.rb but I want to
+        allow calling it via "foo" too, does anyone know if symlinks for that
+        work?
+<shevy> though that will probably not work on windows hmm
+*** nachooo_ (~nacho@host153.190-230-40.telecom.net.ar) has quit: Ping
+    timeout: 246 seconds
+*** BrianJ (~brianjako@115.sub-70-192-199.myvzw.com) has joined channel #ruby
+                                                                        [14:53]
+*** Ry_ (~Ryman@74.82.186.8) has quit: Ping timeout: 246 seconds
+*** thinkdevcode (~thinkdevc@m905536d0.tmodns.net) has quit: Ping timeout: 260
+    seconds                                                             [14:54]
+*** havenn (~havenn@pool-98-112-107-198.lsanca.fios.verizon.net) has joined
+    channel #ruby
+*** Tuxist (~quassel@dyndsl-091-096-122-027.ewe-ip-backbone.de) has quit: Read
+    error: Connection reset by peer                                     [14:55]
+*** nachooo (~nacho@host10.190-230-43.telecom.net.ar) has joined channel #ruby
+*** tar_ (~tar@2001:470:8b2d:7d4:d849:dcf9:b0c4:42f6) has joined channel #ruby
+*** carloslopes (~carloslop@201.82.56.96) has quit: Remote host closed the
+    connection
+*** rafter (~rafter@ppp-123-13.26-151.libero.it) has quit: Remote host closed
+    the connection                                                      [14:56]
+*** thinkdevcode (~thinkdevc@m905536d0.tmodns.net) has joined channel #ruby
+*** ryh (~ryh@65-121-115-33.dia.static.qwest.net) has joined channel #ruby
+*** emmanuelux (~emmanuelu@2a01:e35:2e4d:9010:3d85:37d7:aac:905d) has joined
+    channel #ruby
+*** gpalmier (~l1fetime@c-98-206-35-67.hsd1.il.comcast.net) has quit: Quit:
+    leaving
+*** ryh (~ryh@65-121-115-33.dia.static.qwest.net) has quit: Remote host closed
+    the connection
+*** mikepack (~mikepack@factory-smtp.factorylabs.com) has quit: Remote host
+    closed the connection                                               [14:57]
+*** tvw (~tv@e176004209.adsl.alicedsl.de) has joined channel #ruby
+*** ibash (~islam@mobile-248-156.near.uiuc.edu) has quit: Quit: ibash
+*** Morkel (~Morkel@xdsl-87-78-74-112.netcologne.de) has quit: Read error:
+    Operation timed out                                                 [14:58]
+*** darthdeus (~darthdeus@m90-131-120-75.cust.tele2.se) has joined channel
+    #ruby
+*** ltsstar (~Thunderbi@p5B35AA13.dip.t-dialin.net) has quit: Quit: ltsstar
+*** ltsstar (~Thunderbi@p5B35AA13.dip.t-dialin.net) has joined channel #ruby
+*** Morkel (~Morkel@xdsl-87-78-120-179.netcologne.de) has joined channel #ruby
+                                                                        [14:59]
+*** garndt (uid7486@gateway/web/irccloud.com/x-ayzwiubnkbytfwes) has joined
+    channel #ruby
+*** dv__ (~quassel@chello080108009040.14.11.vie.surfer.at) is now known as dv_
+*** jakob- (~znake@5.254.139.54) has quit: Quit: Linkinus -
+    http://linkinus.com                                                 [15:00]
+*** mikepack (~mikepack@factory-smtp.factorylabs.com) has joined channel #ruby
+<servidorv> hey how can i do this values_at('month', 'year') but without the
+            come or space??                                             [15:01]
+*** kalleth (~trussell@intranet.cishub.co.uk) has joined channel #ruby
+*** ibash (~islam@mobile-248-156.near.uiuc.edu) has joined channel #ruby
+<servidorv> cause for me to be able to save the info into mongo it tells me
+            that the key must be a string                               [15:02]
+<csmrfx> non comprende
+*** ilyam_ (~ilyam@eng.nat.mtv.ooyala.com) has joined channel #ruby
+<servidorv> right now values_at('month', 'year') does [11, 2012]
+<csmrfx> RETURNS                                                        [15:03]
+<csmrfx> ok
+<servidorv> i need it to do [112012]
+<csmrfx> ri Array.join
+<servidorv> values_at('month', 'year').join??
+<csmrfx> [ values_at(what, ever).join ]                                 [15:04]
+<servidorv> ok thanks
+*** ibash (~islam@mobile-248-156.near.uiuc.edu) has quit: Client Quit
+<csmrfx> you do know how to use ri?
+<enroxorz-work> anyone familiar with sinatra?
+<enroxorz-work> cant figure out why i cant thread out a background process
+*** ilyam (~ilyam@eng.nat.mtv.ooyala.com) has quit: Ping timeout: 248 seconds
+*** ilyam_ (~ilyam@eng.nat.mtv.ooyala.com) is now known as ilyam
+*** axl_ (~axl_@63.229.205.62) has joined channel #ruby                 [15:05]
+*** stw (~stefan@95-91-95-191-dynip.superkabel.de) has joined channel #ruby
+<csmrfx> enroxorz-work: do you really mean thread?                      [15:06]
+*** reset (~reset@209.133.52.233) has quit: Quit: Leaving...            [15:07]
+*** nachooo (~nacho@host10.190-230-43.telecom.net.ar) has quit: Ping timeout:
+    240 seconds
+<enroxorz-work> tbh idk. i have a background process i need to kick off afer a
+                post
+*** txdv (~quassel@78.60.233.29) has quit: Read error: Connection reset by
+    peer
+<enroxorz-work> a worker process really, but not a queue
+*** txdv (~quassel@78.60.233.29) has joined channel #ruby
+*** horofox (~horo@201.52.164.248) has joined channel #ruby             [15:08]
+<csmrfx> You do know that on MRI threading dont help much?
+<csmrfx> so, a process                                                  [15:09]
+*** darthdeus (~darthdeus@m90-131-120-75.cust.tele2.se) has quit: Ping
+    timeout: 246 seconds
+<burgestrand> Bullshit.
+*** pyx (~pyx@d24-141-100-35.home.cgocable.net) has joined channel #ruby
+*** mmornati_ (~mmornati@81-67-215-121.rev.numericable.fr) has joined channel
+    #ruby
+*** horofox (~horo@201.52.164.248) has quit: Client Quit
+*** techhelp (~Dan@firebox.rsmart.com) has joined channel #ruby
+<burgestrand> enroxorz-work: what does your code look like?             [15:10]
+<burgestrand> enroxorz-work: and what is the problem with it?
+<enroxorz-work> let me paste it
+<enroxorz-work> gimem a minute
+*** bradhe (~bradhe@71-20-3-9.war.clearwire-wmx.net) has quit: Remote host
+    closed the connection
+*** dakine (~dakine@24-207-151-44.dhcp.stls.mo.charter.com) has joined channel
+    #ruby
+*** horofox (~horo@201.52.164.248) has joined channel #ruby             [15:11]
+*** tvw (~tv@e176004209.adsl.alicedsl.de) has quit: Ping timeout: 268 seconds
+<burgestrand> csmrfx: while MRI threading cannot execute in parallel, they are
+              far from useless.
+<servidorv> hey how can i save this into separate hashes ??
+            http://72.249.22.210:8000/pages/posts?id=58128939954&access_token=AAAFOklG4wnEBAIi8DwIaXOfZBUoZAHjXdqcyhzBrys2gZCiFdbBef77iVrZBJskUAHJF6O1ZAgjhK6FqQGCTSSa7n75kVt5uE0g6oYYM5xwZDZD#
+                                                                        [15:12]
+<burgestrand> csmrfx: itÜ¢s true that, for CPU-intensive work (say, heavy
+              number crunching) pure-ruby code will not gain much from
+              threads. However, for IO, and even large calculation with rubyÜ¢s
+              bignum (which is used for large numbers), threads will help.
+<servidorv> i need so separate them so i can save them into mongo db    [15:13]
+<servidorv> but as separated like 102012 on record and 112012 another record
+*** cakehero (~cakehero@cpe-74-68-133-215.nyc.res.rr.com) has quit: Quit:
+    Computer has gone to sleep.
+<csmrfx> burgestrand: so, in fact, only thing that is bullshit, is your
+         "bullshit" -statement.
+*** Amirh (~Amirhb@2.181.15.221) has quit: Quit: Leaving.
+<csmrfx> 8)
+<enroxorz-work> burgestrand: http://pastebin.com/WJsQm8AG
+<burgestrand> csmrfx: no, I donÜ¢t like FUD being spread.
+<csmrfx> MRI still runs in once single core, right?                     [15:14]
+<csmrfx> *one
+<eph3meral> csmrfx: technically no
+<burgestrand> enroxorz-work: `` will shell out, and ruby will wait until the
+              command has finished before continuing execution. Is that what
+              you want?
+<eph3meral> csmrfx: but for practical purposes given the lock, yes
+*** pettsson (~pettsson@90-230-218-39-no135.tbcn.telia.com) has joined channel
+    #ruby                                                               [15:15]
+<enroxorz-work> burgestrand: nope. i want that badboy to run in the background
+<kalleth> i had a requirement for that, used open3
+<burgestrand> C extensions can unlock the lock, and take advantage of multiple
+              cores; IO in ruby will do a similar thing.
+<eph3meral> csmrfx: native multi-core support on the JVM is one reason people
+            choose jruby
+<kalleth> for shelling out, that is, enroxorz-work
+<csmrfx> you realize that a forking process cannot access another processes
+         memory  btw
+<kalleth> enroxorz-work:
+          http://www.ruby-doc.org/stdlib-1.9.3/libdoc/open3/rdoc/Open3.html
+                                                                        [15:16]
+<burgestrand> enroxorz-work: are you interested in the return value?
+<kalleth> Thread.new, then open3 it, then callback w result when it returns
+<enroxorz-work> nope.
+<burgestrand> enroxorz-work: or any information about the commandÜ¢s execution
+              at all?
+<kalleth> or just `cmd &`
+<kalleth> will that work?
+* kalleth tries
+<burgestrand> It might. :P
+<servidorv> hey how can i save this into separate hashes ??
+            http://72.249.22.210:8000/pages/posts?id=58128939954&access_token=AAAFOklG4wnEBAIi8DwIaXOfZBUoZAHjXdqcyhzBrys2gZCiFdbBef77iVrZBJskUAHJF6O1ZAgjhK6FqQGCTSSa7n75kVt5u
+            E0g6oYYM5xwZDZD#
+<csmrfx> servidorv: that url?
+<servidorv> that is my server url                                       [15:17]
+<kalleth> burgestrand: it depends wether or not `` spins up a bash instance
+<kalleth> and wether it waits for command completion and on command
+          'completion' killing the shell
+<kalleth> or waits for the process to exit cleanly
+<servidorv>
+            http://72.249.22.210:8000/pages/posts?id=58128939954&access_token=AAAFOklG4wnEBAIi8DwIaXOfZBUoZAHjXdqcyhzBrys2gZCiFdbBef77iVrZBJskUAHJF6O1ZAgjhK6FqQGCTSSa7n75kVt5u
+            E0g6oYYM5xwZDZ
+<kalleth> IHNI which
+<burgestrand> enroxorz-work: if you donÜ¢t care, i.e. fire and forget,
+              Thread.new { `external.bat` } should work just fine, however if
+              the process takes a long time to exit (or never exits), and you
+              call this route many times, youÜ¢ll end with a lot of threads
+              that never die which is not really good.
+<servidorv>
+            http://72.249.22.210:8000/pages/posts?id=58128939954&access_token=AAAFOklG4wnEBAIi8DwIaXOfZBUoZAHjXdqcyhzBrys2gZCiFdbBef77iVrZBJskUAHJF6O1ZAgjhK6FqQGCTSSa7n75kVt5uE0g6oYYM5xwZDZD#
+*** pothibo (~pothibo@24.48.80.111) has joined channel #ruby
+<servidorv> this one sorry
+*** joeycarmello (~joeycarme@17.244.69.87) has joined channel #ruby
+<csmrfx> servidorv: What, is it, exactly, that you want to do?          [15:18]
+<burgestrand> enroxorz-work: while naive, itÜ¢s the easiest solution.
+*** nachooo_ (~nacho@host151.190-230-40.telecom.net.ar) has joined channel
+    #ruby
+<kalleth> burgestrand: i'd probably do something like @threads << Thread.new {
+          `external.bat` } and then periodically @threads.each { |thread|
+          thread.dosomethingtocheckifstillalive ? thread.kill : '' }
+<servidorv> I need to separate them so i can save them to mongodb
+<kalleth> oh god mongodb
+<kalleth> i'm out
+*** ephemerian (~ian@82-71-51-229.dsl.in-addr.zen.co.uk) has joined channel
+    #ruby
+<burgestrand> kalleth: if itÜ¢s a process that runs for a few seconds that is
+              started once every day I wouldnÜ¢t really bother. :P       [15:19]
+*** tar_ (~tar@2001:470:8b2d:7d4:d849:dcf9:b0c4:42f6) has quit: Quit: tar_
+<servidorv> if i save them right now it will save the complete array
+<kalleth> burgestrand: he doesn't care about the output of the command because
+          its mongodbë°≠ it can't tell him if it's succeeded or not ;)
+<kalleth> alsoë°≠ ermë°≠ cron?
+<csmrfx> servidorv: you want to separate them? burgestrand and kalleth?
+<enroxorz-work> burgestrand: what if i wanted the return results?
+<burgestrand> kalleth: thatÜ¢s servidorv not enroxorz-work ^^
+<kalleth> oh ffs
+<kalleth> shitty new mac irc client i'm not familiar with
+<burgestrand> enroxorz-work: depends. Where do you want the return results?
+<csmrfx> servidorv: oh, did you mean you wanted to type "ri URI" in console?
+<servidorv> nop
+*** cousine (~cousine@41.233.226.229) has quit: Remote host closed the
+    connection                                                          [15:20]
+*** reinaldob (~reinaldob@201.74.207.100) has joined channel #ruby
+<csmrfx> yes you did
+* kalleth reads scrollback
+*** vickaita_ (~vickaita@75-150-152-213-Philadelphia.hfc.comcastbusiness.net)
+    has joined channel #ruby
+<servidorv> ri uri??
+<servidorv> i need to separate that result into those date groups, for example
+            save 102012 into one record and 112012 into another record
+<enroxorz-work> burgestrand: actually, i take that back. even if i call an
+                external class (Module::Class.execute) I still don't need
+                anything back                                           [15:21]
+<burgestrand> enroxorz-work: :)
+<csmrfx> servidorv: cant see your server. pastie.org?
+<servidorv> https://gist.github.com/4041317                             [15:22]
+*** nachooo_ (~nacho@host151.190-230-40.telecom.net.ar) has quit: Ping
+    timeout: 240 seconds
+*** nachooo (~nacho@host162.181-1-134.telecom.net.ar) has joined channel #ruby
+<enroxorz-work> burgestrand: So this works as well?
+                http://pastebin.com/30HExcfm                            [15:23]
+*** vickaita (~vickaita@75-150-152-213-Philadelphia.hfc.comcastbusiness.net)
+    has quit: Ping timeout: 248 seconds
+<enroxorz-work> and continue to the redirect?
+<burgestrand> enroxorz-work: yup!
+*** swarley (~bunneh@ip68-13-218-90.hr.hr.cox.net) has joined channel #ruby
+*** lxsameer (~lxsameer@unaffiliated/lxsameer) has joined channel #ruby
+                                                                        [15:24]
+<servidorv> got the link csmrfx ??
+*** neersighted (neer@is.a.slave.to.neersighted.com) has joined channel #ruby
+<wwalker>  /lastlog wwalker
+*** cakehero (~cakehero@cpe-74-68-133-215.nyc.res.rr.com) has joined channel
+    #ruby
+<servidorv> ri URI                                                      [15:25]
+*** lxsameer (~lxsameer@unaffiliated/lxsameer) has quit: Remote host closed
+    the connection
+<burgestrand> enroxorz-work: what it does is that it creates a separate thread
+              that runs the code. Once the long-running code finishes the
+              thread will die and ruby can clean it up.
+*** wwalker (~wwalker@208.92.232.27) has left channel #ruby: #ruby
+<enroxorz-work> will it continue to the next step while the thread is working?
+                                                                        [15:26]
+<burgestrand> enroxorz-work: if your long-running code never finishes, or if
+              you hit the /pdfcompare/text URL so often that you eventually
+              have hundreds of threads running at the same time, you might
+              need to change the code.
+<burgestrand> enroxorz-work: yes, it will instantly go on to the next step.
+<enroxorz-work> I have a lock file that prevents any additional processes to
+                run
+<enroxorz-work> thanks
+<enroxorz-work> im gonna try this now. :)
+*** nopolitica (~zul@37.204.131.30) has joined channel #ruby
+<burgestrand> :)                                                        [15:27]
+*** invapid (~invapid@acd4130241353.wireless.rit.edu) has joined channel #ruby
+<servidorv> any one with ideas on how to separate that array ??
+            https://gist.github.com/4041317
+*** J-_-L (~dan@cpe-66-108-247-2.nyc.res.rr.com) has joined channel #ruby
+                                                                        [15:28]
+<servidorv> i did try .each but it didnt work, it sais can't convert to
+            integers
+<burgestrand> servidorv: what is that?
+<burgestrand> servidorv: looks like JSON to me.
+<burgestrand> Except forë°≠
+<burgestrand> no quoting.
+<servidorv> yeah is json decode right now                               [15:29]
+<servidorv> encode sorry
+<burgestrand> servidorv: I donÜ¢t understand what you want to do.
+<servidorv> i have this array were i have grouped results into months and
+            years
+<servidorv> so what i need is to save 102012 into one record, and 112012 into
+            another record                                              [15:30]
+*** nachooo (~nacho@host162.181-1-134.telecom.net.ar) has quit: Ping timeout:
+    246 seconds
+*** Mon_Ouie (~Mon_Ouie@subtle/user/MonOuie) has quit: Ping timeout: 240
+    seconds                                                             [15:31]
+<servidorv> now its without json.dump
+<servidorv>
+            http://72.249.22.210:8000/pages/posts?id=58128939954&access_token=AAAFOklG4wnEBAIi8DwIaXOfZBUoZAHjXdqcyhzBrys2gZCiFdbBef77iVrZBJskUAHJF6O1ZAgjhK6FqQGCTSSa7n75kVt5uE0g6oYYM5xwZDZD#
+*** SmoothSage (~sage@117.207.9.143) has quit: Quit: Leaving
+*** Mon_Ouie (~Mon_Ouie@subtle/user/MonOuie) has joined channel #ruby   [15:32]
+*** pestouille (~adrien@ALagny-153-1-83-51.w90-3.abo.wanadoo.fr) has quit:
+    Quit: pestouille
+*** tvw (~tv@e176004209.adsl.alicedsl.de) has joined channel #ruby
+*** areil (~areil@113.173.26.151) has quit: Remote host closed the connection
+*** Beoran_ (~beoran@ip-213-49-116-191.dsl.scarlet.be) has quit: Read error:
+    Connection reset by peer
+*** Beoran_ (~beoran@ip-213-49-116-191.dsl.scarlet.be) has joined channel
+    #ruby
+*** BSaboia__ (~brunosabo@177.19.71.165) has joined channel #ruby
+<servidorv> any ideas how i can separated and save both 112012 and 102012 into
+            separate records
+*** aquaranto (~aquaranto@remote.academicsoftwareplus.com) has quit: Remote
+    host closed the connection
+<servidorv> more than the save part, i just need to separate them       [15:33]
+<burgestrand> servidorv: what am I looking at?
+*** xcvd`` (~jslowe@94-192-111-207.zone6.bethere.co.uk) has joined channel
+    #ruby
+*** techhelp (~Dan@firebox.rsmart.com) has quit: Quit: Leaving
+<servidorv> i did try a .each but it doesnt work
+<csmrfx> So you want to concatenate two values in a hash?
+*** xcvd`` (~jslowe@94-192-111-207.zone6.bethere.co.uk) has quit: Read error:
+    Connection reset by peer
+<csmrfx> *from a hash, into an array
+<csmrfx> (ignore the ri URI, I thought you wanted to split that url)
+*** SuperrMann (~SuperrMan@host-92-17-231-70.as13285.net) has quit: Quit:
+    Computer has gone to sleep.                                         [15:34]
+<servidorv> na let me show it to you in json.dump cause is more organized
+<servidorv>
+            http://72.249.22.210:8000/pages/posts?id=58128939954&access_token=AAAFOklG4wnEBAIi8DwIaXOfZBUoZAHjXdqcyhzBrys2gZCiFdbBef77iVrZBJskUAHJF6O1ZAgjhK6FqQGCTSSa7n75kVt5uE0g6oYYM5xwZDZD#
+<servidorv> now it has the json.dump,
+*** bradhe (~bradhe@71-20-3-9.war.clearwire-wmx.net) has joined channel #ruby
+*** qwerxy (~qwerxy@46-65-25-88.zone16.bethere.co.uk) has quit: Quit: offski
+                                                                        [15:35]
+*** jslowe (~jslowe@94-192-111-207.zone6.bethere.co.uk) has quit: Ping
+    timeout: 246 seconds
+*** arturaz (~arturas@88-222-158-4.meganet.lt) has joined channel #ruby
+<burgestrand> servidorv: so what do you want it to look like?
+<servidorv> you will see that it has [112012]:[{name:bla, id:bla, month:bla,
+            year:bla},{name:bla, id:bla, month:bla, year:bla}],
+            [102012]:[{name:bla, id:bla, month:bla, year:bla},{name:bla,
+            id:bla, month:bla, year:bla}],
+*** BSaboia (~brunosabo@177.19.71.165) has quit: Ping timeout: 246 seconds
+<servidorv> i just need to separate them
+*** qwerxy (~qwerxy@46-65-25-88.zone16.bethere.co.uk) has joined channel #ruby
+                                                                        [15:36]
+*** reinaldob (~reinaldob@201.74.207.100) has quit: Remote host closed the
+    connection
+<burgestrand> servidorv: it is rather { "112012" => [ { bla }, { bla } ],
+              "102012" => [ { bla }, { bla }] }
+<servidorv> like make 102012 into one array or hash and 112012 into another
+            array or hash
+*** tar_ (~tar@30-7-71.wireless.csail.mit.edu) has joined channel #ruby
+*** cascalheira (~cascalhei@195.54.168.46) has quit: Quit: Linkinus -
+    http://linkinus.com
+<servidorv> yeah sorry
+<burgestrand> servidorv: show what you want it to look like
+<burgestrand> servidorv: I donÜ¢t understand what you want
+<Serial_Killer_C> .flat_map
+<Serial_Killer_C> nm                                                    [15:37]
+*** zommi (~andreas@HSI-KBW-078-042-249-037.hsi3.kabel-badenwuerttemberg.de)
+    has joined channel #ruby
+<csmrfx> lol I also am not sure what you want                           [15:38]
+*** tbrock_ (~tyler@74.113.160.178) has joined channel #ruby
+*** robbyoconnor (~wakawaka@guifications/user/r0bby) has joined channel #ruby
+*** nachooo (~nacho@host187.190-230-87.telecom.net.ar) has joined channel
+    #ruby
+<servidorv> i want it so that when i send it to mongodb instead of saving it
+            as one record
+*** kbeddingfield (~kbeddingf@c-98-203-216-85.hsd1.wa.comcast.net) has quit:
+    Remote host closed the connection
+<servidorv> i want it to save it as 2 records
+*** robbyoconnor (~wakawaka@guifications/user/r0bby) has quit: Read error:
+    Connection reset by peer
+<csmrfx> what?                                                          [15:39]
+<csmrfx> 'it'?
+<burgestrand> servidorv: show what it should look like
+<tjbiddle> anyone have a second to answer a few rspec/general unit testing
+           questions?
+<burgestrand> tjbiddle: just ask, youÜ¢ll find out
+<servidorv> ok hold on
+<burgestrand> tjbiddle: itÜ¢s not rude to just ask, itÜ¢s expected        [15:40]
+*** pestouille (~adrien@ALagny-153-1-83-51.w90-3.abo.wanadoo.fr) has joined
+    channel #ruby
+<tjbiddle> burgestrand: heh, good to know :) thanks
+<servidorv> i need it to be organizer like this                         [15:41]
+<servidorv>
+            http://72.249.22.210:8000/pages/posts?id=58128939954&access_token=AAAFOklG4wnEBAIi8DwIaXOfZBUoZAHjXdqcyhzBrys2gZCiFdbBef77iVrZBJskUAHJF6O1ZAgjhK6FqQGCTSSa7n75kVt5uE0g6oYYM5xwZDZD#
+*** chrxn (~chrxn@216.228.241.140) has joined channel #ruby
+<servidorv> here you will see the way it is organized, wenever i send that
+            response to mongo it will save it as diferent records       [15:42]
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has quit: Read error:
+    Connection reset by peer
+<tjbiddle> not sure if i'm going about this the wrong way (first time tester)
+           - but how would i go about testing a method that does multiple
+           things (calls a few other methods, such as creating git branches
+           and updating trac tickets)
+<burgestrand> servidorv: this is different data
+*** fmcgeough (~fmcgeough@50.59.202.7) has joined channel #ruby
+*** axl_ (~axl_@63.229.205.62) has quit: Read error: Connection reset by peer
+<burgestrand> servidorv: can you show with that that looks like the real data?
+              just small is okay
+<servidorv> ok
+*** nachooo (~nacho@host187.190-230-87.telecom.net.ar) has quit: Ping timeout:
+    260 seconds                                                         [15:43]
+*** seanyo (~quassel@216.16.232.86) has quit: Ping timeout: 246 seconds
+*** lxsameer (~user@unaffiliated/lxsameer) has joined channel #ruby
+<burgestrand> tjbiddle: in all due respect, methods that do different things
+              should *usually* be broken down into separate methods, thatÜ¢d be
+              a general answer without seeing the code
+*** kil0byte (~kil0byte@112.204.135.193) has joined channel #ruby
+*** axl_ (~axl_@63.229.205.62) has joined channel #ruby
+*** banjara (~Adium@unaffiliated/banjara) has joined channel #ruby
+<lxsameer> hi, how can i exclude some files ine gemspec file ?
+*** nachooo (~nacho@host156.190-230-196.telecom.net.ar) has joined channel
+    #ruby
+<servidorv> { "112012" => [ { bla }, { bla } ]}, {"102012" => [ { bla }, { bla
+            }]}
+<servidorv> that is the way i need it to be like                        [15:44]
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has joined channel #ruby
+<servidorv> instead of { "112012" => [ { bla }, { bla } ], "102012" => [ { bla
+            }, { bla }]}
+<tjbiddle> that's what i was thinking - but most things are already broken
+           down, it's just this is one that calls certain things in order
+           e.g.: accept(ticket) would post an update to a trac server, and
+           then create a new branch in git for the ticket - Both the update
+           and branching are different methods, but this is a method that
+           calls both to accomplish something else.                     [15:46]
+<lectrick> What is the fastest way to combine 2 arrays not testing for
+           uniqueness? += results in GC since it has to reallocate the new
+           value, no?
+<servidorv> so in fack what i need is to separate 102012 anb 112012 into 2
+            separate hashes
+<csmrfx> ri Hash
+<csmrfx> for example, ri Hash.delete                                    [15:47]
+*** JonnieCache (~jonnie@coral.osbornebrook.co.uk) has joined channel #ruby
+                                                                        [15:48]
+*** fantazo (~fantazo@91-119-203-9.dynamic.xdsl-line.inode.at) has quit:
+    Remote host closed the connection
+*** swarley| (~bunneh@2600:1003:b02f:bd8d::103) has joined channel #ruby
+*** nachooo_ (~nacho@host218.190-230-234.telecom.net.ar) has joined channel
+    #ruby                                                               [15:51]
+*** nachooo (~nacho@host156.190-230-196.telecom.net.ar) has quit: Ping
+    timeout: 246 seconds                                                [15:52]
+*** nachooo_ (~nacho@host218.190-230-234.telecom.net.ar) is now known as
+    nachooo
+*** swarley (~bunneh@ip68-13-218-90.hr.hr.cox.net) has quit: Ping timeout: 252
+    seconds
+*** elaptics`away (~elaptics@ahenson-1.vps.serverunit.co.uk) is now known as
+    elaptics                                                            [15:53]
+<burgestrand> lectrick: array.concat(other_array) modifies the original array.
+                                                                        [15:54]
+<burgestrand> lectrick: and ruby GCs a little bit every now and then, but I
+              assume what you wanted was to not create an entirely new array.
+<burgestrand> tjbiddle: well, it sounds like placing an expectation on certain
+              methdods to be called might be something for you.         [15:55]
+<burgestrand> ë°≠ one moment.
+<burgestrand> tjbiddle:
+              https://www.relishapp.com/rspec/rspec-mocks/v/2-11/docs/message-expectations
+<lectrick> found this burgestrand:
+           http://doblock.com/articles/the-fastest-way-to-concatenate-strings-and-arrays-in-ruby
+*** thinkdevcode (~thinkdevc@m905536d0.tmodns.net) has quit: Remote host
+    closed the connection                                               [15:56]
+<lectrick> so the solution looks like : .each through the 2nd array doing a
+           first_array << element
+*** JonnieCache (~jonnie@coral.osbornebrook.co.uk) has quit: Read error:
+    Operation timed out
+*** swarley (~bunneh@ip68-13-218-90.hr.hr.cox.net) has joined channel #ruby
+<tjbiddle> burgestrand: awesome - thanks! i just pulled over a friend and she
+           just finished explaining the same thing a second ago, but having
+           that page open is a perfect reference.                       [15:57]
+*** ilyam (~ilyam@eng.nat.mtv.ooyala.com) has quit: Remote host closed the
+    connection
+*** clj_newb (~detryo@223.217.77.188.dynamic.jazztel.es) has quit: Ping
+    timeout: 246 seconds
+*** ilyam (~ilyam@eng.nat.mtv.ooyala.com) has joined channel #ruby      [15:58]
+*** caleb_io (~Caleb@50.0.103.34) has joined channel #ruby
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has quit: Ping timeout:
+    255 seconds
+*** tar_ (~tar@30-7-71.wireless.csail.mit.edu) has quit: Quit: tar_     [15:59]
+*** swarley| (~bunneh@2600:1003:b02f:bd8d::103) has quit: Ping timeout: 246
+    seconds
+*** swarley_ (~swarley@ip68-13-218-90.hr.hr.cox.net) has joined channel #ruby
+*** tvw (~tv@e176004209.adsl.alicedsl.de) has quit: Remote host closed the
+    connection                                                          [16:00]
+*** tvw (~tv@e176004209.adsl.alicedsl.de) has joined channel #ruby
+*** csmrfx (csmr@hilla.kapsi.fi) has quit: Quit: leaving                [16:01]
+*** scx (~scx@aegg1.neoplus.adsl.tpnet.pl) has quit: Ping timeout: 248 seconds
+*** mityaz (~Miranda@ip183-42.telenet.dn.ua) has quit: Read error: Connection
+    reset by peer
+*** servidorv (~IceChat9@190.174.35.154) has quit: Quit: For Sale:
+    Parachute. Only used once, never opened, small stain.               [16:02]
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has joined channel #ruby
+*** nkts (~hi5@unaffiliated/nkts) has joined channel #ruby              [16:03]
+*** bbttxu (~adam@dynamic-129-120-52-174.dynamic.unt.edu) has quit: Quit:
+    bbttxu
+<burgestrand> lectrick: http://pastie.org/private/emjwieihfy3senk1tlqaw
+                                                                        [16:04]
+<burgestrand> lectrick: concat is way faster for me.                    [16:05]
+*** tar_ (~tar@30-7-71.wireless.csail.mit.edu) has joined channel #ruby
+*** tar_ (~tar@30-7-71.wireless.csail.mit.edu) has quit: Client Quit
+*** ethicalhack3r (~ethicalha@unaffiliated/ethicalhack3r) has quit: Quit:
+    Leaving
+<burgestrand> lectrick: http://pastie.org/private/uxc1caieb7wjnc8nadbaw code
+              for benchmarking it
+<burgestrand> Oups.
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has quit: Read error:
+    Connection reset by peer
+<lectrick> Would people hate me if I did the latter instead of the former? A)
+           a=[1,2,3]; b=[4,5,6]; b.each{|e| a << e} ; a  vs. B) a=[1,2,3];
+           b=[4,5,6]; b.each(&a.method(:<<)); a                         [16:06]
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has joined channel #ruby
+<burgestrand> #concat was different.
+<burgestrand> Updated it, still about twice as fast.
+<burgestrand> http://pastie.org/private/r73zb3fpdc4pzcghflraya
+<burgestrand> probably  a little more
+*** senny (~senny@84-72-61-96.dclient.hispeed.ch) has quit: Remote host closed
+    the connection                                                      [16:07]
+*** c0rn (~c0rn@64.125.69.200) has quit: Quit: Computer has gone to sleep.
+<lectrick> ok nevermind... the 2nd way is at least twice as slow. interesting
+                                                                        [16:08]
+<lectrick> must be the to_proc cleverness
+*** nitti_ (~nitti@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has
+    joined channel #ruby                                                [16:09]
+*** kbeddingfield (~kbeddingf@c-98-203-216-85.hsd1.wa.comcast.net) has joined
+    channel #ruby
+*** fmcgeough (~fmcgeough@50.59.202.7) has quit: Quit: fmcgeough
+*** nitti__ (~nitti@206.55.180.8) has joined channel #ruby              [16:10]
+*** nkts (~hi5@unaffiliated/nkts) has quit: 
+*** fmcgeough (~fmcgeough@50.59.202.7) has joined channel #ruby
+*** nkts (~hi5@cpc16-acto1-2-0-cust114.4-2.cable.virginmedia.com) has joined
+    channel #ruby
+*** nkts (~hi5@cpc16-acto1-2-0-cust114.4-2.cable.virginmedia.com) is now known
+    as Guest78730                                                       [16:11]
+*** maxer (~maxer@host86-167-232-163.range86-167.btcentralplus.com) has joined
+    channel #ruby
+*** nitti (~nitti@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has quit:
+    Ping timeout: 240 seconds
+<apeiros_> burgestrand: paste the timings please
+<apeiros_> and lectrick, I'd hate you for both ways :-p                 [16:12]
+<burgestrand> apeiros_: removed my code, but it was 0.52 and 0.21 (.each,
+              #concat)
+<lectrick> apeiros_: ha, of course
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has quit: Read error:
+    Connection reset by peer
+*** nitti (~nitti@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has joined
+    channel #ruby
+<apeiros_> lectrick: I'd only slightly hate you for a.push(*b)
+<lectrick> i went to rubyconf this year and didn't even check this channel to
+           see who went or who was going or anything. #social_nerd_fail
+*** reset (~reset@209.133.52.233) has joined channel #ruby              [16:13]
+<lectrick> apeiros_: I prefer << to push, but they are just aliases
+<apeiros_> lectrick: no, they're not
+<lectrick> oh shit. *b
+<burgestrand> apeiros_: http://ideone.com/mp6TDY
+<apeiros_> which surprised me tbh
+*** nitti_ (~nitti@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has quit:
+    Ping timeout: 245 seconds
+*** t0rc (~t0rc@unaffiliated/t0rc/x-5233201) has joined channel #ruby
+*** g-ram (~textual@c-98-236-197-231.hsd1.wv.comcast.net) has joined channel
+    #ruby
+<burgestrand> My laptop is slower than ideone.
+<burgestrand> :(
+*** erichmenge (~erichmeng@x-134-84-227-203.uofm-secure.wireless.umn.edu) has
+    quit: Read error: Connection reset by peer
+<apeiros_> lol
+*** nitti_ (~nitti@206.55.180.8) has joined channel #ruby
+* apeiros_ loves his mbench
+*** erichmeng (~erichmeng@2607:ea00:104:3c00:9584:2767:4702:6e07) has joined
+    channel #ruby                                                       [16:14]
+*** emptyflask (~emptyflas@72-48-145-194.static.grandenetworks.net) has quit:
+    Remote host closed the connection
+<t0rc> I want to download a file in ruby (tarball) and then untar
+       it. Suggestions?
+*** Tania (~Miranda@unaffiliated/tania) has joined channel #ruby
+*** nopolitica (~zul@37.204.131.30) has quit: Ping timeout: 252 seconds
+*** nitti___ (~nitti@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has
+    joined channel #ruby                                                [16:15]
+*** forced_request (~quassel@cpe-74-78-158-97.twcny.res.rr.com) has quit:
+    Remote host closed the connection
+<lectrick> apeiros_: great recommendation, i like it, thanks!
+<apeiros_> I recommended something?                                     [16:16]
+*** nitti__ (~nitti@206.55.180.8) has quit: Ping timeout: 276 seconds
+<havenn> t0rc: *nix system or has to work on others?
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has joined channel #ruby
+                                                                        [16:17]
+<lectrick> apeiros_: is a.concat b faster than a.push(*b)?
+<t0rc> havenn: lets go for compatibility. Seems to be leaning towards
+       Net::HTTP or something at the moment.
+*** tombar_ (~tombar@r190-135-9-144.dialup.adsl.anteldata.net.uy) has joined
+    channel #ruby
+*** nitti (~nitti@173-160-123-81-Minnesota.hfc.comcastbusiness.net) has quit:
+    Ping timeout: 265 seconds
+<apeiros_> lectrick: of course
+*** kbeddingfield (~kbeddingf@c-98-203-216-85.hsd1.wa.comcast.net) has quit:
+    Ping timeout: 248 seconds
+<t0rc> havenn: if it was *nix I could just curl it or wget right?
+<apeiros_> lectrick: http://pastie.org/5347764
+*** krawchyk (~krawchyk@65.220.49.251) has quit: Remote host closed the
+    connection
+*** geekbri (~geekbri@208.252.10.190) has quit: Remote host closed the
+    connection                                                          [16:18]
+<apeiros_> I guess the high stddev is due to me watching an sc2 livecast
+*** tombar (~tombar@r186-54-234-105.dialup.adsl.anteldata.net.uy) has quit:
+    Ping timeout: 252 seconds
+<apeiros_> hm, though, it uses cpu time, which should be unaffected by other
+           processesë°≠
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has quit: Read error:
+    Connection reset by peer
+*** pestouille (~adrien@ALagny-153-1-83-51.w90-3.abo.wanadoo.fr) has quit:
+    Quit: pestouille
+*** nopolitica (~zul@37.204.131.30) has joined channel #ruby
+*** zommi (~andreas@HSI-KBW-078-042-249-037.hsi3.kabel-badenwuerttemberg.de)
+    has quit: Quit: Leaving.
+*** lxsameer (~user@unaffiliated/lxsameer) has quit: Read error: Connection
+    reset by peer
+<havenn> t0rc: I'l dl it with Ruby, just would be convenient to be *nix for
+         the un-tar-ing.
+*** nitti_ (~nitti@206.55.180.8) has quit: Ping timeout: 276 seconds
+*** lxsameer (~user@unaffiliated/lxsameer) has joined channel #ruby     [16:19]
+*** lxsameer (~user@unaffiliated/lxsameer) has quit: Read error: Connection
+    reset by peer
+<lectrick> apeiros_: can I have your mbench method? :O
+<lectrick> or is that part of 'benchmark' ?                             [16:20]
+<apeiros_> I think it's on github. let me checkë°≠
+*** lxsameer (~user@unaffiliated/lxsameer) has joined channel #ruby
+*** ablankfield (~andy_@cpe-67-240-252-169.rochester.res.rr.com) has joined
+    channel #ruby
+*** axl_ (~axl_@63.229.205.62) has quit: Quit: axl_
+*** und3f (~und3f@178.73.210.152) has quit: Quit: Leaving.
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has joined channel #ruby
+                                                                        [16:21]
+*** lxsameer (~user@unaffiliated/lxsameer) has quit: Read error: Connection
+    reset by peer
+*** senny (~senny@84-72-61-96.dclient.hispeed.ch) has joined channel #ruby
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has quit: Read error:
+    Connection reset by peer
+<t0rc> havenn: mmm how would you download the file with ruby?
+<t0rc> havenn: I mean I can use a zip file too. It's from GH.
+<apeiros_> lectrick: https://gist.github.com/923616
+*** clj_newb (~detryo@223.217.77.188.dynamic.jazztel.es) has joined channel
+    #ruby                                                               [16:22]
+*** lxsameer (~user@unaffiliated/lxsameer) has joined channel #ruby
+*** answer_42 (~answer_42@gateway/tor-sasl/answer42/x-66983568) has quit:
+    Quit: WeeChat 0.3.9
+<havenn> t0rc: I'd recommend Faraday gem, but there are many options:
+         https://github.com/technoweenie/faraday
+*** lxsameer (~user@unaffiliated/lxsameer) has quit: Read error: Connection
+    reset by peer
+*** senny (~senny@84-72-61-96.dclient.hispeed.ch) has quit: Remote host closed
+    the connection
+<lectrick> apeiros_: Why is concat not a bang method? It should be
+           ary.concat!(ary2)                                            [16:23]
+<apeiros_> lectrick: yes, and push! and shift! etc.
+*** geekbri (~geekbri@208.252.10.190) has joined channel #ruby
+*** cdehaan (~cdehaan@cpe-69-205-76-113.rochester.res.rr.com) has joined
+    channel #ruby
+*** twinturbo (~adman65@46.59.202.152) has joined channel #ruby
+<lectrick> well... they should at least have aliases, for clarity
+<apeiros_> lectrick: bang means "be careful" (as stated by matz)
+<cdehaan> Hello! I have a simple but silly problem. I'm trying to install
+          bundler, and I run gem install bundler and it says "1 gem
+          installed," but then typing "bundle" does nothing.
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has joined channel #ruby
+<apeiros_> it does NOT mean "all bang methods are in-situ and all non-bangs
+           are not"
+<davidcelis> cdehaan: rbenv?                                            [16:24]
+<lectrick> but... i like when semantics line up with side effects...
+<apeiros_> that said, I'd very much like it if ruby had a convention like:
+           a.push(x) # in-situ, a.pushed(x) # returns new object
+<lectrick> then again, that would mean << would need a bang too, which is
+           ridiculous admittedly. sigh
+<apeiros_> same like: a.upcase vs. a.upcased
+<cdehaan> davidcelis: Hm, hadn't checked that, I figured it would take care of
+          itself.
+<lectrick> a <<! element
+<apeiros_> probably even valid ruby                                     [16:25]
+<apeiros_> but parsed as a.<<(!(element))
+<lectrick> apeiros_: i like your pushed/upcased idea
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has quit: Read error:
+    Connection reset by peer
+<lectrick> sort of past tense meets side effects
+*** arturaz (~arturas@88-222-158-4.meganet.lt) has quit: Remote host closed
+    the connection
+<havenn> t0rc: require 'zlib'; require 'faraday'; response = Faraday.get
+         'http://sushi.com/nigiri/sake.gz';
+         Zlib::GzipReader.new(response).read                            [16:26]
+<lectrick> it looks like i can't define a <<! method, sigh
+*** timonv (~timonv@140pc227.sshunet.nl) has quit: Remote host closed the
+    connection                                                          [16:27]
+<Hanmac> lecktrick methods are only with an ! when there is an non-! method
+         with the same name too ...
+<lectrick> well... there is a << method
+*** nanderoo (~nanders@38.124.137.226) has quit: Excess Flood
+<Hanmac> yeah but an non-bang << method does not make sense             [16:28]
+<lectrick> [1,2,3].<<(4) #=> [1, 2, 3, 4]
+*** mmornati_ (~mmornati@81-67-215-121.rev.numericable.fr) has quit: Quit:
+    Leaving
+*** tenmilestereo (~tnmlstr@w-70.cust-13055.ip.static.uno.uk.net) has quit:
+    Quit: Leaving
+<lectrick> i know. i was investigating the possibility (at least in my head)
+           of implementing a ruby api subset that allowed all methods that
+           modify their receiver to be called in a bang form
+*** judd7 (~judd7@cpe-142-255-93-69.nyc.res.rr.com) has joined channel #ruby
+                                                                        [16:29]
+*** nopolitica (~zul@37.204.131.30) has quit: Ping timeout: 264 seconds
+<lectrick> for clarity. since side effects => bugs
+*** evilsushi (~evilsushi@50.59.202.7) has joined channel #ruby
+*** evilsushi (~evilsushi@50.59.202.7) has quit: Changing host
+*** evilsushi (~evilsushi@unaffiliated/evilsushi) has joined channel #ruby
+<Hanmac> about method names ... they can end with ? and with ! but not with ?!
+         or !?                                                          [16:30]
+*** nopolitica (~zul@37.204.12.126) has joined channel #ruby            [16:31]
+*** vectorshelve (736e0874@gateway/web/freenode/ip.115.110.8.116) has quit:
+    Quit: Page closed
+<apeiros_> but with !!                                                  [16:32]
+<Hanmac> okay you can but only with cheating
+*** J-_-L (~dan@cpe-66-108-247-2.nyc.res.rr.com) has quit: Quit: Leaving.
+                                                                        [16:33]
+<Hanmac> a=Object.new;  a.define_singleton_method("!!"){ "haha" };
+         a.send("!!")  => "haha"
+*** icole (~icole@63-211-239-34.teliax.com) has quit: Remote host closed the
+    connection
+<apeiros_> ah well, with define method, everything goes                 [16:34]
+<apeiros_> take a look at nokogiris methods ^^                          [16:35]
+<Hanmac> you could define a method called "123" :D
+*** mpereira (~mpereira@200.54.109.17) has quit: Ping timeout: 252 seconds
+*** geekbri (~geekbri@208.252.10.190) has quit: Remote host closed the
+    connection                                                          [16:36]
+*** axl_ (~axl_@75-161-238-76.mpls.qwest.net) has joined channel #ruby
+*** icole (~icole@63-211-239-34.teliax.com) has joined channel #ruby
+*** kil0byte (~kil0byte@112.204.135.193) has quit: Ping timeout: 268 seconds
+*** rakl (~rakl@sonic.mochaleaf.com) has quit: Quit: sleeping           [16:37]
+<havenn> class Array; alias_method(:'<<!', :<<); end; [].send(:'<<!', 'hi')
+         #=> ["hi"]
+*** nomenkun (~nomenkun@178.120.172.65) has quit: Remote host closed the
+    connection
+*** caleb_io (~Caleb@50.0.103.34) has quit: Quit: caleb_io              [16:38]
+*** rakl (~rakl@sonic.mochaleaf.com) has joined channel #ruby
+<havenn> If you call it without #send Ruby thinks it's a bang... >.>
+*** nomenkun (~nomenkun@178.120.172.65) has joined channel #ruby        [16:39]
+*** _________ (~textual@p5B2AB48B.dip.t-dialin.net) has quit: Quit: Computer
+    has gone to sleep.
+*** c0rn (~c0rn@64.125.69.200) has joined channel #ruby
+*** s0ber (~s0ber@114-25-195-201.dynamic.hinet.net) has quit: Read error:
+    Connection reset by peer
+*** darthdeus (~darthdeus@h47n3fls31o279.telia.com) has joined channel #ruby
+                                                                        [16:40]
+*** s0ber (~s0ber@114-36-236-249.dynamic.hinet.net) has joined channel #ruby
+*** Coolhand (quassel@nat/redhat/x-fnxkkkahpfdcyjtp) has quit: Ping timeout:
+    260 seconds                                                         [16:41]
+*** csaunders (~textual@67.210.173.114) has quit: Quit: Computer has gone to
+    sleep.
+*** banisterfiend (~banisterf@5ED280BF.cm-7-3c.dynamic.ziggo.nl) has joined
+    channel #ruby                                                       [16:42]
+*** cdehaan (~cdehaan@cpe-69-205-76-113.rochester.res.rr.com) has left channel
+    #ruby: #ruby
+*** nyuszika7h (nyuszika7h@pdpc/supporter/active/nyuszika7h) has quit: Remote
+    host closed the connection                                          [16:43]
+*** Coolhand (quassel@nat/redhat/x-yyzmmaoufryyddak) has joined channel #ruby
+*** erichmeng (~erichmeng@2607:ea00:104:3c00:9584:2767:4702:6e07) has quit:
+    Quit: Be back later                                                 [16:44]
+*** dakine (~dakine@24-207-151-44.dhcp.stls.mo.charter.com) has quit: Quit:
+    Leaving
+*** nyuszika7h (nyuszika7h@pdpc/supporter/active/nyuszika7h) has joined
+    channel #ruby
+*** nopolitica (~zul@37.204.12.126) has quit: Ping timeout: 265 seconds
+                                                                        [16:45]
+*** bigmcq77 (~wutang@unaffiliated/bigmcq77) has quit: Quit: Computer has gone
+    to sleep.                                                           [16:46]
+*** nopolitica (~zul@37.204.12.102) has joined channel #ruby            [16:47]
+<t0rc> havenn: ahhhh thanks.                                            [16:48]
+*** workmad3 (~workmad3@cpc2-bagu11-2-0-cust411.1-3.cable.virginmedia.com) has
+    joined channel #ruby                                                [16:49]
+*** emptyflask (~emptyflas@72-48-145-194.static.grandenetworks.net) has joined
+    channel #ruby
+*** icooba (~icooba@ath91-2-82-241-146-2.fbx.proxad.net) has quit: Quit:
+    Computer has gone to sleep.
+*** bigmcq77 (~wutang@unaffiliated/bigmcq77) has joined channel #ruby   [16:50]
+*** qwerxy (~qwerxy@46-65-25-88.zone16.bethere.co.uk) has quit: Quit: offski
+*** kaiyin (~kaiyin@s529caaed.adsl.online.nl) has joined channel #ruby  [16:51]
+<kaiyin> hi, everyone.
+<kaiyin> how can I find all methods unique to an object?
+*** nopolitica (~zul@37.204.12.102) has quit: Read error: Connection reset by
+    peer                                                                [16:52]
+*** Edward__ (~Edward@69.196.168.56) has joined channel #ruby           [16:53]
+*** fir_ed (~Edward@69-196-168-56.dsl.teksavvy.com) has joined channel #ruby
+<havenn> kaiyin: Object.public_methods false
+*** rakl (~rakl@sonic.mochaleaf.com) has quit: Ping timeout: 252 seconds
+*** mengu (~mengu@unaffiliated/mengu) has joined channel #ruby
+<kaiyin> suppose doc =
+         Nokogiri::HTML(open("http://www.google.com/search?q=obama")), how can
+         I get a peek at what nodes it contains?
+<havenn> kaiyin: I'd use Pry! http://pryrepl.org/                       [16:54]
+*** Guest10501 (~Jackneill@188-143-16-168.pool.digikabel.hu) has quit: Quit:
+    Guest10501
+*** haxrbyte_ (~haxrbyte@85.92.202.99) has quit: Ping timeout: 246 seconds
+*** moos3 (~rgenthner@pool-72-73-65-244.ptldme.east.myfairpoint.net) has
+    joined channel #ruby
+*** postmodern (~postmoder@ronin/dev/postmodern) has joined channel #ruby
+*** rakl (~rakl@sonic.mochaleaf.com) has joined channel #ruby           [16:55]
+*** jonathanwallace (~jonathanw@72-12-25-4.static.networktel.net) has quit:
+    Remote host closed the connection
+<kaiyin> havenn: so how is that done in pry? I am installing it.        [16:56]
+*** chrxn (~chrxn@216.228.241.140) has quit: Ping timeout: 264 seconds
+<havenn> kaiyin: given the above, you can 'cd doc' then 'ls' to introspect
+                                                                        [16:57]
+*** nopolitica (~zul@37.204.12.102) has joined channel #ruby
+<kaiyin> wow, that's awesome~ thanks.
+*** verto (~verto@ec2-107-22-246-58.compute-1.amazonaws.com) is now known as
+    verto|off                                                           [16:58]
+
+[Fri Nov  9 2012]
+*** You have joined channel #ruby                                       [00:30]
+*** Topic for #ruby: Ruby 1.9.3-p286: http://ruby-lang.org || Paste >3 lines
+    of text on http://gist.github.com
+*** #ruby: topic set by apeiros_!~apeiros_@77-58-114-9.dclient.hispeed.ch,
+    09:16:46 2012/10/12
+*** Users on #ruby: LooChao psycho_one yaymukund SCommette freeayu pnbeast
+    aces1up havenn wroathe butblack adamdonahue dhruvasagar haxrbyte_
+    GeekOnCoffee yshh adeponte tbrock_ rohit_ Guest10501 joeycarmello bigmcq77
+    nemish_ jadon idzuna Liothen hbpoison Danielpk arielpts savage- fyolnish_
+    freakazoid0223 carlzulauf DarthGandalf ryanf krz dakine justsee plains
+    radic beachandbytes jonathanwallace djbpython tomsthumb erichmenge BoomCow
+    axl_ cj3kim ddd rellin kil0byte ilyam ottbot
+*** Users on #ruby: gyre007 sn0wb1rd beneggett davidcelis kaneda__
+    gabrielrotbart pipopopo Guest26813 zzyybb Hanmac1 Dreamer3 _alejandro
+    skcin7 monkegjinni rakl otters BrianJ Guest45224 ttt osvico pkrnj enderx86
+    xid centipedefarmer Juul `brendan moshee piotr Roa bigmac Kyril kiyoura
+    charliesome Tearan strangeworks bitZero__ thinkit2 Nanuq BeLucid fantazo
+    Jellyg00se emergion __miha__ codezombie SegFaultAX spathi tr4656 thorncp
+    akl robbyoconnor Hien mvangala nkts jaygen iaj_ alanp_
+*** Users on #ruby: rman JohnTeddy Axsuul Chryson psykotron Elhu [Neurotic]
+    timonv chrxn cantonic francisfish LastBeerEver postmodern Edward__
+    nyuszika7h Coolhand s0ber icole Tania g-ram Guest78730 Beoran_ neersighted
+    pyx txdv kalleth garndt heftig thone tchebb deavid ericwood Tarential
+    ViperMaul|_ ndrei mahmoudimus cibs maxmanders khakimov wallerdev kkh
+    jgrevich jhgaylor SpamapS Rydefalk_ warb0 sts sterNiX casheew Kudos lkba
+    mmikeym blazes816 jbw AndChat- CamonZ Guest36125
+*** Users on #ruby: TommyBlue notwen xsbeats burgestrand tommyvyo iamjarvo x0F
+    quazimodo bier pen yeban clocKwize maetthew jbpros caveat- AllStruck_
+    FlyingFoXy dv_ uxp_ zaki[] beilabs Villadelfia SeySayux araujo wchun
+    Shrink TheFuzzball wf2f Asher Fraeon zf_ classix greenarrow KnowTheLedge
+    chendo fuho wargasm amacgregor_osx luminous vitor-br Whackatre atmosx
+    undersc0re97 Grieg jblack L0L0L0L0L digifiv5e manizzle stnly frogstarr78
+    LucidDreamZzZ sebastianb lucaspiller_ Shamgar
+*** Users on #ruby: jmeeuwen hemanth tommylommykins madhatter array_ hiroyuki_
+    _bry4n RudyValencia- _cheney theoros Bosma shevy stenno\splat SJr ewag
+    Drewch mattsgarrison werdnativ stat1x lobak kiddy56842 katherinem13 zodiak
+    brendan` nasso Trioke juarlex crankycoder mr-rich KindTwo Katniss
+    asobrasil Lemtzas robinbowes ddv pigoz alup pavilionXP sejo tris
+    {^_^}_______ jphpsf mattp_ gregorg eldariof queequeg1 sphera straind
+    ping-pong wmoxam bapa tnk1 infinite_ Koshian__ DefV Raboo_
+*** Users on #ruby: dpk combataircraft sh1nji alexwh dominikh nazty crazymykl
+    ezra kzrl Gadgetoid wookiehangover locriani hsbt JustinCampbell etank
+    wereHamster Dwarf kapowaz lele moted BadLarry koshii crodas jalcine
+    eregon_ xkx Daman shammancer jhowarth Spaceghost|cloud ctevie NimeshNeema
+    MoMo pkondzior_ dkannan anildigital_work krazyj Mchl perun_ mnaser
+    alienvenom wallmani gurps TheNumb dcope ben_alman withnale telling
+    lushious jasond xclite Debolaz m_3 devdazed voodoofish fooo
+*** Users on #ruby: ionte Cool_Fire ninegrid hoelzro|away jsaak Drager
+    spacebug Rix bigkevmcd Cork verma Emmanuel_Chanel busybox42 thomasfedb
+    alee Nisstyre methoddk THE_GFR|WORK failingkid earthquake mfridh QKO
+    canton7 mmercer goraxe palyboy Nowaker passbe irclog0 samuelkadolph tomku
+    weeb1e_ sr___ justinweiss sixtenei1hty cheez0r joppe_ zaiste_ undyingr1ge
+    Skelz0r_ tessi spanner_ KarlHungus juha_ issyl0 Sargun lupine_85 tekacs
+    spo12 seich zigidias mkillebrew joast barce DarkFoxDK
+*** Users on #ruby: _veer Apocalypse klip jord_ apmacwrk SoonerBourne hakunin
+    dross joukokar stigmux Luceo philips_ cespare CodeVision companion waxjar
+    froy TTilus wedgeV pignata catepillar dash_ schwap drPoggs g_bleezy_
+    flagg0204 dubz Gm4n tectonic JStoker ksk Poapfel zipkid preller shikamaru
+    TomRone Paradox Voxxit BombStrike strcrzy_ yellow5 ahuman levicole
+    pcarrier matled croz lahwran joschi tomaw yeltzooo SecretAgent vjt drnfx
+    klaas X-Jester Balthek beandip aflynn andynu
+*** Users on #ruby: maddog_ jeekl Bish asuka moeSeth ElderFain emdub Kov|abx
+    jrist-afk nricciar TheMoonMaster Guest54783 dimka kuzushi d-snp nimred
+    pcboy_ EPIK Azure mahlon ged idoru _br_ crazedpsyc Eiam epitron ozzloy
+    mikekelly joelio ccooke faulkner rking nick_h RubyPanther fcoury FDj dpn`
+    mtfk davorb rtl patricksroberts SeanTAllen randym nw sirecote benwoody
+    jaredrhine Guedes adamblac1well rcs epochwolf sj26 realniko malcolmva
+    anekos jayne elektronaut __main__ JoeTheGuest
+*** Users on #ruby: shadewind WhereIsMySpoon bakedb_ framling Caius jeedey
+    hackeron dekz namidark sweet_kid matti lectrick dreamfall notbrent
+    rcsheets octarine G Spaceghostc2c alta rcj_ plu Jb__ UdontKnow Norrin
+    LiquidInsect _axx acrocity mikalv poRz fatninja xsdg naquad RailWolf
+    Kovensky brunchpoems faen marienz Rious ixx wunz __class__ mosez
+    justinabrahms soulcake linnea Drakevr KillerFox ohcibi swistak35 parus egn
+    estan Derander timtux shaman42 happosade imami|afk tos9 lorn
+*** Users on #ruby: elliottcable mephux Spitfire jonasac Whoop _whitelogger__
+    babinho brian-_ undert- barzogh Y_Ichiro russfrank ichilton Boohbah
+    darkc0met ejnahc NuclearL1cifer dagobah_ jtcoon kisoku patronus_ jhunter
+    fearoffish new299 Jck_true cjk101010 no_i_wont clop oz Veejay rotor
+    gianlucadv verto|off inimino JodaZ nuba yosafbridge affix kenichi acies
+    dubios reactormonk edenc sunhay phreax regedarek psino cout phrame xybre_
+    Sigma00 conceal_rs_ willcodeforfoo Schmidt xea
+*** Users on #ruby: oddraisin mrmist ph^^ thebastl Elfix TommyBotten kiela
+    DrWhax aef Gate SirFunk rmc3 fred iosctr taec thomas elspeth tils Sp4rKy
+    MissionCritical msch PhilK davidboy im0b musl aetaric nopper kstephens
+    willb pavelz joni al-ol kaleido Muz wang chiel drizz elaptics`away
+    zz_chrismcg yugui_zzz felipe fasta mariooo Mathieu fbernier
+-verne.freenode.net- [freenode-info] why register and identify? your IRC nick
+                 is how people know
+                 you. http://freenode.net/faq.shtml#nicksetup
+*** #ruby modes: +Ccnt
+*** #ruby was created on Sunday 2006/11/26 01:42:45
+*** bjeanes (~bjeanes@c-98-193-78-148.hsd1.il.comcast.net) has joined channel
+    #ruby                                                               [00:31]
+*** osvico (~UPP@c-98-194-253-51.hsd1.tx.comcast.net) has quit:         [00:33]
+<aces1up> burgestrand what is the diff between .find and .find_all when
+          including enumerable, becuase it works find with .find so I was
+          thinking there is something needed by enumerable to make .find_all
+          other than the .each method?
+*** nemish_ (4c0f15f2@gateway/web/freenode/ip.76.15.21.242) has quit: Ping
+    timeout: 245 seconds                                                [00:34]
+*** nari (~nari@p2073-ipngn100104matsue.shimane.ocn.ne.jp) has joined channel
+    #ruby
+<aces1up> min_by doesn't work either does that require <=> method?
+<aces1up> burgestrand I think if I understood what block[self] does I would be
+          better to fix this. what is that exactly doing? how is a block
+          referenced with []  looks weird.                              [00:36]
+*** eldariof (~CLD@89.22.1.3) has quit: Ping timeout: 240 seconds
+*** superSlumbo (~stefan@c-24-22-126-120.hsd1.or.comcast.net) has joined
+    channel #ruby
+*** _bart (~bart@62.140.132.71) has joined channel #ruby
+<superSlumbo> very very newb question
+<superSlumbo> when i type in rib in terminal it returns '-bash: irb: command
+              not found'                                                [00:37]
+<burgestrand> aces1up: I have to go, no time to answer properly. But Proc#[]
+              is aliased to Proc#call, #min probably requires #<=> yes.
+<superSlumbo> sorry *irb
+<superSlumbo> when i type in irb
+<undersc0re97> have you installed irb?                                  [00:38]
+*** tbrock_ (~tyler@cpe-74-68-121-46.nyc.res.rr.com) has quit: Quit: Computer
+    has gone to sleep.                                                  [00:39]
+<davidcelis> have you installed _ruby_?                                 [00:40]
+*** adeponte (~cyphactor@pool-74-100-65-232.lsanca.fios.verizon.net) has quit:
+    Remote host closed the connection                                   [00:41]
+*** luckyruby (~rubknob@70.126.235.32) has joined channel #ruby
+*** shammancer (~dannick@d199-126-163-18.abhsia.telus.net) has quit: Remote
+    host closed the connection                                          [00:42]
+*** ilyam (~ilyam@c-67-188-113-128.hsd1.ca.comcast.net) has quit: Quit: ilyam
+<adamdonahue> how do i get a particular instance variable, initialized within
+              initialize, to be private? 
+*** shammancer (~dannick@d199-126-163-18.abhsia.telus.net) has joined channel
+    #ruby                                                               [00:43]
+<adamdonahue> and then i'll stop asking stupid questions :)
+*** nemish_ (4c0f15f2@gateway/web/freenode/ip.76.15.21.242) has joined channel
+    #ruby
+*** zaargy (~zaargy@adriana.stillidream.org) has joined channel #ruby   [00:44]
+<nemish_> burgestrand: thanks... it seems my issue now is actually MiniMagick
+<nemish_> does anyone know MiniMagick?
+<nemish_> ;)
+<reactormonk> how do you forward #each the right way?
+<adamdonahue> oh, guess it's private by default :)
+<zaargy> is there a better way to do this than
+         some_array.grep(/foo/)[/foo\s+(\S+)/, 1]?
+*** justsee (~justsee@unaffiliated/justsee) has quit: Quit: Linkinus -
+    http://linkinus.com                                                 [00:45]
+<zaargy> e.g. do the capture same time as teh grep?
+*** strangeworks (~strangewo@195.189.51.112) has quit: Quit: Leaving
+<superSlumbo> undersc0re97: sorry, yeh i have and it was working before
+*** maletor (~maletor@c-69-181-24-86.hsd1.ca.comcast.net) has joined channel
+    #ruby
+<superSlumbo> undersc0re97: for some reason it just stopped working
+*** Whackatre (~whackatre@unaffiliated/whackatre) has left channel #ruby:
+    "Cya."
+*** tjbiddle (~tjbiddle@c-71-202-41-52.hsd1.ca.comcast.net) has joined channel
+    #ruby                                                               [00:46]
+*** tjbiddle (~tjbiddle@c-71-202-41-52.hsd1.ca.comcast.net) has quit: Read
+    error: Connection reset by peer
+*** kbeddingfield (~kbeddingf@c-98-203-216-85.hsd1.wa.comcast.net) has joined
+    channel #ruby
+*** tjbiddle (~tjbiddle@c-71-202-41-52.hsd1.ca.comcast.net) has joined channel
+    #ruby
+*** Guest10501 (~Jackneill@178-164-239-119.pool.digikabel.hu) has quit: Read
+    error: Connection reset by peer                                     [00:48]
+<superSlumbo> when i put in 'ruby -v' it says
+<superSlumbo> ruby 1.8.7 (2011-12-28 patchlevel 357) [universal-darwin11.0]
+<superSlumbo> but irb doesn't work. anyone know whats going on here? does IRB
+              just not work on my computer anymore                      [00:49]
+<havenn> superSlumbo: 1.8.7 is dead. Use 1.9.3+.                        [00:50]
+*** dmiller (~dmiller@148-100-182-91.WIRELESS.STUDENTS.NAT-POOL.MARIST.EDU)
+    has joined channel #ruby
+*** dmiller (~dmiller@148-100-182-91.WIRELESS.STUDENTS.NAT-POOL.MARIST.EDU)
+    has quit: Remote host closed the connection
+<superSlumbo> havenn: how do i change from 1.8.7 to 1.9.3?
+*** dmiller (~dmiller@148-100-182-91.WIRELESS.STUDENTS.NAT-POOL.MARIST.EDU)
+    has joined channel #ruby                                            [00:51]
+<TTilus> superSlumbo: i recommend you get familiar with rben
+<TTilus> rbenv even
+<havenn> superSlumbo: What OS?
+<nemish_> does anyone know MiniMagick? trying to determine why this isn't
+          working
+<nemish_> image = MiniMagick::Image.read((AWS::S3::S3Object.value
+          "#{object}/components/versions/secured/main-v01.jpg",
+          "docs.core.prod"))
+<superSlumbo> havenn: mac                                               [00:52]
+<havenn> superSlumbo: rvm, rbenv, or rbfu
+<havenn> superSlumbo: Using Homebrew?
+<TTilus> superSlumbo: rbenv, no brew
+*** hsbt (~hsbt@www.hsbt.org) is now known as hsbt_away
+<nemish_> havenn: homebrew = FTW ;)
+<superSlumbo> havenn: no i don't think I'm using homebrew
+<adamdonahue> Rubyish question: let's say i have a lambda i want to call
+              stored in an array.  the syntax x[item][p1,p2] seems kinda
+              confusing.  it would read more naturally, i'd think, as
+              x[item].call(p1,p2)
+<havenn> superSlumbo: I'm using rbfu + rubu-build                       [00:53]
+<adamdonahue> is there a preference?
+*** emergion (~textual@124-149-188-67.dyn.iinet.net.au) has quit: Quit:
+    ["Textual IRC Client: www.textualapp.com"]
+*** mahmoudimus (~mahmoudim@173-164-253-217-SFBA.hfc.comcastbusiness.net) has
+    quit: Quit: Computer has gone to sleep.
+<havenn> superSlumbo: You *should* use homebrew. Install it!
+         http://mxcl.github.com/homebrew/
+*** ananthakumaran (~Adium@106.51.154.66) has joined channel #ruby
+<havenn> superSlumbo: Paste this in Terminal: ruby -e "$(curl -fsSkL
+         raw.github.com/mxcl/homebrew/go)"
+*** sn0wb1rd (~kannanman@ip24-254-86-209.sb.sd.cox.net) has quit: Quit:
+    sn0wb1rd                                                            [00:54]
+<TTilus> adamdonahue: id .call in that case, it is unambiguous
+<adamdonahue> yeah, that's what i did. thanks :)
+<superSlumbo> havenn: I'm currently trying rvm
+<superSlumbo> i think it worked
+<TTilus> adamdonahue: or you could .()
+*** cantonic_ (~cantonic@p5DDFF64A.dip.t-dialin.net) has joined channel #ruby
+<superSlumbo> the last thing it said to me was
+<adamdonahue> .()?                                                      [00:55]
+<superSlumbo> oh scratch that
+*** Trioke (~Trioke@108-197-236-84.lightspeed.sntcca.sbcglobal.net) has quit:
+    Ping timeout: 252 seconds
+<TTilus> adamdonahue: new call
+<superSlumbo> it didn't work it said
+<superSlumbo> "Error running 'env CFLAGS=-I/Users/stefan/.rvm/usr/include
+              LDFLAGS=-L/Users/stefan/.rvm/usr/lib ./configure --enable-shared
+              --disable-install-doc
+              --prefix=/Users/stefan/.rvm/rubies/ruby-1.9.3-p286', please read
+              /Users/stefan/.rvm/log/ruby-1.9.3-p286/configure.log
+<adamdonahue> i see
+<adamdonahue> thx
+*** Paradox (paradox@reddit/admins/paradox) has quit: Ping timeout: 240
+    seconds
+*** RandyInLA (~rwalker2@209.249.145.10) has joined channel #ruby
+<superSlumbo> havenn: i guess ill try homebrew                          [00:56]
+*** sn0wb1rd (~kannanman@ip24-254-86-209.sb.sd.cox.net) has joined channel
+    #ruby
+<superSlumbo> wish me luck!
+<havenn> superSlumbo: It is an excellent package manager. Good luck!
+<superSlumbo> havenn: thanks
+<havenn> brew list
+*** nari (~nari@p2073-ipngn100104matsue.shimane.ocn.ne.jp) has quit: Ping
+    timeout: 252 seconds
+*** hsbt_away (~hsbt@www.hsbt.org) is now known as hsbt
+*** sn0wb1rd (~kannanman@ip24-254-86-209.sb.sd.cox.net) has quit: Client Quit
+                                                                        [00:57]
+<superSlumbo> havenn: ok so install was successful
+<superSlumbo> does that mean ruby was installed?
+*** cantonic (~cantonic@p5481C19D.dip.t-dialin.net) has quit: Ping timeout:
+    255 seconds
+*** cantonic_ (~cantonic@p5DDFF64A.dip.t-dialin.net) is now known as cantonic
+<postmodern> superSlumbo, im using ruby-build + chruby btw
+<postmodern> superSlumbo, however you probably don't care about 1.8.7, so i'd
+             just install ruby 1.9.3 via homebrew
+<superSlumbo> postmodern: how do i do that                              [00:58]
+<superSlumbo> postmodern: sorry I'm terrible
+<postmodern> superSlumbo, brew install ruby
+<havenn> superSlumbo: No. Now start with something like: brew install
+         coreutils openssl automake git curl
+<superSlumbo> postmodern: just type that into terminal
+<superSlumbo> havenn: what does that do?
+<havenn> superSlumbo: like they said, 'brew install ruby' installs ruby. What
+         I pasted installs some basic packages                          [00:59]
+<superSlumbo> ok
+*** _bart (~bart@62.140.132.71) has quit: Quit: _bart
+<superSlumbo> havenn: ill start with yours and then do a ruby instal
+*** rohit_ (~rohit@117.207.243.150) has quit: Quit: Leaving             [01:00]
+<havenn> superSlumbo: I'd recommend using rbenv/rvm/rbfu instead of ruby
+         install though
+<havenn> superSlumbo: E.g., rbenv you'd: brew install ruby-build rbenv
+*** djdb (~digitalbo@linux.minsk.tutby.com) has joined channel #ruby
+<havenn> superSlumbo: rbfu you'd: brew install ruby-build rbfu          [01:01]
+<postmodern> havenn, i dont think rbfu is in homebrew yet
+*** CamonZ (~CamonZ@200.82.130.11) has quit: Ping timeout: 244 seconds
+<postmodern> superSlumbo, actually I'd recommend going the route of RVM, they
+             have an awesome support channel #rvm
+*** Gm4n (~Gm4n@unaffiliated/gm4n) has quit: Read error: Operation timed out
+                                                                        [01:02]
+<havenn> postmodern: oops! You're right: brew install http://git.io/rbfu
+*** rohit (~rohit@117.207.243.150) has joined channel #ruby
+*** Gm4n (~Gm4n@unaffiliated/gm4n) has joined channel #ruby
+*** areil (~areil@123.20.52.163) has joined channel #ruby
+*** psycho_one (~psycho_on@92.61.65.151) has quit: Remote host closed the
+    connection                                                          [01:03]
+*** BoomCow (~BoomCow@173-228-60-190.dsl.dynamic.sonic.net) has quit: Ping
+    timeout: 256 seconds
+<postmodern> superSlumbo, https://rvm.io/rvm/install/
+*** yxhuvud (~foo@c80-216-178-113.bredband.comhem.se) has joined channel #ruby
+<havenn> superSlumbo: Or do all of the above, and use the one you prefer! They
+         are all very nice.
+<superSlumbo> i ended up going brew install ruby                        [01:04]
+<superSlumbo> its working right now
+<superSlumbo> *crosses fingers**
+<havenn> superSlumbo: Nice. If you want One True Ruby and have no need for
+         switching, that is prolly the way to go! :O
+*** iamjarvo (~textual@c-76-98-135-214.hsd1.pa.comcast.net) has quit: Quit:
+    Computer has gone to sleep.                                         [01:05]
+*** BoomCow (~BoomCow@173-228-60-190.dsl.dynamic.sonic.net) has joined channel
+    #ruby
+<superSlumbo> havenn: its been patching for a long time I'm kinda worried
+                                                                        [01:06]
+*** centipedefarmer (~centipede@75-162-61-37.desm.qwest.net) has quit: Remote
+    host closed the connection
+<havenn> superSlumbo: Takes a while. Might be normal.                   [01:07]
+*** Tearan (~frances@cpe-66-75-65-168.socal.res.rr.com) has quit: Quit: Sleepy
+    Badger....
+*** pkrnj (~pkrnjevi_@65.94.65.105) has quit: Quit: Textual IRC Client:
+    www.textualapp.com                                                  [01:08]
+<superSlumbo> wooooah                                                   [01:09]
+<superSlumbo> i think it worked
+<superSlumbo> wait
+<superSlumbo> ok so it deficiently worked
+<superSlumbo> but                                                       [01:10]
+<superSlumbo> when i type ruby -v
+<superSlumbo> it still says 1.87
+*** tonini (~zastav@edge.garaio.com) has joined channel #ruby
+<superSlumbo> Here's what it said after brew install ruby finished: You may
+              want to add this to your PATH.
+<superSlumbo> ==> Summary
+*** alem0lars (~alem0lars@host20-1-dynamic.11-87-r.retail.telecomitalia.it)
+    has joined channel #ruby                                            [01:11]
+<superSlumbo> ?usr/local/Cellar/ruby/1.9.3-p286: 14350 files, 71M, built in
+              4.6 minutes
+<havenn> superSlumbo: brew install rbenv ruby-build; rbenv install 2.0.0.-dev
+         CONFIGURE_OPTS=--with-openssl-dir=brew --prefix openssl``
+*** RandyInLA (~rwalker2@209.249.145.10) has quit: Quit: RandyInLA      [01:12]
+<superSlumbo> havenn: i wonder if this has something to do with it: my
+              terminal says "Stefans-MacBook-Pro:~ stefan$ "
+<havenn> superSlumbo: Or: \curl -L https://get.rvm.io | bash -s stable --ruby;
+         rvm install ruby-head
+<superSlumbo> befoe I type a command
+<superSlumbo> am in the wrong directory or something                    [01:13]
+*** thinkdevcode (~thinkdevc@crlspr-24.233.166.11.myacc.net) has joined
+    channel #ruby                                                       [01:14]
+<havenn> superSlumbo: If you're not into zsh, I'd recommend bash-it: git clone
+         http://github.com/revans/bash-it.git ~/.bash_it;
+         ~/.bash_it/install.sh
+*** hackerdude (~hackerdud@c-24-4-54-27.hsd1.ca.comcast.net) has joined
+    channel #ruby                                                       [01:16]
+<nemish_> superSlumbo: export PATH=/usr/local/bin:$PATH
+<nemish_> then ruby -v                                                  [01:17]
+<superSlumbo> nemish_:  ahhhhhhH! it worked
+<nemish_> you'll have to add that to your .bash_profile
+*** RandyInLA (~RandyInLA@209.249.145.10) has joined channel #ruby
+<superSlumbo> nemish_:  what did that                                   [01:18]
+<superSlumbo> "export PATH=/usr/local/bin:$PATH" do exactly
+<nemish_> put /usr/local/bin first in your path
+*** gabrielrotbart (gabrielrot@nat/jetstar/x-cbekormorqhjedpa) has quit:
+    Remote host closed the connection
+<superSlumbo> nemish_: do i have to do that each time i enter terminal?
+<nemish_> as i just said put that in your .bash_profile and it will load as
+          you open terminal                                             [01:19]
+<nemish_> otherwise yes you'd have to manually run that every time you open
+          terminal window/tab
+<superSlumbo> nemish_: sorry, i actually have never used terminal before how
+              do i do that (sorry to keep bugging yuou)                 [01:20]
+*** havenn (~havenn@26.sub-70-197-142.myvzw.com) has quit: Ping timeout: 248
+    seconds
+*** pnbeast (~pnbeast@70.sub-75-195-99.myvzw.com) has quit: Quit: = Let's blow
+    this popsicle stand.
+<nemish_> do you know how to use vi?
+<nemish_> nevermind... probably not                                     [01:21]
+<nemish_> type cd to go back to your home directory
+<nemish_> then type
+<superSlumbo> nemish_: no
+<nemish_> open .bash_profile
+<superSlumbo> ok
+*** ryanf (~rf-@50.0.160.40) has quit: Ping timeout: 264 seconds
+*** Rizzle (Rizzle@c-50-135-61-185.hsd1.wa.comcast.net) has joined channel
+    #ruby
+<nemish_> at the bottom of that file add the line above I gave you
+<nemish_> and save the file
+*** lxsameer (~lxsameer@unaffiliated/lxsameer) has joined channel #ruby
+                                                                        [01:22]
+*** nari (~nari@p2136-ipngn100104matsue.shimane.ocn.ne.jp) has joined channel
+    #ruby
+<superSlumbo> sorryë°≠ which line (i don't wanna like mess this up and brick my
+              computer)
+*** palyboy (~palyer@c-24-91-244-162.hsd1.ma.comcast.net) has quit: Ping
+    timeout: 244 seconds
+<nemish_> last line of that file is fine
+<lxsameer> is there any documents system like sphinx for ruby ?         [01:23]
+<superSlumbo> nemish_: no what text do I ad
+*** eignerchris (~eignerchr@71-222-83-199.ptld.qwest.net) has joined channel
+    #ruby
+<nemish_> export PATH=/usr/local/bin:$PATH
+*** dmiller_ (~dmiller@2620:91:0:163:2145:d9a4:e89f:e27a) has joined channel
+    #ruby
+<rking> lxsameer: https://github.com/pat/thinking-sphinx ?
+*** ViperMaul|_ (Rizzle@c-50-135-61-185.hsd1.wa.comcast.net) has quit: Ping
+    timeout: 256 seconds                                                [01:24]
+<superSlumbo> nemish_: ok i did that and quit out of terminal and it seems to
+              be working
+<nemish_> good
+<superSlumbo> nemish_: thanks so much
+<nemish_> np                                                            [01:25]
+<nemish_> gnite all... maybe tomorrow someone will know MiniMagick :)
+<superSlumbo> nemish_: sleep tire, don't let the bed bugs bigth
+*** SilSila (SilSila@115.242.219.166) has joined channel #ruby          [01:26]
+*** dmiller (~dmiller@148-100-182-91.WIRELESS.STUDENTS.NAT-POOL.MARIST.EDU)
+    has quit: Read error: Operation timed out
+*** nemish_ (4c0f15f2@gateway/web/freenode/ip.76.15.21.242) has left channel
+    #ruby: #ruby
+<lxsameer> rking: what is it exactly ?
+*** rakm (~rakm@sonic.mochaleaf.com) has joined channel #ruby           [01:27]
+*** rakm (~rakm@sonic.mochaleaf.com) has quit: Max SendQ exceeded
+*** nari (~nari@p2136-ipngn100104matsue.shimane.ocn.ne.jp) has quit: Ping
+    timeout: 252 seconds
+*** rakm (~rakm@sonic.mochaleaf.com) has joined channel #ruby
+*** rakm (~rakm@sonic.mochaleaf.com) has quit: Max SendQ exceeded
+*** Tania (~Miranda@unaffiliated/tania) has quit: Quit: :p              [01:28]
+*** francisfish (~francisfi@host-2-97-84-29.as13285.net) has quit: Ping
+    timeout: 252 seconds
+*** rakm (~rakm@sonic.mochaleaf.com) has joined channel #ruby
+<rking> lxsameer: Hehe, not what you were asking.
+*** rakm (~rakm@sonic.mochaleaf.com) has quit: Max SendQ exceeded
+<lxsameer> rking: :)                                                    [01:29]
+*** rakm (~rakm@sonic.mochaleaf.com) has joined channel #ruby
+*** rakm (~rakm@sonic.mochaleaf.com) has quit: Max SendQ exceeded
+*** Paradox (paradox@reddit/admins/paradox) has joined channel #ruby
+<rking> lxsameer: http://yardoc.org/ ?
+*** rakm (~rakm@sonic.mochaleaf.com) has joined channel #ruby
+*** rakm (~rakm@sonic.mochaleaf.com) has quit: Max SendQ exceeded
+*** gabrielrotbart (gabrielrot@nat/jetstar/x-jmqyzslejaavxhab) has joined
+    channel #ruby
+*** rakm (~rakm@sonic.mochaleaf.com) has joined channel #ruby           [01:30]
+*** gabrielrotbart (gabrielrot@nat/jetstar/x-jmqyzslejaavxhab) has quit:
+    Remote host closed the connection                                   [01:31]
+*** wroathe (~wroathe@host-227-168-2-96.midco.net) has quit: Quit: leaving
+*** pen (~pen@g1pc2n249.g1.ntu.edu.tw) has quit: Remote host closed the
+    connection
+*** kbeddingfield (~kbeddingf@c-98-203-216-85.hsd1.wa.comcast.net) has quit:
+    Remote host closed the connection                                   [01:32]
+*** SCommette (~SCommette@c-76-120-64-168.hsd1.co.comcast.net) has quit: Quit:
+    SCommette                                                           [01:33]
+<lxsameer> rking: let me check                                          [01:34]
+*** uuair (~uuair@117.128.187.4) has joined channel #ruby
+*** dmiller_ (~dmiller@2620:91:0:163:2145:d9a4:e89f:e27a) has quit: Ping
+    timeout: 246 seconds                                                [01:36]
+*** casheew (~casheew@109.75.178.128) has quit: Read error: Connection reset
+    by peer
+*** SilSila (SilSila@115.242.219.166) has left channel #ruby: #ruby
+*** pyx (~pyx@d24-141-100-35.home.cgocable.net) has quit: Quit: Leaving
+*** casheew (~casheew@109.75.178.128) has joined channel #ruby          [01:37]
+*** rohit (~rohit@117.207.243.150) has quit: Ping timeout: 246 seconds
+*** dnyy (~dnyy@cpe-76-185-43-147.tx.res.rr.com) has joined channel #ruby
+                                                                        [01:38]
+*** answer_42 (~answer_42@gateway/tor-sasl/answer42/x-66983568) has joined
+    channel #ruby                                                       [01:39]
+*** plu (~plu@omega.pqpq.de) has quit: Quit: ZNC - http://znc.sourceforge.net
+                                                                        [01:40]
+*** butblack
+    (~butblack@CPE0018f85e8c59-CM001ac3168f66.cpe.net.cable.rogers.com) has
+    quit: Quit: butblack
+*** bigmcq77 (~wutang@unaffiliated/bigmcq77) has quit: Ping timeout: 252
+    seconds                                                             [01:41]
+*** enderx86 (~enderx86@c-24-15-68-142.hsd1.il.comcast.net) has quit: Remote
+    host closed the connection
+*** plu (~plu@omega.pqpq.de) has joined channel #ruby
+*** Shrink (sgupta@redhat/shrink) has quit: Ping timeout: 252 seconds
+*** ryanf (~rf-@c-69-181-29-17.hsd1.ca.comcast.net) has joined channel #ruby
+                                                                        [01:42]
+*** maletor (~maletor@c-69-181-24-86.hsd1.ca.comcast.net) has quit: Quit:
+    Computer has gone to sleep.
+*** bigmcq77 (~wutang@unaffiliated/bigmcq77) has joined channel #ruby   [01:43]
+*** kiyoura (~kiyoura@pool-72-66-1-54.washdc.fios.verizon.net) has quit: Quit:
+    Leaving
+*** tchebb (~tchebb@pool-108-7-186-124.bstnma.fios.verizon.net) has quit: Ping
+    timeout: 246 seconds                                                [01:44]
+<superSlumbo> so I'm trying to install the rubylabs gem from this site
+<superSlumbo> http://www.cs.uoregon.edu/eic/software.html
+*** Dreamer3 (~Dreamer3@74-141-133-220.dhcp.insightbb.com) has quit: Quit:
+    Computer has gone to sleep.
+<superSlumbo> and its not letting me
+<BoomCow> are you on windows?
+*** adeponte (~cyphactor@pool-74-100-65-232.lsanca.fios.verizon.net) has
+    joined channel #ruby                                                [01:45]
+*** swex (~quassel@178.17.194.119) has joined channel #ruby
+*** caleb_io (~Caleb@50.0.103.34) has joined channel #ruby
+<superSlumbo> postmodern: no I'm on mac
+<superSlumbo> BoomCow: oh sorry, I'm on mac                             [01:46]
+<BoomCow> what's the problem
+<superSlumbo> when i run the gem install
+<superSlumbo> this is what i get back
+<superSlumbo> WARNING:  You don't have /Users/stefan in your PATH,
+<superSlumbo> 	  gem executables will not run.
+<superSlumbo> ERROR:  While executing gem ... (Errno::EACCES)           [01:47]
+<superSlumbo>     Permission denied - /Users/stefan/.gem/ruby/1.9.1
+<superSlumbo> WARNING:  You don't have /Users/stefan in your PATH,
+<superSlumbo> gem executables will not run.
+<superSlumbo> ERROR:  While executing gem ... (Errno::EACCES)
+<superSlumbo> Permission denied - /Users/stefan/.gem/ruby/1.9.1
+<superSlumbo> BoomCow: what could it be
+<superSlumbo> i think my ruby is installed in a weird path              [01:48]
+<BoomCow> lol I'm googling it
+<BoomCow> give me a min
+<BoomCow> I've never had this problem before
+<superSlumbo> BoomCow: thanks sorry i am so new to this ruby & terminal thing
+<BoomCow> but I also didn't use an installer
+*** kbeddingfield (~kbeddingf@c-98-203-216-85.hsd1.wa.comcast.net) has joined
+    channel #ruby
+<BoomCow> superSlumbo, did you try executing your command with sudo     [01:49]
+<BoomCow> sudo gem install [gemname]
+*** _bart (~bart@ip82-139-79-212.lijbrandt.net) has joined channel #ruby
+*** rohit (~rohit@117.217.64.73) has joined channel #ruby
+<superSlumbo> o                                                         [01:50]
+<superSlumbo> ah
+<superSlumbo> she's working
+<superSlumbo> ahhh!
+<BoomCow> :)
+*** nari (~nari@p2073-ipngn100104matsue.shimane.ocn.ne.jp) has joined channel
+    #ruby
+<superSlumbo> BoomCow: is a hero
+<superSlumbo> BoomCow: i'd kiss your feet if you were by me             [01:51]
+*** caleb_io (~Caleb@50.0.103.34) has quit: Quit: caleb_io
+<BoomCow> I Just googled it :)                                          [01:52]
+<BoomCow> or stackoverflow
+*** dnyy (~dnyy@cpe-76-185-43-147.tx.res.rr.com) has quit: Remote host closed
+    the connection                                                      [01:53]
+<superSlumbo> BoomCow: hahah but you know what to google. you are a master
+<superSlumbo> BoomCow 2016                                              [01:54]
+<superSlumbo> you have my vote
+<BoomCow> that seals it
+<BoomCow> I'm quitting my job in 2016
+<BoomCow> and running for president of murica
+<superSlumbo> BoomCow: If you need someone to vote for you (or sacrifice for a
+              pagan ritual) I'm your man                                [01:56]
+*** xpen (~xpen@116.251.210.122) has joined channel #ruby
+*** eignerchris (~eignerchr@71-222-83-199.ptld.qwest.net) has quit: Remote
+    host closed the connection                                          [01:57]
+*** Shrink (sgupta@redhat/shrink) has joined channel #ruby              [01:58]
+*** icooba (~icooba@ath91-2-82-241-146-2.fbx.proxad.net) has joined channel
+    #ruby
+*** topek (~tom@193.41.201.20) has joined channel #ruby
+*** hsbt (~hsbt@www.hsbt.org) is now known as hsbt_away                 [01:59]
+*** hsbt_away (~hsbt@www.hsbt.org) is now known as hsbt
+*** zzyybb (~zzyybb@24-136-7-173.c3-0.fld-ubr1.chi-fld.il.cable.rcn.com) has
+    quit: Ping timeout: 268 seconds
+*** luckyruby (~rubknob@70.126.235.32) has quit: Remote host closed the
+    connection                                                          [02:01]
+*** JonnieCache (~jonnie@coral.osbornebrook.co.uk) has joined channel #ruby
+*** nari (~nari@p2073-ipngn100104matsue.shimane.ocn.ne.jp) has quit: Ping
+    timeout: 260 seconds                                                [02:03]
+*** codespectator (~jamesmacl@host-78-146-100-218.as13285.net) has joined
+    channel #ruby                                                       [02:04]
+*** und3f (~und3f@178.73.210.152) has joined channel #ruby              [02:08]
+*** JonnieCache (~jonnie@coral.osbornebrook.co.uk) has quit: Ping timeout: 276
+    seconds                                                             [02:09]
+<superSlumbo> how do you switch between 1.9.3 & 1.8.7                   [02:10]
+*** awarner (~awarner@cpe-72-229-63-202.nyc.res.rr.com) has joined channel
+    #ruby                                                               [02:11]
+*** adeponte (~cyphactor@pool-74-100-65-232.lsanca.fios.verizon.net) has quit:
+    Remote host closed the connection                                   [02:13]
+*** zzyybb (~zzyybb@24-136-7-173.c3-0.fld-ubr1.chi-fld.il.cable.rcn.com) has
+    joined channel #ruby                                                [02:14]
+*** rakl (~rakl@sonic.mochaleaf.com) has quit: Quit: sleeping           [02:15]
+*** fixl (~fixl@110-174-167-204.static.tpgi.com.au) has joined channel #ruby
+                                                                        [02:16]
+<superSlumbo> BoomCow: ok somethings not working with the specific module I'm
+              trying to load
+<superSlumbo> heres a screenshot
+<superSlumbo> http://i.imgur.com/rEmsT.png
+<BoomCow> superSlumbo, don't user 1.8.7                                 [02:18]
+<BoomCow> and also
+<BoomCow> what module is it
+*** hsbt (~hsbt@www.hsbt.org) is now known as hsbt_away
+<superSlumbo> when i'm in IRB I'm supposed to type 'include RandomLab
+*** adeponte (~cyphactor@pool-74-100-65-232.lsanca.fios.verizon.net) has
+    joined channel #ruby
+<superSlumbo> its part of the RubyLabs gem i downloaded                 [02:19]
+*** joeycarmello (~joeycarme@108-94-164-250.lightspeed.sntcca.sbcglobal.net)
+    has quit: Remote host closed the connection
+<superSlumbo> (its for a cs class)
+*** adamdonahue (~adamdonah@user-0cdfq8q.cable.mindspring.com) has left
+    channel #ruby: #ruby
+<superSlumbo> i'm not using 1.8.7 tho, i thought that might be the problem but
+              i guess its not
+*** amd (~adamdonah@user-0cdfq8q.cable.mindspring.com) has joined channel
+    #ruby                                                               [02:20]
+<amd> t
+*** mahmoudimus (~mahmoudim@70-36-140-15.dsl.dynamic.sonic.net) has joined
+    channel #ruby
+*** Mon_Ouie (~Mon_Ouie@subtle/user/MonOuie) has joined channel #ruby   [02:21]
+*** jadon (~jadon@c-98-200-155-180.hsd1.tx.comcast.net) has quit: Remote host
+    closed the connection
+<BoomCow> next time you can just gist or pastie it                      [02:22]
+<BoomCow> :)
+<BoomCow> hmm
+<BoomCow> let me look into the documentaiton                            [02:23]
+*** Hanmac1 (~Hanmac@p508451AC.dip0.t-ipconnect.de) is now known as Hanmac
+<BoomCow> http://rubydoc.info/gems/rubylabs/0.9.8/frames                [02:24]
+*** ezkl (~ezkl@dynamic-acs-24-144-206-131.zoominternet.net) has joined
+    channel #ruby
+*** superSlumbo (~stefan@c-24-22-126-120.hsd1.or.comcast.net) has quit: Read
+    error: Connection reset by peer
+<BoomCow> try running the script and seeing if it runs automatically?   [02:25]
+<BoomCow> ruby ./lab-setup.rb
+*** BoomCow (~BoomCow@173-228-60-190.dsl.dynamic.sonic.net) has left channel
+    #ruby: "Leaving"
+*** adeponte (~cyphactor@pool-74-100-65-232.lsanca.fios.verizon.net) has quit:
+    Remote host closed the connection                                   [02:27]
+*** dhruvasagar (~dhruvasag@122.178.202.234) has quit: Read error: Connection
+    reset by peer
+*** superSlumbo (~stefan@c-71-237-170-164.hsd1.wa.comcast.net) has joined
+    channel #ruby
+<tjbiddle> If I have a method that I am testing that is calling
+           "git.lib.branch_current" how would i mock that in rspec?
+<superSlumbo> Hey sorry my internet went donw                           [02:28]
+*** artOfWar (~artofwar@108-205-201-30.lightspeed.sntcca.sbcglobal.net) has
+    joined channel #ruby
+*** senny (~senny@edge.garaio.com) has joined channel #ruby
+<superSlumbo> any idea whats going on?
+*** SmoothSage (~sage@117.220.205.23) has joined channel #ruby          [02:29]
+*** vlad_starkov (~vlad_star@194.186.188.76) has joined channel #ruby
+*** vlad_starkov (~vlad_star@194.186.188.76) has quit: Remote host closed the
+    connection                                                          [02:30]
+*** dhruvasagar (~dhruvasag@122.167.91.236) has joined channel #ruby    [02:31]
+*** kbeddingfield (~kbeddingf@c-98-203-216-85.hsd1.wa.comcast.net) has quit:
+    Remote host closed the connection
+*** monkegji_ (~monkegjin@176.41.232.106) has joined channel #ruby      [02:33]
+*** adeponte (~cyphactor@pool-74-100-65-232.lsanca.fios.verizon.net) has
+    joined channel #ruby
+*** rellin (~rellin@c-71-237-254-60.hsd1.or.comcast.net) has quit: Ping
+    timeout: 255 seconds
+*** aganov (~aganov@gw.viscomp.bg) has joined channel #ruby             [02:35]
+*** elentras (~elentras@bny92-12-78-223-17-241.fbx.proxad.net) has joined
+    channel #ruby
+*** lushious (~lushious@cpc9-flit3-2-0-cust134.9-1.cable.virginmedia.com) has
+    quit: Ping timeout: 252 seconds                                     [02:36]
+*** vlad_starkov (~vlad_star@83.149.9.143) has joined channel #ruby
+*** Eiam (~that@unaffiliated/eiam) has quit: Read error: Connection reset by
+    peer                                                                [02:37]
+*** jaygen (~jaygen@CPEbcc81014e54a-CMbcc81014e547.cpe.net.cable.rogers.com)
+    has quit: Remote host closed the connection                         [02:39]
+*** eldariof (~CLD@89.22.1.3) has joined channel #ruby
+*** awestroke (~awestroke@213-21-92-165.customer.t3.se) has joined channel
+    #ruby                                                               [02:42]
+*** lushious (~lushious@cpc9-flit3-2-0-cust134.9-1.cable.virginmedia.com) has
+    joined channel #ruby
+*** adeponte (~cyphactor@pool-74-100-65-232.lsanca.fios.verizon.net) has quit:
+    Remote host closed the connection                                   [02:44]
+*** maesbn (~maesbn@d5152D68E.static.telenet.be) has joined channel #ruby
+*** thinkdevcode (~thinkdevc@crlspr-24.233.166.11.myacc.net) has quit: Remote
+    host closed the connection                                          [02:45]
+*** ij (~root@unaffiliated/sie) has joined channel #ruby                [02:46]
+*** lushious (~lushious@cpc9-flit3-2-0-cust134.9-1.cable.virginmedia.com) has
+    quit: Excess Flood                                                  [02:47]
+*** lushious (~lushious@cpc9-flit3-2-0-cust134.9-1.cable.virginmedia.com) has
+    joined channel #ruby
+*** psycho_one (~psycho_on@92.61.65.151) has joined channel #ruby       [02:48]
+*** lukeholder (~textual@116.212.205.122) has joined channel #ruby
+*** dr_bob (~dr_bob@pdbfw01.securecomputing.com) has joined channel #ruby
+*** ABK (~abhishekk@14.140.107.130) has joined channel #ruby            [02:49]
+*** joeycarmello (~joeycarme@108-94-164-250.lightspeed.sntcca.sbcglobal.net)
+    has joined channel #ruby
+*** rakl (~rakl@208-90-212-222.PUBLIC.monkeybrains.net) has joined channel
+    #ruby
+*** beachandbytes (~none@71.22.53.211) has quit: Ping timeout: 246 seconds
+<lukeholder> i have an array of hashes. every has has a key. Some keys are the
+             same, and I want to add a flag to the hash if it is a
+             duplicate. How could i do this?                            [02:50]
+<lukeholder> *every hash has a key
+*** rohit (~rohit@117.217.64.73) has quit: Quit: Leaving
+*** NsOmNiAc (~nsomniac@cpe-76-184-6-154.tx.res.rr.com) has joined channel
+    #ruby
+*** NsOmNiAc (~nsomniac@cpe-76-184-6-154.tx.res.rr.com) has quit: Client Quit
+                                                                        [02:53]
+*** Morkel (~Morkel@xdsl-78-35-206-87.netcologne.de) has joined channel #ruby
+*** swex (~quassel@178.17.194.119) has quit: Read error: Connection reset by
+    peer
+*** NsOmNiAc (~nsomniac@cpe-76-184-6-154.tx.res.rr.com) has joined channel
+    #ruby                                                               [02:54]
+*** Luminda (~nsomniac@cpe-76-184-6-154.tx.res.rr.com) has joined channel
+    #ruby
+*** swex (~quassel@178.17.194.119) has joined channel #ruby
+*** hackerdude (~hackerdud@c-24-4-54-27.hsd1.ca.comcast.net) has quit: Remote
+    host closed the connection                                          [02:56]
+*** Luminda (~nsomniac@cpe-76-184-6-154.tx.res.rr.com) has quit: Client Quit
+<Hanmac> lukeholder: array.group_by {|h| h[key]}.each {|k,v| v.each_with_index
+         {|o,i| o[dup_key]= true if i > 0}}}
+*** hackerdude (~hackerdud@c-24-4-54-27.hsd1.ca.comcast.net) has joined
+    channel #ruby
+*** dr_bob (~dr_bob@pdbfw01.securecomputing.com) has quit: Ping timeout: 246
+    seconds
+<lukeholder> thanks Hanmac trying now.                                  [02:57]
+*** joeycarmello (~joeycarme@108-94-164-250.lightspeed.sntcca.sbcglobal.net)
+    has quit: Ping timeout: 240 seconds
+*** JustinCampbell (~justincam@c-68-81-39-247.hsd1.pa.comcast.net) has quit:
+    Remote host closed the connection
+*** dr_bob (~dr_bob@pdbfw01.securecomputing.com) has joined channel #ruby
+                                                                        [02:58]
+*** rakl (~rakl@208-90-212-222.PUBLIC.monkeybrains.net) has quit: Ping
+    timeout: 240 seconds                                                [02:59]
+*** rakl (~rakl@208-90-212-222.PUBLIC.monkeybrains.net) has joined channel
+    #ruby                                                               [03:00]
+*** hackerdude (~hackerdud@c-24-4-54-27.hsd1.ca.comcast.net) has quit: Ping
+    timeout: 240 seconds
+*** hotovson (~hotovson@91.219.242.15) has joined channel #ruby         [03:01]
+*** BrianJ (~brianjako@pool-108-18-120-114.washdc.fios.verizon.net) has quit:
+    Quit: BrianJ
+<lukeholder> Hanmac what do you think I am doing wrong here?
+             http://d.pr/n/KLtN                                         [03:02]
+<lukeholder> Hanmac better link https://gist.github.com/4044349         [03:03]
+*** xsbeats (~xsbeats@ip98-165-232-243.ph.ph.cox.net) has quit: Read error:
+    Connection reset by peer                                            [03:04]
+<Hanmac> the all_files.group_by need to be after the end of the
+         Å†Å†Å†Å†files.sort.each do |file|
+*** wf2f (dfgdfg@c211-30-60-1.frank3.vic.optusnet.com.au) has quit: 
+*** xsbeats (~xsbeats@ip98-165-232-243.ph.ph.cox.net) has joined channel #ruby
+<lukeholder> ahh crap
+<lukeholder> yep
+<lukeholder> haha checking for dups on every cycle.                     [03:05]
+*** xbayrockx (~g3wey3@c211-30-60-1.frank3.vic.optusnet.com.au) has joined
+    channel #ruby                                                       [03:06]
+*** xbayrockx (~g3wey3@c211-30-60-1.frank3.vic.optusnet.com.au) is now known
+    as wf2f
+*** superSlumbo (~stefan@c-71-237-170-164.hsd1.wa.comcast.net) has quit: Quit:
+    superSlumbo
+*** FlyingFoXy (~quassel@sanktwendel.weh.rwth-aachen.de) has quit: Ping
+    timeout: 246 seconds
+<lxsameer> i have a license header in all of my ruby files, how can i force
+           rdoc to forget about them ?
+*** codespectator (~jamesmacl@host-78-146-100-218.as13285.net) has quit: Quit:
+    Computer has gone to sleep.
+*** qwerxy (~qwerxy@46-65-25-88.zone16.bethere.co.uk) has joined channel #ruby
+*** uuair (~uuair@117.128.187.4) has quit: Quit: uuair
+*** NsOmNiAc (~nsomniac@cpe-76-184-6-154.tx.res.rr.com) has quit: Quit:
+    Leaving                                                             [03:07]
+<lukeholder> hanmac still no giving expected results
+<lukeholder> https://gist.github.com/4044349
+<lukeholder> anyone see anything i cant?
+<lukeholder> does group_by return a new hash?                           [03:08]
+<Hanmac> group_by makes an new hash but this should not be the problem  [03:10]
+<lukeholder> ah                                                         [03:11]
+<lukeholder> ok
+<lukeholder> looks like it works but doesn't tag the first duplicate only
+             additions
+<lukeholder> Hanmac thats for that great start
+<lukeholder> As its looks working, but only marks the second duplicate  [03:12]
+<lukeholder> see
+<Hanmac> ... i thought that the first doesnt need the dup flag?
+*** filipe (~filipe@bl8-156-51.dsl.telepac.pt) has joined channel #ruby
+*** monkegji_ (~monkegjin@176.41.232.106) has quit: Read error: No route to
+    host
+*** monkegji_ (~monkegjin@176.41.232.106) has joined channel #ruby
+<lukeholder> I suppose not                                              [03:13]
+<lukeholder> makes sense
+<lukeholder> just need to place a delete button next to ones that are
+             duplicates
+<lukeholder> not the original
+<Hanmac> array.group_by {|h| h[key]}.each {|k,v| v.each{|o| o[dup_key]= true}
+         if v.size > 1 }}   <<< this is the code if everyone should have the
+         dup flag in the group
+<lukeholder> wow nice                                                   [03:14]
+*** ABK (~abhishekk@14.140.107.130) has quit: Ping timeout: 248 seconds
+<lukeholder> how come this is not in enumerable module? there should be a dup
+             with a proc to make changes to a dup object
+*** Nanuq (~nanuq@tlalocan.ecks.ca) has quit: Ping timeout: 246 seconds
+*** awestroke (~awestroke@213-21-92-165.customer.t3.se) has quit: Remote host
+    closed the connection                                               [03:15]
+*** khakimov (~textual@c-98-234-218-82.hsd1.ca.comcast.net) has quit: Quit:
+    Computer has gone to sleep.                                         [03:16]
+<lukeholder> like array.dup { |d| d[:dup] = true }
+<lukeholder> Hanmac could monkey enumerable i suppose?                  [03:17]
+*** Chryson (~Chryson@c-71-60-249-122.hsd1.pa.comcast.net) has quit: Quit:
+    Leaving                                                             [03:18]
+*** Shrink (sgupta@redhat/shrink) has quit: Ping timeout: 240 seconds
+*** FlyingFoX (~quassel@sanktwendel.weh.rwth-aachen.de) has joined channel
+    #ruby
+*** hoelzro|away (hoelzro@hoelz.ro) is now known as hoelzro             [03:19]
+*** cj3kim (~good_even@unaffiliated/cj3kim) has quit: Quit: This computer has
+    gone to sleep
+*** ephemerian (~ian@82-71-51-229.dsl.in-addr.zen.co.uk) has joined channel
+    #ruby
+<lukeholder> thanks again Hanmac really appreciate it
+<tjbiddle>  If I have a method that I am testing that is calling
+           "git.lib.branch_current" how would i mock that in rspec?     [03:20]
+<Hanmac> something like  array.dup { |d| d[:dup] = true } would not be easy
+         possible because it needs more blocks than one ...
+*** mmikeym (~mikeym@184.70.65.118) has quit: Ping timeout: 246 seconds
+                                                                        [03:21]
+*** joeycarmello (~joeycarme@108-94-164-250.lightspeed.sntcca.sbcglobal.net)
+    has joined channel #ruby                                            [03:24]
+*** codespectator (~jamesmacl@82.153.106.168) has joined channel #ruby

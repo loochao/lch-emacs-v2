@@ -1,0 +1,27 @@
+;;; w3m-session  -*- mode: emacs-lisp; coding: iso-2022-7bit -*-
+;; This file is generated automatically by emacs-w3m v1.4.437.
+
+(("Crash recovery sessions"
+  (20688 42667 545100)
+  (("about:" nil nil "About emacs-w3m") ("about:" (0) (("about:" (:title "About emacs-w3m") (0) :window-start 1 :position (1 . 0) :window-hscroll 0)) "About emacs-w3m") ("about:" (1) (("about:" (:title "About emacs-w3m") (0) :window-start 1 :position (1 . 0) :window-hscroll 0) ("about:" (:title "About emacs-w3m") (1) :window-start 1 :position (1 . 0) :window-hscroll 0)) "About emacs-w3m"))
+  nil)
+ ("Automatic saved sessions-1"
+  (20684 57763 620433)
+  (("about:" nil nil "About emacs-w3m"))
+  0)
+ ("Automatic saved sessions-2"
+  (20643 8976 656993)
+  (("about:" nil nil "About emacs-w3m"))
+  nil)
+ ("Automatic saved sessions-3"
+  (20641 36161 274273)
+  (("http://paste.lisp.org/display/133715" nil nil "Paste number 133715: group-by"))
+  nil)
+ ("Automatic saved sessions-4"
+  (20636 11035 992712)
+  (("http://www.emacswiki.org/cgi-bin/wiki?Command" (0) (("https://metacpan.org/module/IPC::System::Simple" (:title "IPC::System::Simple - Run commands simply, with detailed diagnostics - metacpan.org") (0) :forms ([w3m-form-object get "https://metacpan.org/search" nil application/x-www-form-urlencoded (1 (:value ("q" . "")) 2 (:value ("")))] [w3m-form-object internal "https://metacpan.org/module/none" nil application/x-www-form-urlencoded (3 (:value ("release" "Go to version" ("Go to version" . "Go to version") ("PJF/IPC-System-Simple-1.20/lib/IPC/System/Simple.pm" . "1.18 (2010-01-09)") ("PJF/IPC-System-Simple-1.19/lib/IPC/System/Simple.pm" . "1.18 (2009-12-04)") ("PJF/IPC-System-Simple-1.18/lib/IPC/System/Simple.pm" . "1.18 (2009-02-08)") ("PJF/IPC-System-Simple-1.17/lib/IPC/System/Simple.pm" . "1.17 (2008-12-19)") ("PJF/IPC-System-Simple-0.16/lib/IPC/System/Simple.pm" . "0.16 (2008-09-14)") ("PJF/IPC-System-Simple-0.15/lib/IPC/System/Simple.pm" . "0.15 (2008-07-20)") ("PJF/IPC-System-Simple-0.14/lib/IPC/System/Simple.pm" . "0.14 (2008-07-18)") ("PJF/IPC-System-Simple-0.13/lib/IPC/System/Simple.pm" . "0.13 (2008-07-17)") ("PJF/IPC-System-Simple-0.12/lib/IPC/System/Simple.pm" . "0.12 (2008-06-06)") ("PJF/IPC-System-Simple-0.11/lib/IPC/System/Simple.pm" . "0.11 (2008-06-06)") ("PJF/IPC-System-Simple-0.10/lib/IPC/System/Simple.pm" . "0.09 (2008-05-14)") ("PJF/IPC-System-Simple-0.09/lib/IPC/System/Simple.pm" . "0.09 (2008-05-12)") ("PJF/IPC-System-Simple-0.08/lib/IPC/System/Simple.pm" . "0.08 (2008-04-13)") ("PJF/IPC-System-Simple-0.07/lib/IPC/System/Simple.pm" . "0.07 (2008-04-12)") ("PJF/IPC-System-Simple-0.06/lib/IPC/System/Simple.pm" . "0.06 (2007-09-06)") ("PJF/IPC-System-Simple-0.05/lib/IPC/System/Simple.pm" . "0.05 (2007-04-09)") ("PJF/IPC-System-Simple-0.04/lib/IPC/System/Simple.pm" . "0.04 (2006-10-30)") ("PJF/IPC-System-Simple-0.03/lib/IPC/System/Simple.pm" . "0.03 (2006-07-25)") ("PJF/IPC-System-Simple-0.02/lib/IPC/System/Simple.pm" . "0.02 (2006-07-25)") ("PJF/IPC-System-Simple-0.01/lib/IPC/System/Simple.pm" . "0.01 (2006-07-23)"))) 4 (:value ("release" "Diff with version" ("Diff with version" . "Diff with version") ("PJF/IPC-System-Simple-1.20/lib/IPC/System/Simple.pm" . "1.18 (2010-01-09)") ("PJF/IPC-System-Simple-1.19/lib/IPC/System/Simple.pm" . "1.18 (2009-12-04)") ("PJF/IPC-System-Simple-1.18/lib/IPC/System/Simple.pm" . "1.18 (2009-02-08)") ("PJF/IPC-System-Simple-1.17/lib/IPC/System/Simple.pm" . "1.17 (2008-12-19)") ("PJF/IPC-System-Simple-0.16/lib/IPC/System/Simple.pm" . "0.16 (2008-09-14)") ("PJF/IPC-System-Simple-0.15/lib/IPC/System/Simple.pm" . "0.15 (2008-07-20)") ("PJF/IPC-System-Simple-0.14/lib/IPC/System/Simple.pm" . "0.14 (2008-07-18)") ("PJF/IPC-System-Simple-0.13/lib/IPC/System/Simple.pm" . "0.13 (2008-07-17)") ("PJF/IPC-System-Simple-0.12/lib/IPC/System/Simple.pm" . "0.12 (2008-06-06)") ("PJF/IPC-System-Simple-0.11/lib/IPC/System/Simple.pm" . "0.11 (2008-06-06)") ("PJF/IPC-System-Simple-0.10/lib/IPC/System/Simple.pm" . "0.09 (2008-05-14)") ("PJF/IPC-System-Simple-0.09/lib/IPC/System/Simple.pm" . "0.09 (2008-05-12)") ("PJF/IPC-System-Simple-0.08/lib/IPC/System/Simple.pm" . "0.08 (2008-04-13)") ("PJF/IPC-System-Simple-0.07/lib/IPC/System/Simple.pm" . "0.07 (2008-04-12)") ("PJF/IPC-System-Simple-0.06/lib/IPC/System/Simple.pm" . "0.06 (2007-09-06)") ("PJF/IPC-System-Simple-0.05/lib/IPC/System/Simple.pm" . "0.05 (2007-04-09)") ("PJF/IPC-System-Simple-0.04/lib/IPC/System/Simple.pm" . "0.04 (2006-10-30)") ("PJF/IPC-System-Simple-0.03/lib/IPC/System/Simple.pm" . "0.03 (2006-07-25)") ("PJF/IPC-System-Simple-0.02/lib/IPC/System/Simple.pm" . "0.02 (2006-07-25)") ("PJF/IPC-System-Simple-0.01/lib/IPC/System/Simple.pm" . "0.01 (2006-07-23)"))))] [w3m-form-object get "https://metacpan.org/search" nil application/x-www-form-urlencoded (5 (:value ("q" . "dist:IPC-System-Simple")) 6 (:value ("q" . "")) 7 (:value ("")))]))) "EmacsWiki: Command"))
+  nil)
+ ("Automatic saved sessions-5"
+  (20635 53620 389585)
+  (("about:" nil nil "About emacs-w3m") ("http://www.princeton.edu/~chaol/" (1) (("about:" (:title "About emacs-w3m") (0) :window-start 1 :position (1 . 0) :window-hscroll 0) ("http://emacsformacosx.com/" (:title "emacsformacosx.com") (1) :window-start 1 :position (0 . 0) :window-hscroll 0)) "LooChao' Notes") ("http://emacsformacosx.com/" (0) (("about:" (:title "About emacs-w3m") (0) :window-start 1 :position (1 . 0) :window-hscroll 0)) "emacsformacosx.com"))
+  nil))

@@ -1,0 +1,660 @@
+
+[Thu Nov  8 2012]
+*** You have joined channel #perl                                       [14:24]
+*** Topic for #perl: No pasting into channel, use http://scsys.co.uk:8002/perl
+    to show code | perl-5.16.2 released!, http://xrl.us/bnjyda ! Perls 5.8,
+    5.10, 5.12 EOLd | Modern Perl book at http://xrl.us/bjc4vf |
+    http://presentingperl.org/ | FAQ at http://faq.perl.org ;  Channel FAQ at
+    http://xrl.us/bmzccn | popl is gangnam style
+*** #perl: topic set by rindolf!~shlomi@bzq-79-181-188-143.red.bezeqint.net,
+    12:20:27 2012/11/01
+*** Users on #perl: LooChao xilo Shiina irqq b1zz73 ashley_w Chillance Tiders
+    nantou yak mr007x astrostl insulator forbid xinming haarg jordanm claes_
+    stkowski mark5 EvilPenguin Quark edlinde wittro Sclex rexbinary sud0
+    Alpha64 AzaToth proller vitimiti bob_p dmfh Walzmyn impulse150 Mithaldu
+    zellio buu scp1 gelignite WinstonSmith ChmEarl grondilu mdrd bAndie9100
+    MrBougo fisted pg_lizard demolithion crocket trist4n Kulrak ahoops cibs
+    Kassandry mrsolo reisio DeusEx ozux
+*** Users on #perl: Guest48178 fisabelle rustymyers mauke ChibaPet Ross
+    Codynyx thawes regex__ cannonball Altreus jxriddle knshaum z3r0pr0f1t
+    TheJH rindolf Holy_Cow v4x ash` Roa WebDragon stopbit briguy mprentice
+    rozie Icewing chasmo jamesaxl schrodinger nemesit rizlah fbsd haxrbyte_
+    nanderoo daemoneye TitanOfOld|work kenlik szr [1]JPeterson kith DansTheMan
+    iLogical tosh stan___ nine ner0x Patterner sebuba chee miha- tipdbmp
+    Khoyo_ mr_vile pj-phone jampola smeea Su-Shee ph8
+*** Users on #perl: caveat- felher Zx3_ Iota__ Muska ss mfontani bocaneri
+    Fat-Zer Villadelfia SeySayux Uzix mroh TinoDidriksen GlitchMr SirCmpwn
+    plantseeker hnsz2002 rmp saorge dur-randir jvv zoite resistivecorpse
+    classix xj54y sauvin lawalker populvuh alaska coasterz absolut_todd
+    Khisanth maxdml ugexe tekzilla zivester tybalt89 xchg yofel_ cooper
+    daemonkeeper noganex talsamon cfedde vert2 Ruler_Of_Heaven_ slaytanic
+    perlygatekeeper Vampire0 undef_null achromic robn a3r0
+*** Users on #perl: aloelight cullum L0L0L0L0L Trashlord Embalmed c45y kel39
+    RussellB28 peterrooney rjgonza_ Internet13 hemanth Janhouse jrockway
+    mooky_ magnuse hiroyuki_ apeiron nishttal2 Praise FastJack DysLexie ferret
+    milkshake_ tag cyclick shadey_ nielse unluckful VaNNi kiddy56842
+    syst3mw0rm magoo catcity fluxdude Kyshtynbai o3u CrazyEddy mateu KindTwo
+    semeion fairlite sh4rm4 ew73 MidnighToker djharsk Bry8Star sivoais garris
+    MouldyOldBones amiri_ sapde pj RushPL decoder
+*** Users on #perl: Jellyg00se Sjors mattp_ zby Deathvalley122 gregorg
+    angzam7111 catsup potatoe5 dropdrive bapa auraka setient cyborg-one
+    miniCruzer tsnow tadzik topo PerlJam majuscule dondelelcaro Bazerka
+    Kiranos KES82 snarkyboojum seoul_man nyuszika7h wolong rvchangue holycrab
+    NucWin PhifeDoc cl0ud xenoterracide Zaba metateck kury kitchen elixey
+    davve alanjf else- BSDBlack anexus SmokeMachine grug abackus hippie
+    Ironnads netj andybe john3_ em RichiH kakashi_ imarcusthis
+*** Users on #perl: Nomad_ BadLarry sirhc dondon uri_ uri cyberspace- rohanpm
+    kaitlyn whizzer_ mattux s0ber Zephyrus Jayce^ ardnew Botje NimeshNeema
+    MoMo MDGrein K1rk gtmanfred zach_mtu Furai Daman typeless ryanc tm604
+    ag4ve AigleNoir foristh revolet matchaw_ asakura0 robinsmidsrod
+    SvenDowideit darkclown Kays DRW_ polemon talexb joshie elmex svenx
+    Psi-Jack xdbr PZt hoelzro|away Rix m4rcu5 Ikarus Thalamus alnewkirk
+    SpiceMan b2 ProperNoun shimoco DarthGandalf japh imMute rewt
+*** Users on #perl: sjohnson shardz Nisstyre avar caitlin ow fihi09 kaffee
+    woky MatthewGP celogeek mmercer goraxe Lynx_ Medlir tapout tmtowtdi
+    euphoria waltman gcola compengi Gryllida HarryS ChoHag cheako burnersk
+    zendeavor initself VVelox shadowpaste gensym ChristianS mordy__ whee
+    andrewalker spanner_ Natch dngor Corey huf radio23 Olipro folivora takus
+    codepal Rallias mst xeon-enouf protospork bouncyfoxie milligan DHowett
+    wizkid238 kart0ffelsack valleyfox twinshadow ology
+*** Users on #perl: apmacwrk bps Paladin kent\n dross Total_Oblivion plaxx
+    xorspark Romnous bambams Whiskey maluco modexi darkx larks phungus prakash
+    welandB melter abyss karan90 tangler01 rickest MedlirWork Goatbert raSter^
+    Atlas squentin mtrd`w fuzzix jab416171|Cloud danmackay rblackwe brong
+    bennymack Clex k-man Todd Visual` jagerman abyxcos torbjorn avenj krapfie
+    colo-work barika tarski sparkman laidback_01 jerry three18ti ingy BadAtom
+    Zemyla fizztpok Perlboy lahwran tomaw
+*** Users on #perl: yeltzooo ivan`` hive-mind smpb Pizentios jlindsay jjore
+    cnu- Paks Getty lucs MkZx^ bline ifvoid WormDrink trcjr nimred tharkun
+    metasyntax hmmhesays genio Aniar sysop2 nuken Shells east seek^126 Champi
+    Ottre nronksr aramisf ghenry derchiller tjmc felipe kuyatzu Celelibi
+    sunny256 kamyl deasl Hor|zon smash Triffid_Hunter qtplatypus Deleterios
+    Harzilein peder dcat mattwb Apachez shabble M-Technic jtrucks kst
+    MissionCritical _quadDamage thomas TomWork Rubin
+*** Users on #perl: crazedpsyc LoRez idoru w0m skarpflier triffiddd nots
+    blueyed SJS SAL9000 Aerdan shealyw2 Voldenet Bryanstein aqz aindilis jsec
+    knowpaced DrForr wallacereis kambiz musca poutine jonsen_ zox jayne
+    lady_awk pink_mist mpajor_op5 ad_ __main__ squimmy Caelum Kovensky heckman
+    przemoc cybrhuman Taranis ZadYree zykes- mark-use operhiem1 sweet_kid
+    salparadise Exodist bakedb_ dwierenga erth64net cjh` failingkid rcsheets
+    Gurragchaa ryan-c preaction squawk Invis toddf
+*** Users on #perl: simcop2387 hyperboreean server_failure s_p_a_c_e_d_o_u_
+    trink winklet zafu andyrossy naquad faen awwaiid skor marienz stephen87
+    Chosi __class__ Drakevr flok genehack flocke daemon brr flashback jiffe1
+    atsaloli gnusosa Demonen idn yuni revdiablo shorten lorn elliottcable
+    andrefs megaTherion Perun alamar Krigsforbryter ServerSage reg0l Bonilla
+    semy thrig youam integral tkr LeoNerd ironcamel new299 patCorkv1_0 malex
+    CBro2007 craZZter clop [vlad] __greg__ Dave2
+*** Users on #perl: astopholos_ anelson frankie Mogget iemelianov Trixar_za
+    Yaakov Cru mjflick hobbs kers sobukus spb riddle GumbyPAN Kuukunen perlbot
+    jamesstanley HighBit grothendieck Maddingue maio mrmist Chrys0pras3
+    m_athias jvolkman fizzie penma yves__ tove tehKitten __sri ocharles rfi
+    shaldannon oskie Ishaq yibe_ eam dmbaturin geeeek frikinz BinGOs nuba
+    JodaZ jtpalmer nperez bigpresh magic_pe1ple archon-
+*** pj-phone2 (~pj-phone@222.153.223.81) has joined channel #perl
+*** #perl modes: +CLPcntj 5:80
+*** #perl was created on Sunday 2006/11/26 01:42:39
+*** Guest48178 (~markizano@173-203-78-227.static.cloud-ips.com) is now known
+    as Kizano_werk
+*** Kizano_werk (~markizano@173-203-78-227.static.cloud-ips.com) is now known
+    as Kizano
+*** Kizano (~markizano@173-203-78-227.static.cloud-ips.com) is now known as
+    Kizano_werk
+*** wittro (~wittro@7c2956af.i-revonet.jp) has quit: Remote host closed the
+    connection                                                          [14:25]
+*** und3f (~und3f@178.73.210.152) has joined channel #perl              [14:26]
+*** pj-phone (~pj-phone@60-234-254-5.bitstream.orcon.net.nz) has quit: Ping
+    timeout: 260 seconds
+*** troller (~proller@80.240.216.69) has joined channel #perl           [14:27]
+*** Kasler (~dragan@unaffiliated/kasler) has joined channel #perl
+*** proller (~proller@80.240.216.69) has quit: Ping timeout: 256 seconds
+                                                                        [14:28]
+*** Kharec (~Kharec@APuteaux-653-1-199-136.w90-44.abo.wanadoo.fr) has joined
+    channel #perl                                                       [14:30]
+*** yofel_ (~quassel@ubuntu/member/yofel) is now known as yofel         [14:31]
+*** Chillance (~Chillance@83.233.182.216) has quit: Read error: Connection
+    reset by peer                                                       [14:32]
+*** setty1 (~ale@84.126.222.213.dyn.user.ono.com) has joined channel #perl
+*** setty1 (~ale@84.126.222.213.dyn.user.ono.com) has quit: Client Quit
+*** Chillance (~Chillance@83.233.182.216) has joined channel #perl      [14:33]
+*** Fat-Zer (~alexander@ppp91-76-56-138.pppoe.mtu-net.ru) has quit: Read
+    error: Connection reset by peer
+<LooChao> silly questions: how to call a system process?
+<LooChao> system(ls)?
+<LooChao> `ls`?
+<huf> depends on what you want to do with it
+<huf> so, what do you want to do with it?
+<LooChao> want to learn how many ways to call a system command.         [14:34]
+<LooChao> Newbie, still learning.
+<huf> oh. well, system() and `` both call it, but they do very different
+      things
+<mst> LooChao: I tend to use http://p3rl.org/IPC::System::Simple
+<mst> LooChao: or if I want to leave it running in the background,
+      http://p3rl.org/Proc::Simple
+*** Sclex (~1111111@178.121.211.11) has quit: Ping timeout: 240 seconds
+<LooChao> mst: thanks!                                                  [14:35]
+<jjore> I've really enjoyed IPC::Run, especially given the flexibility on
+        choosing what to do WRT redirections.
+*** irqq (~chatzilla@dni5.neoplus.adsl.tpnet.pl) has quit: Ping timeout: 246
+    seconds                                                             [14:36]
+*** Fat-Zer (~alexander@ppp91-76-63-223.pppoe.mtu-net.ru) has joined channel
+    #perl
+<LooChao> huf: very different things? can you explain a little bit? I'm going
+          to try them as well.
+*** pj-phone (~pj-phone@60-234-254-5.bitstream.orcon.net.nz) has joined
+    channel #perl
+<haarg> and hopefully you are doing something other than calling ls, because
+        that can be easily done within perl instead
+*** Fat-Zer (~alexander@ppp91-76-63-223.pppoe.mtu-net.ru) has quit: Client
+    Quit
+<LooChao> haarg: sure, trying                                           [14:37]
+*** irqq (~chatzilla@accq6.neoplus.adsl.tpnet.pl) has joined channel #perl
+*** Fat-Zer (~alexander@ppp91-76-63-223.pppoe.mtu-net.ru) has joined channel
+    #perl
+<jjore> Try this: system("ls -l") and then $var = `ls -l`; print ">> $var\n"
+*** bocaneri (~bocaneri@about/linux/staff/sauvin) has quit: Remote host closed
+    the connection
+*** Sclex (~1111111@178.121.211.11) has joined channel #perl
+<huf> LooChao: system() calls it so it inherits your stdin/stdout/stderr, and
+      returns the exit code of the program. `` is popen, it calls the thing
+      and captures its stdout, returning that to you once the process is done.
+                                                                        [14:38]
+*** sauvin (~sauvin@about/linux/staff/sauvin) has quit: Remote host closed the
+    connection
+*** pj-phone2 (~pj-phone@222.153.223.81) has quit: Ping timeout: 264 seconds
+<huf> LooChao: but i'm fairly sure perldoc explains the difference
+*** Kasler (~dragan@unaffiliated/kasler) has quit: Ping timeout: 260 seconds
+<LooChao> huf:                                                          [14:39]
+<LooChao> I just tried.
+<LooChao> test.pl
+<LooChao> cat test.pl
+<LooChao> if it's system('ls')                                          [14:40]
+<LooChao> it's like calling ls from the command line.
+<LooChao> but if it's `ls`
+<LooChao> no output to the command line.
+<mst> correct. because `ls` *returns* the output
+<LooChao> my question is what does `ls` do?
+<jjore> That part where I wrote $var = `ls` meant it went into $var.    [14:41]
+<LooChao> `ls` returns? where?
+<huf> same thing as `ls` does in shell, basically
+*** Kharec (~Kharec@APuteaux-653-1-199-136.w90-44.abo.wanadoo.fr) has quit:
+    Ping timeout: 255 seconds
+<mauke> LooChao: wherever you wrote it
+<huf> LooChao: it's an expression, when evaluated, it yields a value
+<huf> that value is the output of the program you called
+<LooChao> huf: I see. which means use the output to replace `ls`
+<huf> well, "replace"
+<huf> not really replace. it returns the output
+<LooChao> but system('ls') also returns the output?                     [14:42]
+<huf> no, it returns the exit code
+<huf> the output is printed by ls to its stdout
+<huf> which happens to be your script's stdout
+<huf> so you just see it on your terminal
+<stan___> system would return the output before the program exists because it
+          takes your stdin/out/err `` must wait for the program to exit/return
+          before it can display output                                  [14:43]
+<LooChao> huf: thanks, now it's clear
+<huf> system does not return any output, stan___
+<LooChao> $var = system('ls')
+<stan___> well i was trying to put it in lamerns terms
+<LooChao> after calling $var ==0
+<LooChao> but the stdout will have ls output
+<LooChao> while `ls`
+<LooChao> $var = `ls`                                                   [14:44]
+* GumbyPAN CPAN Upload: SOAP-XML-Client-2.26 by LLAP
+  http://metacpan.org/release/LLAP/SOAP-XML-Client-2.26
+<huf> LooChao: yes, similar to how in shell: ls ; echo $? will print ls's
+      output and then echo 0, ls's exit code
+<eam> LooChao: if you are familiar with system libraries, `` is akin to
+      popen()
+<LooChao> $var will be the output of ls
+*** Kasler (~dragan@unaffiliated/kasler) has joined channel #perl
+<LooChao> Good, taking notes :)
+<LeoNerd> popen - plural of "pope"                                      [14:45]
+<tadzik> hehe                                                           [14:46]
+<claes_> there can be only one!
+*** insulator (~insulator@gateway/tor-sasl/insulator) has quit: Remote host
+    closed the connection
+<thrig> claes_: history indicates otherwise
+<claes_> they have to behead eachother
+<jjore> well no, there can be several concurrently.
+<claes_> damn it.. I was trying to do a highlander thing
+<tadzik> the design is concurrent, but is the implementation parallel?  [14:47]
+*** holli__ (~holli@dslb-088-068-233-089.pools.arcor-ip.net) has joined
+    channel #perl
+<huf> with discordianism, surely                                        [14:48]
+<huf> oh incidentally, you're all excommunicated.
+* GumbyPAN CPAN Upload: Webservice-InterMine-1.0103 by INTERMINE
+  http://metacpan.org/release/INTERMINE/Webservice-InterMine-1.0103     [14:49]
+* GumbyPAN CPAN Upload: SOAP-XML-Client-2.6 by LLAP
+  http://metacpan.org/release/LLAP/SOAP-XML-Client-2.6
+<eam> I thought popen was the verb form of pope
+<eam> we be popen'
+*** achromic_ (~achromic@cpe-76-169-197-255.socal.res.rr.com) has joined
+    channel #perl
+*** antgel (~topdog@bzq-79-183-226-181.red.bezeqint.net) has joined channel
+    #perl
+<DrForr> Isn't that popeil? :)
+<jjore> huf, oh, it hurts.
+<huf> jjore: oh okay, not you.                                          [14:50]
+<mauke> popen(n) returns the n'th pope
+<DrForr> hellzapopen.
+<thrig> what does pclose do?
+<huf> something pretty close to that
+<jjore> fun fact, friends got married on may 5th, 2005 at 5:55 in the
+        afternoon and we performed a dance in 5/4 time using 5 dancers and
+        both inverted and shuffled all the normal modular relations.    [14:51]
+*** regex__ (~Barbapapp@2001:16d8:ff00:827d::5) is now known as regex
+*** irqq (~chatzilla@accq6.neoplus.adsl.tpnet.pl) has quit: Ping timeout: 256
+    seconds
+<thrig> provide vestments?
+*** achromic (~achromic@cpe-76-168-201-93.socal.res.rr.com) has quit: Ping
+    timeout: 240 seconds
+*** irqq (~chatzilla@bkg1.neoplus.adsl.tpnet.pl) has joined channel #perl
+                                                                        [14:52]
+<ner0x> Anyone using Validation::Class know how to set custom required
+        messages?
+<derchiller> i have written a perl application which has some other files in
+             'lib', which are required to run the application. the application
+             runs absolutely smooth if i'm in the right directory. how can i
+             run it from everywhere? (using an absolute path results in errors
+             from the use of "use lib './lib'". any suggestions are
+             appreciated                                                [14:53]
+<mauke> perlbot: findbin
+<perlbot> mauke: use File::Basename qw(dirname); use lib dirname(__FILE__); --
+          see also Dir::Self;
+<derchiller> ty mauke
+*** emmanuelux (~emmanuelu@2a01:e35:2e4d:9010:3d85:37d7:aac:905d) has joined
+    channel #perl                                                       [14:56]
+* GumbyPAN CPAN Upload: Catalyst-Manual-5.9006 by HKCLARK
+  http://metacpan.org/release/HKCLARK/Catalyst-Manual-5.9006            [14:59]
+*** jhattara (~jhattara@dsl-tkubrasgw1-fe24fa00-223.dhcp.inet.fi) has joined
+    channel #perl                                                       [15:02]
+* GumbyPAN CPAN Upload: forkprove-0.2.3 by MIYAGAWA
+  http://metacpan.org/release/MIYAGAWA/forkprove-0.2.3                  [15:09]
+<huf> what's the collective term for negation and its opposite?         [15:10]
+<huf> what's the term for the opposite of negation?
+<rewt> what would the opposite of negation be?
+<huf> the same as negating twice
+<pink_mist> addition?
+<huf> leaving well alone
+<Kovensky> huf: a no-no? :>
+<rewt> i don't think there's an actual term for leaving something as-is
+<huf> am i gonna have to coin one?                                      [15:11]
+<huf> this has been bothering me for years
+<reisio> which 'negation' are you referring to?
+<rewt> just leave it alone ;)
+<mst> huf: identity
+<huf> mst: how's that as a verb?
+<rewt> identify
+<huf> oh come on
+<rewt> reisio: $x = -$x;                                                [15:12]
+<mst> huf: your original question was sufficiently vague that I'm not going to
+      answer that until you provide some damn context
+<pink_mist> idention <-- needs to end in tion :P
+<reisio> huf: which 'negation' are you referring to?
+<huf> simple boolean logic
+<reisio> eh?                                                            [15:13]
+<rewt> reisio, you don't like my answer?
+<reisio> rewt: isn't it huf's problem?
+*** hhjear (~hhjear@host143.190-138-188.telecom.net.ar) has joined channel
+    #perl
+<Kovensky> mst: saw a video of your talk on yapc::ny
+<rewt> huf, do you mean negation as in $x = -$x; ?
+*** [raymond] (80dde039@gateway/web/freenode/ip.128.221.224.57) has joined
+    channel #perl
+<Kovensky> mst: sure was intense :P
+*** fisted (~fisted@unaffiliated/fisted) has quit: Remote host closed the
+    connection                                                          [15:14]
+<huf> no, boolean negation
+<huf> a = !a
+*** fisted (~fisted@unaffiliated/fisted) has joined channel #perl
+<Kovensky> by negating twice do you mean !!a?
+<rewt> that's not, not negation :/
+<mauke> IÅ‰! IÅ‰!                                                         [15:15]
+<reisio> not not a
+<reisio> wfm
+*** pettsson (~pettsson@90-230-218-39-no135.tbcn.telia.com) has joined channel
+    #perl
+<tybalt89> eval: [ map $x ^= 1, 1..9 ]
+<perlbot> tybalt89: [1,0,1,0,1,0,1,0,1]
+<[raymond]> I'm parsing a text file using parse_line(). Sometime parse_line()
+            isn't able to parse the line ( not sure why ). But I would like to
+            do something to the affect of "@line = parse_line() or { log_line(
+            $_ ); next; }
+<pink_mist> a = !!a
+<mst> Kovensky: DDD or The End Of Everything ?
+<Kovensky> mst: the __END__ one :p
+*** davidbitton (~davidbitt@ool-4351d916.dyn.optonline.net) has joined channel
+    #perl
+<pink_mist> Mithaldu has posted it on youtube =)                        [15:16]
+<[raymond]> Trying to create a sub which does the log, then calls next throw
+            warnings.
+<mst> Kovensky: I don't do slow lightning talks :)
+<Kovensky> :>
+<Kovensky> mst: I found fatpacker a bit hard to use :(
+<mauke> [raymond]: perldoc -f do, perldoc -f if
+<Kovensky> I tried to make it work on an oneliner without CWD pollution too
+           but it didn't work too well =p
+*** Shiina (~Shiina@unaffiliated/shiina) has quit:                      [15:17]
+*** fisted (~fisted@unaffiliated/fisted) has quit: Read error: Connection
+    reset by peer
+<Kovensky> (it didn't like <() because of /tmp/ paths)
+<mst> Kovensky: you've asked me no questions and sent me no patches ... so how
+      am I supposedto fix anything? :P
+*** fisted (~fisted@unaffiliated/fisted) has joined channel #perl
+<Kovensky> nah, just commenting :P
+<Kovensky> I didn't poke it much either                                 [15:18]
+<mst> fundamentally, it works for me
+<mst> if it's hardto use, I need to know aht didn't work
+<mst> so I can try and make it work
+<mst> making something that -I- can use and miyagawa can use for cpanm, I can
+      do without help
+<rewt> huf, seems like 'proposition' is the opposite of 'negation'
+<rewt> huf: http://en.wikipedia.org/wiki/Truth_function
+<Kovensky> another comment is that, at least in my perl, `fatpack
+           packlists-for` included a lot of core modules                [15:19]
+<mst> making something that works for everybody else is a different matter
+<Kovensky> indeed
+<mst> Kovensky: core perl does not have packlist files.
+<huf> rewt: ooooh!
+* GumbyPAN CPAN Upload: DBIx-Class-0.08204 by GETTY
+  http://metacpan.org/release/GETTY/DBIx-Class-0.08204
+<Kovensky> mst: yeah, but I had used cpan to update a lot of core modules
+<mst> Kovensky: all I can suggest is that you've installed cpan versions of a
+      bunch of dual life stuff
+<mst> right
+<mst> at which point fatpacker has to bundle them
+<mst> because it has no way of telling if you need the updated versions or not
+<Kovensky> I see                                                        [15:20]
+<mst> I ... it did exactly what it was supposed to do there
+<Kovensky> lol
+<mst> I don't understand why it was surprising
+*** davidbitton (~davidbitt@ool-4351d916.dyn.optonline.net) has quit: Client
+    Quit
+<Kovensky> I thought it'd filter against corelist or sth, but whatever  [15:21]
+<Kovensky> you're probably doing the right thing
+<mst> how would that help?
+*** fgomez (~Fernando@uws16915usr.uws.ualberta.ca) has joined channel #perl
+*** Shiina (~Shiina@unaffiliated/shiina) has joined channel #perl
+<mst> e.g. if core contains JSON::PP 2.2 and you';ve installed 2.3 from CPAN
+<mst> fatpacker can either (a) bundle 2.3, which might be wasteful or (b) not
+      bundle it, and then your code turns out to crash against 2.2      [15:22]
+<mst> I chose option (a) because I prefer things to not crash :)
+<Kovensky> :)
+<Kovensky> at any rate, I ended up not using fatpack because the people who
+           would use my code didn't want a single huge file ._.
+<mauke> besides, it's called *fat*packer
+<Kovensky> instead I copied modules into a lib/ dir and had the script load
+           them from there
+<tadzik> did anyone try this carton thingy?                             [15:23]
+<mauke> Kovensky: fatpacker + multifile zip!
+<mst> tadzik: carton's a way to build a per-app local::lib
+<Kovensky> (similar to what fatpack tree would've done, actually, but I only
+           needed a single module)
+<tadzik> I think it was something that was to solve this kind of problem
+<tadzik> mst: is it any good?
+<mst> tadzik: it's marginally easier than doing it by hand
+<Kovensky> tadzik: isn't it like a perl version of `bundler`?
+<tadzik> Kovensky: no eye deer
+<tadzik> not that I know what bundler is, either                        [15:24]
+*** neersighted (neer@is.a.slave.to.neersighted.com) has joined channel #perl
+<Kovensky> ruby's version of bundler records in a file the version of
+           dependency modules that were used during development
+<mst> tadzik: it's a nasty hack, frankly, but one that is very easy to use so
+      long as it doesn't break
+<Kovensky> so, on deployment, you can replicate the development environment by
+           using `bundler` to install the exact same versions you had
+<mst> tadzik: but, equally, the same can be said of cpanm               [15:25]
+<mst> tadzik: so that's not necessarily a criticism :)
+<tadzik> :)
+<Kovensky> mst: "worse is better" :)
+*** _`_ (~kittysnif@unaffiliated/happy) has joined channel #perl        [15:27]
+<Su-Shee> great article.
+*** Shiina (~Shiina@unaffiliated/shiina) has quit:                      [15:28]
+<Kovensky> mst: anyway, what I meant is: nice talk :P
+<Kovensky> (and nice tools)
+*** zach_mtu (~zach_mtu@24.104.130.178) has quit: Remote host closed the
+    connection
+<Kovensky> though fatpack is a bit hard to automate
+*** amiri (~amiri@cpe-76-87-43-72.socal.res.rr.com) has joined channel #perl
+<Kovensky> I could filter trace's output myself if there's any module I don't
+           want to fatpack anyway                                       [15:29]
+<mst> right                                                             [15:30]
+<mst> the thing is, fatpack doesn't have enough information to automate stuff
+      really
+*** amiri_ (~amiri@cpe-76-87-43-72.socal.res.rr.com) has quit: Ping timeout:
+    245 seconds                                                         [15:31]
+*** dur-randir_ (~irc@178.162.60.102) has joined channel #perl          [15:32]
+*** irqq (~chatzilla@bkg1.neoplus.adsl.tpnet.pl) has quit: Ping timeout: 246
+    seconds                                                             [15:33]
+* GumbyPAN CPAN Upload: Text-Extract-MaketextCallPhrases-0.6 by DMUEY
+  http://metacpan.org/release/DMUEY/Text-Extract-MaketextCallPhrases-0.6
+                                                                        [15:34]
+*** dur-randir (~irc@178.162.60.102) has quit: Ping timeout: 260 seconds
+                                                                        [15:36]
+*** lukep_ (~lukep@f-d1-232-fw-dip-18438.core.deakin.edu.au) has joined
+    channel #perl
+*** ElDiabolo (~jo@xdsl-213-196-248-139.netcologne.de) has joined channel
+    #perl                                                               [15:37]
+*** fgomez (~Fernando@uws16915usr.uws.ualberta.ca) has quit: Remote host
+    closed the connection                                               [15:38]
+*** b1zz73 (~ascii@173-167-2-70-michigan.hfc.comcastbusiness.net) has left
+    channel #perl: #perl                                                [15:40]
+*** shadey___ (~abcd@host86-159-130-210.range86-159.btcentralplus.com) has
+    joined channel #perl                                                [15:41]
+*** shadey_ (~abcd@unaffiliated/shadey) has quit: Ping timeout: 245 seconds
+                                                                        [15:42]
+*** chrxn (~chrxn@216.228.241.140) has joined channel #perl
+*** fgomez (~Fernando@uws16915usr.uws.ualberta.ca) has joined channel #perl
+*** sebuba (~sebuba@unaffiliated/sebuba) has quit: Remote host closed the
+    connection                                                          [15:47]
+*** fgomez (~Fernando@uws16915usr.uws.ualberta.ca) has quit: Ping timeout: 252
+    seconds
+*** ghatothkach (~chatzilla@99-32-9-188.uvs.elpstx.sbcglobal.net) has joined
+    channel #perl
+*** grondilu (~grondilu@unaffiliated/grondilu) has quit: Quit: leaving  [15:48]
+*** hhjear (~hhjear@host143.190-138-188.telecom.net.ar) has quit: Quit:
+    Leaving                                                             [15:53]
+*** TheJH (~TheJH@wikipedia/TheJH) has quit: Quit: goodbye              [15:54]
+*** roue (~roue@96-42-92-237.dhcp.roch.mn.charter.com) has joined channel
+    #perl                                                               [15:55]
+<roue> hola
+<reisio> shalom
+<roue> is there any way to pass the cpan shell a file containing a list of
+       modules to install?
+*** Tiders (~Tiders@131.104.8.1) has quit: Ping timeout: 255 seconds
+<roue> I have a couple hundred modules to install and ... my head is hurting.
+<kitchen> there's a faq on migrating/saving installed modules           [15:56]
+<apeiron> cpan? unsure. cpanm? yes
+<kitchen> for m in $(cat module_list.txt) ; do cpan $m ; done # ymmv    [15:57]
+<haarg> cpan `cat list.txt`
+*** asarch (~asarch@189.151.5.39) has joined channel #perl
+<thrig> cpanm < module_list.txt
+<forbid> lolol
+<roue> ahh. so does the list file need to contain "install foo::module" or
+       just the "foo::module" ?                                         [15:58]
+*** am0c (~am0c@124.49.51.146) has joined channel #perl
+<kitchen> run on a small module_list.txt to begin with and find out :-D
+<haarg> the cpan script accepts a list of modules to install            [15:59]
+<haarg> not cpan shell commands
+*** zellio (~zellio@128-122-170-180.DYNAPOOL.NYU.EDU) has quit: Quit: Lost
+    terminal
+<roue> haarg perfect. It's executing now... :)
+*** TheJH (~TheJH@wikipedia/TheJH) has joined channel #perl
+*** TheJH (~TheJH@wikipedia/TheJH) has quit: Client Quit
+<haarg> cpan -h for docs                                                [16:00]
+<roue> now I can go lay down and wait for installs to fail .
+*** Lexie (alex@cpe-173-174-33-87.austin.res.rr.com) has joined channel #perl
+*** DysLexie (alex@cpe-173-174-33-87.austin.res.rr.com) has quit: Ping
+    timeout: 245 seconds                                                [16:01]
+*** cooper (~mitchell@unaffiliated/furryfishy) has quit: Quit: cooper   [16:02]
+*** zellio (~zellio@128-122-170-180.DYNAPOOL.NYU.EDU) has joined channel #perl
+                                                                        [16:03]
+*** zellio (~zellio@128-122-170-180.DYNAPOOL.NYU.EDU) has quit: Client Quit
+*** zellio (~zellio@128-122-170-180.DYNAPOOL.NYU.EDU) has joined channel #perl
+<thrig> (cpanm also noms on stdin even when passed other arguments, so has to
+        be /dev/nulled in a while loop, for example)
+*** Sclex (~1111111@178.121.211.11) has quit: Ping timeout: 240 seconds
+                                                                        [16:06]
+*** Deck` (~hypo@95-37-68-221.dynamic.mts-nn.ru) has joined channel #perl
+*** anunakki (~dawg@unaffiliated/anunakki) has joined channel #perl
+*** Trixar_za (~trixarian@b09s22le.corenetworks.net) is now known as
+    Trix[a]r_za
+*** EvilPenguin (~EvilPengu@50.193.235.235) has quit: Ping timeout: 246
+    seconds                                                             [16:07]
+*** MatthewGP (~www@c-24-13-18-155.hsd1.il.comcast.net) has quit: Remote host
+    closed the connection                                               [16:09]
+*** anunakki (~dawg@unaffiliated/anunakki) has quit: Ping timeout: 264 seconds
+                                                                        [16:11]
+*** Sclex (~1111111@178.121.211.11) has joined channel #perl            [16:12]
+*** am0c (~am0c@124.49.51.146) has quit: Read error: Connection reset by peer
+                                                                        [16:13]
+*** bitcycle (~bitcycle@64.14.143.130) has joined channel #perl
+*** GlitchMr (~glitchmr@178-36-0-253.adsl.inetia.pl) has quit: Quit: WeeChat
+    0.3.8
+*** lukep_ (~lukep@f-d1-232-fw-dip-18438.core.deakin.edu.au) is now known as
+    ltp                                                                 [16:14]
+*** asarch (~asarch@189.151.5.39) has quit: Remote host closed the connection
+*** troys (~troys@23-24-139-178-static.hfc.comcastbusiness.net) has joined
+    channel #perl                                                       [16:15]
+*** firstdayonthejob
+    (~firstdayo@cpc3-cmbg9-0-0-cust760.5-4.cable.virginmedia.com) has joined
+    channel #perl                                                       [16:16]
+*** rustymyers (~rustymyer@mackenster.tlt.psu.edu) has quit: Quit: Later all!
+                                                                        [16:18]
+* GumbyPAN CPAN Upload: perl-5.12.5-RC2 by DOM
+  http://metacpan.org/release/DOM/perl-5.12.5-RC2                       [16:19]
+* GumbyPAN CPAN Upload: perl-5.12.5-RC2 by DOM
+  http://metacpan.org/release/DOM/perl-5.12.5-RC2
+*** hpt (~hpt@119.80.179.140) has joined channel #perl
+*** und3f (~und3f@178.73.210.152) has quit: Quit: Leaving.              [16:20]
+*** EvilPenguin (~EvilPengu@50.193.235.235) has joined channel #perl    [16:21]
+*** ghenry (~ghenry@pdpc/supporter/monthlybyte/ghenry) has quit: Ping timeout:
+    245 seconds
+*** R1cochet (~R1cochet@freecode-project/coder/r1cochet) has joined channel
+    #perl                                                               [16:22]
+*** l2esonance (~l2esonanc@c-50-136-184-122.hsd1.ca.comcast.net) has joined
+    channel #perl                                                       [16:23]
+*** john_doe_jr (~Adium@206.248.207.14) has joined channel #perl        [16:24]
+*** AzaToth (~azatoth@wikipedia/AzaToth) has quit: Read error: Connection
+    reset by peer
+*** mprentice (~mprentice@wr-130-64-42-225.boston.tufts.edu) has quit: Quit:
+    Ciao
+<john_doe_jr> asdf
+<john_doe_jr> clear
+*** looogsgd (~jasmine@adsl-71-141-95-142.dsl.snfc21.sbcglobal.net) has joined
+    channel #perl                                                       [16:25]
+<john_doe_jr> I'm trying to use a perl script on Ubuntu that has a " use
+              HTML::WikiConverter;" but I'm getting an error messageë°≠.Can't
+              locate HTML/WikiConverter.pm in @INCë°≠how do I get the includes
+              working
+<jordanm> install the module                                            [16:26]
+<john_doe_jr> jordanm: how do I do that?                                [16:27]
+<tadzik> perlbot: cpan
+<perlbot> tadzik: Main archive of Perl modules. It helps Perl programmers to
+          not reinvent the wheel. User-friendly interfaces are available at
+          http://metacpan.org/ and http://search.cpan.org/ . See also "life
+          with cpan". See also http://perl-begin.org/topics/cpan/ .
+<jordanm> john_doe_jr: apt-get install libhtml-wikiconverter-perl
+<tadzik> john_doe_jr: on ubuntu it may ... what jordanm said
+*** nanderoo (~nanders@38.124.137.226) has quit: Excess Flood
+* GumbyPAN CPAN Upload: Tree-DAG_Node-1.09 by RSAVAGE
+  http://metacpan.org/release/RSAVAGE/Tree-DAG_Node-1.09                [16:29]
+<john_doe_jr> jordanm: looks like it worked but I don't know where it output
+              it at
+<tadzik> dpkg -L libhtml-wikiconverter-perl                             [16:30]
+*** claes_ (~claes@c-302ee555.041-56-73746f10.cust.bredbandsbolaget.se) has
+    quit: Quit: claes_
+<john_doe_jr> jordanm: this is the script I'm trying to run:
+              http://pastie.org/5347836
+<john_doe_jr> any idea where the media wiki got sent to ?               [16:32]
+<jordanm> john_doe_jr: stdout
+*** claes_ (~claes@c-302ee555.041-56-73746f10.cust.bredbandsbolaget.se) has
+    joined channel #perl
+*** claes_ (~claes@c-302ee555.041-56-73746f10.cust.bredbandsbolaget.se) has
+    quit: Client Quit
+<john_doe_jr> jordanm: so I need to redirect it to a file right?
+*** TheJH (~TheJH@wikipedia/TheJH) has joined channel #perl
+<jordanm> john_doe_jr: ./yourscript < foo.html > file.out               [16:33]
+*** zellio (~zellio@128-122-170-180.DYNAPOOL.NYU.EDU) has quit: Quit: leaving
+                                                                        [16:34]
+* GumbyPAN CPAN Upload: CPAN-Perl-Releases-0.86 by BINGOS
+  http://metacpan.org/release/BINGOS/CPAN-Perl-Releases-0.86
+<john_doe_jr> jordanm: didn't work
+*** mdrd_ (~chatzilla@109.162.222.194) has joined channel #perl         [16:35]
+*** zellio (~zellio@128-122-170-180.DYNAPOOL.NYU.EDU) has joined channel #perl
+<jordanm> john_doe_jr: this channel is generally for programming help, not for
+          helping non-programmers run random code they found on the internet
+                                                                        [16:36]
+<john_doe_jr> jordanm: I know but I'm so close to getting this working
+<Su-Shee> ah well.. everybody thinks that. and then the other 80% start...
+                                                                        [16:37]
+<thrig> Zeno's Deadline
+*** mdrd (~chatzilla@176.31.9.158) has quit: Ping timeout: 246 seconds  [16:38]
+<tybalt89> 90% done, 90% to go  :)
+<john_doe_jr> jordanm: this is what it looks like now: $ perl html2mw.pl
+              /home/user/test.html /home/user/Desktop/file.outë°≠any idea what I
+              may be doing wrong?
+*** mdrd_ (~chatzilla@109.162.222.194) is now known as mdrd
+<jordanm> john_doe_jr: that doesn't look much like my example           [16:39]
+* rindolf wonders if this is perlsyntax's E-mail message -
+  http://mail.pm.org/pipermail/chicago-talk/2012-November/006279.html
+*** TheJH (~TheJH@wikipedia/TheJH) has quit: Read error: Connection reset by
+    peer
+<john_doe_jr> jordanm: well, u got the script
+*** s0ber (~s0ber@114-25-195-201.dynamic.hinet.net) has quit: Read error:
+    Connection reset by peer
+<jordanm> john_doe_jr: well, you were told its usage and ignored that   [16:40]
+<john_doe_jr> jordanm: Alright I'm trying ./yourscript < foo.html > file.out
+*** s0ber (~s0ber@114-36-236-249.dynamic.hinet.net) has joined channel #perl
+*** nyuszika7h (nyuszika7h@pdpc/supporter/active/nyuszika7h) has quit: Remote
+    host closed the connection                                          [16:43]
+*** mdrd_ (~chatzilla@109.162.223.223) has joined channel #perl
+*** nyuszika7h (nyuszika7h@pdpc/supporter/active/nyuszika7h) has joined
+    channel #perl                                                       [16:44]
+*** Khoyo_ (Roublard__@fsf/member/khoyo) is now known as Khoyo          [16:45]
+*** mdrd (~chatzilla@109.162.222.194) has quit: Ping timeout: 246 seconds
+*** mdrd_ (~chatzilla@109.162.223.223) is now known as mdrd
+<john_doe_jr> jordanm: Alright it creates the file.out but there's nothing in
+              it
+*** vitimiti (~BlackDrac@95.39.240.15) has quit: Quit: This fire shall redeem
+    your sins                                                           [16:46]
+*** fgomez (~Fernando@uws15288usr.uws.ualberta.ca) has joined channel #perl
+<jordanm> then i guess foo.html was empty or the script doesn't do what is
+          intended                                                      [16:47]
+*** looogsgd_ (~jasmine@mobile-198-228-210-231.mycingular.net) has joined
+    channel #perl
+*** vitimiti (~BlackDrac@95.39.240.15) has joined channel #perl         [16:48]
+*** unluckful (~unluckful@2001:468:d01:3c:21d:9ff:fe04:5066) is now known as
+    Unluckful|AFK
+<john_doe_jr> jordanm: nope the html wasn't empty                       [16:49]
+<john_doe_jr> jordanm: I know the script works b/c it's used all over the
+              internet
+*** looogsgd (~jasmine@adsl-71-141-95-142.dsl.snfc21.sbcglobal.net) has quit:
+    Ping timeout: 245 seconds
+*** looogsgd_ (~jasmine@mobile-198-228-210-231.mycingular.net) is now known as
+    looogsgd
+* GumbyPAN CPAN Upload: GraphViz-2.13 by RSAVAGE
+  http://metacpan.org/release/RSAVAGE/GraphViz-2.13
+<john_doe_jr> jordanm: plus it's outputting it to standard out b/c I see it on
+              the console                                               [16:50]
+<jordanm> then as the large community of users
+<jordanm> ask
+<john_doe_jr> jordanm: here's were I got the script:
+              http://meta.wikimedia.org/wiki/Help:WordToWiki
+*** mauke (~mauke@p3m/member/mauke) has quit: Remote host closed the
+    connection                                                          [16:51]
+*** Deck` (~hypo@95-37-68-221.dynamic.mts-nn.ru) has quit: Ping timeout: 276
+    seconds                                                             [16:54]
+<john_doe_jr> jordanm: well the script is printing $pë°≠.
+<Pizentios> w0000! i got a raise!
+*** haxrbyte_ (~haxrbyte@85.92.202.99) has quit: Ping timeout: 246 seconds
+<tadzik> congrats :)                                                    [16:55]
+<Pizentios> thanks :-)
+<Pizentios> $7 more an hour :-)
+<tadzik> I was upgraded from intern to regular programmer, I know the feeling
+         :)
+<Pizentios> nice
+<Pizentios> puts a big smile on my face that's for sure
+*** chrxn (~chrxn@216.228.241.140) has quit: Ping timeout: 264 seconds  [16:56]

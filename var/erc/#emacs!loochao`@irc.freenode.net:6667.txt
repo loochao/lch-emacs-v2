@@ -1,0 +1,89 @@
+
+[Thu Nov  8 2012]
+*** You have joined channel #emacs                                      [14:21]
+*** Topic for #emacs: Emacs users are like children; you can't just give them
+    what they want - it only encourages them. | Newcomers please read
+    http://www.emacswiki.org/EmacsChannel | Pastebin: http://paste.lisp.org |
+    No public logging! What happens in #emacs stays in #emacs | No sexism,
+    racism, mysogyny, etc.  No, not even if you're trying to be funny.
+*** #emacs: topic set by aidalgol!~user@114-134-9-209.rurallink.co.nz,
+    20:35:11 2012/11/06
+*** Users on #emacs: LooChao` thone kimimben35435435 aidalmobile dardevelin
+    Blkt weslen mishok13 sdemarre kilon Laynef_ daaku tech1_ cluck xinming
+    c0rn SlitazMint jordanm dnolen_ TheCrittaC LooChao it3ration robmyers
+    jxriddle Pythagoras sohail tgunr chrisb scroy kliph dragansah nullie
+    nicferrier Joreji enzuru piper PetrVod zellio amoe `youlysses
+    AdmiralBumbleBee kmels legumbre_ mahmoudimus fozzey fisted hiroaki__
+    gnuvince demolithion perezd boyd ahoops jlf dbeest anon4427
+*** Users on #emacs: hyperair jeansch dbristow aisbaa macrover kloeri gits1225
+    hdev kryl99 fayek pckt shadowdaemon zroth Hodapp two- jashank Vorpal isak
+    smazga daniel-s_ doomlord jgay hectorh30 elkng palomer mathrick tiwula
+    fsbot ananthakumaran scriptor _alejandro sheepbat dgvncsz0f peterhil`
+    wbooze jmolet hansy yakov felipealmeida sellout42 carif tensorpudding
+    pandeiro jgama cvandusen lduros kanru pmade crculver jweiss ArneBab
+    shergill jao kevinbenko jrm ashawley luxbock rgr
+*** Users on #emacs: nooy jcromartie fledermaus DT` nforgerit hjlee gusnan
+    kahen taylanub ivand Mon_Ouie quazimodo Kvaks Yuuhi Demosthenex morazow
+    jespada dankles axrfnu Silex i7c dgoon-tifa caveat- xxtjaxx GnarlyBob
+    legumbre thorkill KAction agumonkey wavekidsjp antoszka Houl cbpage
+    asmo_dasmo plotr stfacc Joelbyte wchun trebor_dki dathui benny DraX damd|
+    cornihilio kennyd progo saorge mag] Tegi theos classix hrehf dothebart
+    emilh pramatias cnl Boney jehan rdqfdx Tekk_`
+*** Users on #emacs: cortexman Bentbot forcer crdueck msx peterhil nelk
+    toroidalcode|OFF L0L0L0L0L jeffrubic karswell tbarletz scottj isomer
+    ndk-logbot fperrin wgreenhouse Krystof hiroaki Xnid_ musty jrockway
+    cthuluh talyz youlysse` hober jso-` jabot mrBliss broquaint MrTorque
+    Sonderblade barik unknown_lamer macrobat bipedman apo_ technomancy xristos
+    kiddy56842 mario-goulart remote Aoy_c calimocho inigo_ CrazyEddy robertJ
+    ice golodhrim mtk MouldyOldBones libertas surrounder
+*** Users on #emacs: RushPL Siphonblast ryanakca dajva lfazio tali713
+    bersace_olfeo ivan\ wagle kini ura Trademark91 SamB_MacG5 necronian
+    shifty`` dropdrive lloydhuang sanooj offby1 Dreadtower Pio eqyiel
+    Koshian__ mjc combataircraft rods nully futuro sorabji5252 raph_ael Myk267
+    function1 vbBZOWBTZTVU wolong anxt milkpost dooglus steggy wdouglas
+    Guest98759 elbeardmorez jandrusk konr_trab ecraven Amadiro AlexanderS zloy
+    balle redblue s15y1 optikalmouse Ender79 fg_ cyberspace-
+*** Users on #emacs: Guest65027 Dybber stokachu bob2 jlf_ mak favadi timvishe`
+    timvisher jhowarth PuffTheMagic NimeshNeema skangas anildigital_work
+    wilfredh bradwright thomases ArZa entropie ryanc nowhere_man_ mns cuba33ci
+    free` mefisto jasond froggey lazik Expez iderrick yhager murphy_ lnostdal
+    kanru` shimoco dizzylizzy avar Entroacceptor twobitsprite ldlework
+    banjiewen theBlackDragon Sembei teiresias b0ef` shader matthiasgorgens
+    monotux fmu _flow_ Quadrescence angelixd
+*** Users on #emacs: sshirokov scgilardi th0ma5 ChoHag gensym cmatei
+    justinweiss jaaso_ derrida zenwryly somasin_ dshep_ mstr Natch sajith
+    birkenfeld lightquake adammh jonwaltman Drakeson sanderd docgnome steez
+    NaCl turbofail synx bps elik prip_ Nebukadneza micro` jave aburgess
+    sybariten eosphoros ganbold TTilus Han dim heathjs ingenious reeses
+    quotemstr quicksilver basho puff Nafai Will| solarus renard_ Rapp barika
+    johnsu01 yonkeltron atrus setheus_ bpalmer emss jaimef
+*** Users on #emacs: mnemonikk quasisane tessier lahwran hgb rudybot ivan``
+    jlindsay jeekl Jonte Sketch asuka abeaumont dzho ivan korutsu- lateEven1ng
+    mfisher sm orospakr SpiderPig digie bobo_ nimred metasyntax vmeson Ottre
+    lenzoid bzzbzz Odin- fasta twem2 felipe_ YoungFrog hanDerPeder wapiflapi
+    Ulrar sepisult1um peder Seb drdo magnars srid shabble emacsnw vcgomes
+    gkeith_lt BlastHardcheese tils cods arkx hpd a00001 nephyrin ozzloy
+    jedediah Obfuscate andrzejsliwa cataska
+*** Users on #emacs: georgehank bigjust Buglouse nyergler aindilis _schulte_
+    dfox mattcen yhvh les mechairoi noptys jaredrhine fds binjured Raynes
+    qDot_ kordex swathe bla jayne qsun beneth` drewr bjonnh __main__ easye
+    gnomon grothendieck Dnumgis mowen ruediger literal_ framling sweet_kid
+    hiredman k-man z0d cbmuser paroneayea offbyone fhd heatxsink russm
+    aboudreault juri_ monolith muhoo ans hyperboreean bremner rson dubz andres
+    elarson faen tromey marienz terjesb __class__
+*** Users on #emacs: brendyn YokYok genehack cpt_nemo ok2 Dr_Jazz yazirian
+    nano- Bootvis Derander karbak k0ral tazle iiska hohum_ lorn jonasac anonus
+    mstevens xAFFE Urchin dueno ski txxt Jasper zw01 neurodamage mosu lokydor_
+    sav tg ext fschmitt fimblo rossabaker charlietanksley chewbranca hhuuggoo
+    qasi prebz rizumu Athas clop newcup birny tvaalen_ Hapsbanan daimrod
+    gianlucadv cmbntr_ rotty murr4y tychoish galdor maio sav1o antono Fuco
+    kodein aidy kenyon brainproxy netrom
+
+[Thu Nov  8 2012]
+<aidalmobile> I wouldn't recommend using it to learn Emacs, but it can be used
+              from within Emacs.                                        [14:21]
+*** technomancy (~technoman@ec2-107-22-118-185.compute-1.amazonaws.com) has
+    quit: Remote host closed the connection
+*** technomancy (~technoman@ec2-107-22-118-185.compute-1.amazonaws.com) has
+    quit: Remote host closed the connection
+*** #emacs modes: +np                                                   [14:22]

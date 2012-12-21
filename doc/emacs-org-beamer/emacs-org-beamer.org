@@ -1,0 +1,61 @@
+#+TITLE:     Chao's Beamer Template
+#+AUTHOR:    Chao LU
+#+EMAIL:     chaol@princeton.edu
+#+DATE:      2011-12-05 Mon
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+
+#+STARTUP: oddeven
+#+STARTUP: beamer
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [bigger, english, 10pt, presentation]
+#+LATEX_HEADER: \usepackage{loochao}
+#+BEAMER_FRAME_LEVEL: 3
+
+#+COLUMNS: %20ITEM %13BEAMER_env(Env) %6BEAMER_envargs(Args) %4BEAMER_col(Col) %7BEAMER_extra(Extra)
+
+* Introduction
+** Background
+*** Chalcogen elements
+*** Short-range order
+- medium-range order.
+*** Light induced phenomena
+*** Application
+** State of Art
+*** The problem we're facing
+*** What others do about it
+*** What's the solution from our group
+*** Spin coating difference
+* Preliminary Results
+** Theoretical (Volume expansion)
+*** Dipole interaction mode
+** Experimental (Change of index of refraction)
+*** Setup of the laser
+*** SEM image of As_2 S_3
+**** Org mode increases productivity                                           :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+    - org mode means not having to remember \LaTeX commands.
+    - it is based on ascii text which is inherently portable.
+    - Emacs!
+
+* Future Challenges
+*** Volume gratings
+*** Hologram
+*** Creating structure by light
+*** Confirming defeats
+* Backup slides
+*** Craig
+- Here's the problem we're dealing with.
+- Here how others
+
+
