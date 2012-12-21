@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Dec 21 12:53:10 2012
+;; Created Fri Dec 21 14:53:09 2012
 ;; Desktop file format version 206
 ;; Emacs version 24.3.50.1
 
@@ -13,16 +13,16 @@
 (setq search-ring '("hs" "bind" ".emacs.d" "caution" "w3m" "wory" "desktop" "publsih" "publish" "org-pub" "pub-" "org" "emacs-dir" "window" "auctex" "subdirs"))
 (setq regexp-search-ring '("ui" "conf" "modeline" "org" "export" "main" "sig" "sprintf" "eta" "sigma" "sprin" "p2" "ess" "pack" "find-file-hook" "include"))
 (setq register-alist (list (list 97 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/Dropbox/.emacs.d/var/.bm-repository" "~/Dropbox/.emacs.d/rc/lch-init.el" "~/Dropbox/.emacs.d/rc/dotEmacs" "~/Dropbox/.emacs.d/rc/lch-conf.el" "/home/loochao/Dropbox/.emacs.d/rc/lch-ui.el" "~/‘ÑÏ‘¸è‘Üß_‘Ò»‘¸ö‘Å®‘ÈË‘µÄ‘Ê·‘Ê«.txt" "~/Dropbox/Org/org/Archive/Research/Mica.org" "~/Dropbox/Org/org/Archive/Necbl.org" "~/Dropbox/Org/org/Archive/BBall.Team.Reimbursement.org" "~/Dropbox/Org/org/Culture/PU-MieJueShiTai.org" "~/Dropbox/Org/org/Culture/YuShan.org" "~/Dropbox/Org/org/History/No.CHN.After.Song.org" "~/Dropbox/Org/org/Physics/PU-MieJueShiTai.org" "~/Dropbox/Org/org/Physics/PKU-PHYNotes-Proverb.org" "~/Dropbox/Org/org/Physics/PKU-PHYNotes-Proverb (LCH-X61's conflicted copy 2011-03-01).org" "~/Dropbox/Org/org/Research/Laser.Startup.org" "~/Dropbox/Org/org/Research/Mica.org" "/Volumes/DATA/Dropbox/Org/public_html/Career.html" "/Volumes/DATA/Dropbox/Org/public_html/Humor.html" "/Volumes/DATA/Dropbox/Org/public_html/Life.html" "/Volumes/DATA/Dropbox/Org/public_html/Sitemap.html" "/Volumes/DATA/Dropbox/Org/public_html/Miscellaneous.html" "/Volumes/DATA/Dropbox/Org/public_html/Pearl.html" "/Volumes/DATA/Dropbox/Org/public_html/PhD-Thesis.html" "/Volumes/DATA/Dropbox/Org/public_html/Philosophy.html" "/Volumes/DATA/Dropbox/Org/public_html/iCount.html" "/Volumes/DATA/Dropbox/Org/public_html/iDea.html" "/Volumes/DATA/Dropbox/Org/public_html/iPU.html" "/Volumes/DATA/Dropbox/Org/public_html/iPrv.html" "/Volumes/DATA/Dropbox/Org/public_html/iStuff.html" "~/Dropbox/.emacs.d/rc/lch-org-export.el" "~/Dropbox/.emacs.d/rc/lch-org.el" "~/Dropbox/Org/org/index.org" "~/Dropbox/Org/org/iTHU.org"))
+(setq file-name-history '("~/Dropbox/.emacs.d/var/.bm-repository" "~/Dropbox/.emacs.d/rc/lch-startup.el" "~/Dropbox/.emacs.d/rc/lch-init.el" "~/Dropbox/.emacs.d/rc/dotEmacs" "~/Dropbox/.emacs.d/rc/lch-conf.el" "/home/loochao/Dropbox/.emacs.d/rc/lch-ui.el" "~/‘ÑÏ‘¸è‘Üß_‘Ò»‘¸ö‘Å®‘ÈË‘µÄ‘Ê·‘Ê«.txt" "~/Dropbox/Org/org/Archive/Research/Mica.org" "~/Dropbox/Org/org/Archive/Necbl.org" "~/Dropbox/Org/org/Archive/BBall.Team.Reimbursement.org" "~/Dropbox/Org/org/Culture/PU-MieJueShiTai.org" "~/Dropbox/Org/org/Culture/YuShan.org" "~/Dropbox/Org/org/History/No.CHN.After.Song.org" "~/Dropbox/Org/org/Physics/PU-MieJueShiTai.org" "~/Dropbox/Org/org/Physics/PKU-PHYNotes-Proverb.org" "~/Dropbox/Org/org/Physics/PKU-PHYNotes-Proverb (LCH-X61's conflicted copy 2011-03-01).org" "~/Dropbox/Org/org/Research/Laser.Startup.org" "~/Dropbox/Org/org/Research/Mica.org" "/Volumes/DATA/Dropbox/Org/public_html/Career.html" "/Volumes/DATA/Dropbox/Org/public_html/Humor.html" "/Volumes/DATA/Dropbox/Org/public_html/Life.html" "/Volumes/DATA/Dropbox/Org/public_html/Sitemap.html" "/Volumes/DATA/Dropbox/Org/public_html/Miscellaneous.html" "/Volumes/DATA/Dropbox/Org/public_html/Pearl.html" "/Volumes/DATA/Dropbox/Org/public_html/PhD-Thesis.html" "/Volumes/DATA/Dropbox/Org/public_html/Philosophy.html" "/Volumes/DATA/Dropbox/Org/public_html/iCount.html" "/Volumes/DATA/Dropbox/Org/public_html/iDea.html" "/Volumes/DATA/Dropbox/Org/public_html/iPU.html" "/Volumes/DATA/Dropbox/Org/public_html/iPrv.html" "/Volumes/DATA/Dropbox/Org/public_html/iStuff.html" "~/Dropbox/.emacs.d/rc/lch-org-export.el" "~/Dropbox/.emacs.d/rc/lch-org.el" "~/Dropbox/Org/org/index.org" "~/Dropbox/Org/org/iTHU.org"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/home/loochao/Dropbox/.emacs.d/rc/lch-conf.el"
-  "lch-conf.el"
+  "/home/loochao/Dropbox/.emacs.d/rc/lch-startup.el"
+  "lch-startup.el"
   'emacs-lisp-mode
   '(global-auto-revert-mode auto-complete-mode outline-minor-mode yas/minor-mode)
-  1194
-  '(1595 nil)
+  1113
+  '(nil nil)
   nil
   nil
   '((buffer-file-coding-system . utf-8-unix)))
@@ -32,19 +32,30 @@
   "rc"
   'dired-mode
   '(global-auto-revert-mode)
-  1471
+  4463
   '(1 nil)
   t
   '("/home/loochao/Dropbox/.emacs.d/rc/")
   nil)
 
 (desktop-create-buffer 206
+  "/home/loochao/Dropbox/.emacs.d/rc/lch-conf.el"
+  "lch-conf.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode auto-complete-mode outline-minor-mode yas/minor-mode)
+  1036
+  '(1595 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
   "/home/loochao/Dropbox/.emacs.d/rc/lch-ui.el"
   "lch-ui.el"
   'emacs-lisp-mode
   '(global-auto-revert-mode auto-complete-mode outline-minor-mode yas/minor-mode)
-  5545
-  '(2019 nil)
+  1429
+  '(1429 nil)
   nil
   nil
   '((buffer-file-coding-system . utf-8-unix)))

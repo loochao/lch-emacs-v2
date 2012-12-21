@@ -51,7 +51,7 @@
 (require 'lch-emms)
 (require 'lch-web)
 (require 'lch-auto-mode)
-(require 'lch-z-var)
+(require 'lch-var)
 (require 'lch-dired)
 (require 'lch-calendar)
 (require 'lch-shell)
