@@ -2,8 +2,8 @@
 ;; This file is generated automatically by emacs-w3m v1.4.437.
 
 (("Crash recovery sessions"
-  (20688 42667 545100)
-  (("about:" nil nil "About emacs-w3m") ("about:" (0) (("about:" (:title "About emacs-w3m") (0) :window-start 1 :position (1 . 0) :window-hscroll 0)) "About emacs-w3m") ("about:" (1) (("about:" (:title "About emacs-w3m") (0) :window-start 1 :position (1 . 0) :window-hscroll 0) ("about:" (:title "About emacs-w3m") (1) :window-start 1 :position (1 . 0) :window-hscroll 0)) "About emacs-w3m"))
+  (20691 50506 227167)
+  (("about:" nil nil "About emacs-w3m") ("about:" (0) (("about:" (:title "About emacs-w3m") (0) :window-start 1 :position (1 . 0) :window-hscroll 0)) "About emacs-w3m") ("http://www.princeton.edu/~chaol/" (1) (("about:" (:title "About emacs-w3m") (0) :window-start 1 :position (1 . 0) :window-hscroll 0) ("about:" (:title "About emacs-w3m") (1) :window-start 1 :position (0 . 0) :window-hscroll 0)) "LooChao' Notes"))
   nil)
  ("Automatic saved sessions-1"
   (20684 57763 620433)
