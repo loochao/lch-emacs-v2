@@ -1,23 +1,17 @@
 
 ;; ----- smex-history -----
 (
- save-buffer
- org-mode
- goto-line
- list-packages
- print-buffer
- view-mode
- comment-region
+ emacs-version
+ lch-modeline
+ cd
+ 5x5
+ arp
+ dbx
+ dig
 )
 
 ;; ----- smex-data -----
 (
- (comment-region . 1)
- (view-mode . 1)
- (print-buffer . 3)
- (list-packages . 1)
- (goto-line . 1)
- (org-goto . 1)
- (org-mode . 1)
- (save-buffer . 2)
+ (lch-modeline . 1)
+ (emacs-version . 1)
 )

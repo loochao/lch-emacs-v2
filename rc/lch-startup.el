@@ -39,8 +39,8 @@
    ;; (other-window 1)
    ;; (org-agenda nil "1")
    ;; (list-bookmarks)
-   ;; (set-frame-position (selected-frame) 0 0)
-   ;; (set-frame-size (selected-frame) 237 65)
+   (set-frame-position (selected-frame) 0 0)
+   (set-frame-size (selected-frame) 237 65)
    ;; (ansi-term "/bin/bash")  ;; load a shell
 
    (message "Emacs startup time: %d seconds."

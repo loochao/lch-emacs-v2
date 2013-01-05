@@ -1,46 +1,10 @@
-;;; Arjen
-(autoload 'color-theme-arjen "color-theme-arjen.el" "" t)
-(define-key global-map (kbd "<f11> <f3>") (lambda() (interactive) (color-theme-arjen) (lch-modeline) (message "color theme arjen selected")))
-;;; Tango
-(autoload 'color-theme-tango "color-theme-tango.el" "" t)
-(define-key global-map (kbd "<f11> <f4>") (lambda() (interactive) (color-theme-tango) (lch-modeline) (message "color theme tango selected")))
-;;; Tango2
-(autoload 'color-theme-tango2 "color-theme-tango2.el" "" t)
-(define-key global-map (kbd "<f11> <f5>") (lambda() (interactive) (color-theme-tango2) (lch-modeline) (message "color theme tango2 selected")))
-;;; railscasts
-(autoload 'color-theme-railscasts "color-theme-railscasts" "" t)
-(define-key global-map (kbd "<f11> <f6>") (lambda() (interactive) (color-theme-railscasts) (lch-modeline) (message "color theme railscast selected")))
-;;; Jimmy
-(autoload 'color-theme-jimmy "color-theme-jimmy.el" "Load color-theme-jimmy" t)
-(define-key global-map (kbd "<f11> <f7>") (lambda() (interactive) (color-theme-jimmy) (lch-modeline) (message "color theme jimmy selected")))
-;;; Zenburn
-(autoload 'color-theme-zenburn "color-theme-zenburn.el" "" t)
-(define-key global-map (kbd "<f11> <f8>") (lambda() (interactive) (color-theme-zenburn) (lch-modeline) (message "color theme zenburn selected")))
-;;; Tomorrow
-(require 'color-theme-tomorrow)
-(require 'color-theme-tomorrow-night)
-(define-key global-map (kbd "<f11> <f9>") (lambda() (interactive) (color-theme-tomorrow-night) (lch-modeline) (message "color theme tomorrow-night selected")))
-(require 'color-theme-tomorrow-night-eighties)
-(require 'color-theme-tomorrow-night-bright)
-(define-key global-map (kbd "<f11> <f10>") (lambda() (interactive) (color-theme-tomorrow-night-bright) (lch-modeline) (message "color theme tomorrow-night-bright selected")))
+(require 'color-theme)
 
-;;; Modeline
-(defun lch-modeline ()
-  (interactive)
-  (if lch-mac-p
-      (set-face-font 'modeline "-apple-Monaco-medium-normal-normal-*-18-*-*-*-m-0-fontset-startup")
-    (set-face-font 'modeline "-outline-Lucida Console-normal-normal-normal-mono-18-*-*-*-c-*-iso8859-1"))
-  (set-face-background 'modeline "DarkRed")
-  (set-face-foreground 'modeline "white")
-  )
-(define-key global-map (kbd "<f11> =") 'lch-modeline)
-
-;;; LCH
-(defun lch-color-theme ()
+(defun color-theme-loochao ()
   "Color theme by LooChao"
   (interactive)
   (color-theme-install
-   '(lch-color-theme
+   '(color-theme-loochao
      ((background-color . "black")
       (background-mode . dark)
       (border-color . "black")
@@ -51,7 +15,7 @@
      (modeline ((t (:background "DarkRed" :foreground "white" :box (:line-width 1 :style released-button)))))
      (modeline-mousable ((t (:background "DarkRed" :foreground "white"))))
      (modeline-mousable-minor-mode ((t (:background "DarkRed" :foreground "white"))))
-;     (mode-line-buffer-id ((t (:foreground "pink" :bold t))))
+     ;; (mode-line-buffer-id ((t (:foreground "pink" :bold t))))
      (mode-line-emphasis ((t (:foreground "#99ccff"))))
      (mode-line-highlight ((t (:foreground "#55ff55"))))
      (fringe ((t (:background "black"))))
@@ -97,7 +61,7 @@
      (dired-ignored ((t (:foreground "#555555"))))
      (dired-mark ((t (:foreground "#78a355"))))
      (dired-marked ((t (:background "#222222"))))
-;     (dired-perm-write ((t (:background "black" :foreground "#666699" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "outline" :family "Monaco"))))
+     ;; (dired-perm-write ((t (:background "black" :foreground "#666699" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "outline" :family "Monaco"))))
      (dired-symlink ((t (:foreground "#4682b4"))))
      (dired-warning ((t (:bold t :foreground "#ff6600" :weight bold))))
 
@@ -135,7 +99,7 @@
      (org-level-6 ((t (:foreground "#9651cc"))))
      (org-level-7 ((t (:foreground "#f3715c"))))
      (org-level-8 ((t (:foreground "#7ec0ee"))))
-;     (org-link ((t (:foreground "#cccccc" :underline t))))
+     ;; (org-link ((t (:foreground "#cccccc" :underline t))))
      (org-link ((t (:foreground "Cyan" :underline nil))))
      (org-meta-line ((t (:foreground "#95917e"))))
      (org-mode-line-clock ((t (nil))))
@@ -147,7 +111,7 @@
      (org-sexp-date ((t (:foreground "#50b7c1"))))
      (org-special-keyword ((t (:foreground "LightSalmon"))))
      (org-table ((t (:foreground "#555555"))))
-;     (org-tag ((t (:bold t :foreground "#55ff55" :weight bold))))
+     ;; (org-tag ((t (:bold t :foreground "#55ff55" :weight bold))))
      (org-target ((t (:underline t))))
      (org-time-grid ((t (:foreground "LightGoldenrod"))))
      (org-todo ((t (:bold t :foreground "#ff5555" :weight bold))))
@@ -229,16 +193,13 @@
      (speedbar-tag-face ((t (:foreground "yellow"))))
 
      (ido-first-match ((t (:foreground "pink"))))
-;     (ido-incomplete-regexp ((t (:bold t :foreground "#ff6600" :weight bold))))
+     ;; (ido-incomplete-regexp ((t (:bold t :foreground "#ff6600" :weight bold))))
      (ido-incomplete-regexp ((t (:bold t :foreground "SlateBlue" :weight bold))))
      (ido-indicator ((t (:background "red1" :foreground "yellow1" :width condensed))))
      (ido-only-match ((t (:foreground "SlateBlue"))))
      (ido-subdir ((t (:foreground "Peru"))) )
-
      )))
 
-;;; LOAD-COLOR-THEME
-(lch-color-theme)
-(lch-modeline)
-(define-key global-map (kbd "<f11> <f2>") (lambda() (interactive) (lch-color-theme) (lch-modeline) (message "color theme lch selected")))
+(provide 'color-theme-loochao)
 
+;;; color-theme-loochao.el ends here

@@ -110,7 +110,6 @@
 
 (load (concat emacs-dir "/rc/lch-env.el"))
 (require 'lch-conf)
-(require 'lch-z)
 ;; (require 'lch-startup)
 
 ;; CONF From Others

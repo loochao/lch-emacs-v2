@@ -11,8 +11,6 @@
 
 ;;; Commentary:
 
-;; Named as z-var, for it should be loaded at last.
-
 ;;; License:
 
 ;; This program is free software; you can redistribute it and/or
@@ -31,10 +29,10 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code
-;(setq emacs-dir "~/Dropbox/.emacs.d") -> dotEmacs
-;(setq emacs-var-dir "~/Dropbox/.emacs.d/var") -> dotEmacs
+;; (setq emacs-dir "~/Dropbox/.emacs.d") -> dotEmacs
+;; (setq emacs-var-dir "~/Dropbox/.emacs.d/var") -> dotEmacs
 
-;(setq semanticdb-default-save-directory "~/.emacs.d/.semantic")
+;; (setq semanticdb-default-save-directory "~/.emacs.d/.semantic")
 (setq tetris-score-file (concat emacs-var-dir "/tetris-scores"))
 (setq session-save-file (concat emacs-var-dir "/emacs-session"))
 ;(setq recentf-save-file (concat emacs-var-dir "/emacs-recentf")) => lch-org.el
@@ -49,4 +47,4 @@
 
 (setq diary-file (concat emacs-var-dir "/diary"))
 
-(provide 'lch-z-var)
+(provide 'lch-var)

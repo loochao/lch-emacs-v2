@@ -32,6 +32,56 @@
 
 ;;; Code
 (message "=> lch-ui-theme: loading...")
+
+(defvar emacs-theme-dir (concat emacs-lib-dir "/themes"))
+(add-to-list 'load-path emacs-theme-dir)
+(require 'color-theme)
+
+;;; Arjen
+(require 'color-theme-arjen)
+(define-key global-map (kbd "<f11> <f3>") (lambda() (interactive) (color-theme-arjen) (lch-modeline) (message "color theme arjen selected")))
+;;; Tango
+(require 'color-theme-tango)
+(define-key global-map (kbd "<f11> <f4>") (lambda() (interactive) (color-theme-tango) (lch-modeline) (message "color theme tango selected")))
+;;; Tango2
+(require 'color-theme-tango2)
+(define-key global-map (kbd "<f11> <f5>") (lambda() (interactive) (color-theme-tango2) (lch-modeline) (message "color theme tango2 selected")))
+;;; railscasts
+(require 'color-theme-railscasts)
+(define-key global-map (kbd "<f11> <f6>") (lambda() (interactive) (color-theme-railscasts) (lch-modeline) (message "color theme railscast selected")))
+;;; Jimmy
+(require 'color-theme-jimmy)
+(define-key global-map (kbd "<f11> <f7>") (lambda() (interactive) (color-theme-jimmy) (lch-modeline) (message "color theme jimmy selected")))
+;;; Zenburn
+(require 'color-theme-zenburn)
+(define-key global-map (kbd "<f11> <f8>") (lambda() (interactive) (color-theme-zenburn) (lch-modeline) (message "color theme zenburn selected")))
+;;; Tomorrow
+(require 'color-theme-tomorrow)
+(require 'color-theme-tomorrow-night)
+(define-key global-map (kbd "<f11> <f9>") (lambda() (interactive) (color-theme-tomorrow-night) (lch-modeline) (message "color theme tomorrow-night selected")))
+(require 'color-theme-tomorrow-night-eighties)
+(require 'color-theme-tomorrow-night-bright)
+(define-key global-map (kbd "<f11> <f10>") (lambda() (interactive) (color-theme-tomorrow-night-bright) (lch-modeline) (message "color theme tomorrow-night-bright selected")))
+
+;;; Modeline
+(defun lch-modeline ()
+  (interactive)
+  (if lch-mac-p
+      (set-face-font 'modeline "-apple-Monaco-medium-normal-normal-*-18-*-*-*-m-0-fontset-startup")
+    (set-face-font 'modeline "-outline-Lucida Console-normal-normal-normal-mono-18-*-*-*-c-*-iso8859-1"))
+  (set-face-background 'modeline "DarkRed")
+  (set-face-foreground 'modeline "white")
+  )
+(define-key global-map (kbd "<f11> =") 'lch-modeline)
+(lch-modeline)
+
+;;; Theme load
+(require 'color-theme-arjen)
+(color-theme-arjen)
+
+(require 'color-theme-loochao)
+(color-theme-loochao)
+
 (provide 'lch-ui-theme)
 (message "~~ lch-ui-theme: done.")
 ;;; Local Vars.

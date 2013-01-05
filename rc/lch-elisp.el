@@ -245,9 +245,9 @@
 
 ;;; Textmate
 ;; Works only for mac.
-(when lch-mac-p
-  (require 'textmate)
-  (textmate-mode))
+;; (when lch-mac-p
+;;  (require 'textmate)
+;;  (textmate-mode))
 
 
 ;;; Windmove

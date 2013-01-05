@@ -2,27 +2,27 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Dec 21 14:53:09 2012
+;; Created Sat Jan  5 01:02:44 2013
 ;; Desktop file format version 206
-;; Emacs version 24.3.50.1
+;; Emacs version 23.3.1
 
 ;; Global section:
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring '("hs" "bind" ".emacs.d" "caution" "w3m" "wory" "desktop" "publsih" "publish" "org-pub" "pub-" "org" "emacs-dir" "window" "auctex" "subdirs"))
-(setq regexp-search-ring '("ui" "conf" "modeline" "org" "export" "main" "sig" "sprintf" "eta" "sigma" "sprin" "p2" "ess" "pack" "find-file-hook" "include"))
+(setq regexp-search-ring '("sta" "font" "them" "lch-init" "lch-ui" "var" "ui" "conf" "modeline" "org" "export" "main" "sig" "sprintf" "eta" "sigma"))
 (setq register-alist (list (list 97 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/Dropbox/.emacs.d/var/.bm-repository" "~/Dropbox/.emacs.d/rc/lch-startup.el" "~/Dropbox/.emacs.d/rc/lch-init.el" "~/Dropbox/.emacs.d/rc/dotEmacs" "~/Dropbox/.emacs.d/rc/lch-conf.el" "/home/loochao/Dropbox/.emacs.d/rc/lch-ui.el" "~/‘ÑÏ‘¸è‘Üß_‘Ò»‘¸ö‘Å®‘ÈË‘µÄ‘Ê·‘Ê«.txt" "~/Dropbox/Org/org/Archive/Research/Mica.org" "~/Dropbox/Org/org/Archive/Necbl.org" "~/Dropbox/Org/org/Archive/BBall.Team.Reimbursement.org" "~/Dropbox/Org/org/Culture/PU-MieJueShiTai.org" "~/Dropbox/Org/org/Culture/YuShan.org" "~/Dropbox/Org/org/History/No.CHN.After.Song.org" "~/Dropbox/Org/org/Physics/PU-MieJueShiTai.org" "~/Dropbox/Org/org/Physics/PKU-PHYNotes-Proverb.org" "~/Dropbox/Org/org/Physics/PKU-PHYNotes-Proverb (LCH-X61's conflicted copy 2011-03-01).org" "~/Dropbox/Org/org/Research/Laser.Startup.org" "~/Dropbox/Org/org/Research/Mica.org" "/Volumes/DATA/Dropbox/Org/public_html/Career.html" "/Volumes/DATA/Dropbox/Org/public_html/Humor.html" "/Volumes/DATA/Dropbox/Org/public_html/Life.html" "/Volumes/DATA/Dropbox/Org/public_html/Sitemap.html" "/Volumes/DATA/Dropbox/Org/public_html/Miscellaneous.html" "/Volumes/DATA/Dropbox/Org/public_html/Pearl.html" "/Volumes/DATA/Dropbox/Org/public_html/PhD-Thesis.html" "/Volumes/DATA/Dropbox/Org/public_html/Philosophy.html" "/Volumes/DATA/Dropbox/Org/public_html/iCount.html" "/Volumes/DATA/Dropbox/Org/public_html/iDea.html" "/Volumes/DATA/Dropbox/Org/public_html/iPU.html" "/Volumes/DATA/Dropbox/Org/public_html/iPrv.html" "/Volumes/DATA/Dropbox/Org/public_html/iStuff.html" "~/Dropbox/.emacs.d/rc/lch-org-export.el" "~/Dropbox/.emacs.d/rc/lch-org.el" "~/Dropbox/Org/org/index.org" "~/Dropbox/Org/org/iTHU.org"))
+(setq file-name-history '("~/Dropbox/.emacs.d/var/.bm-repository" "~/Dropbox/.emacs.d/rc/lch-startup.el" "~/Dropbox/.emacs.d/rc/lch-ui.el" "~/Dropbox/.emacs.d/rc/lch-init.el" "~/Dropbox/.emacs.d/rc/lch-init.el_archive" "~/Dropbox/.emacs.d/rc/lch-ui.el.bak" "~/Dropbox/.emacs.d/rc/lch-ui.el_archive" "~/Dropbox/.emacs.d/site-lisp/color-theme/themes/color-theme-loochao.el" "~/Dropbox/.emacs.d/site-lisp/color-theme/themes/color-theme-arjen.el" "~/Dropbox/.emacs.d/rc/lch-ui-theme.el_archive" "~/Dropbox/.emacs.d/rc/lch-ui-theme.el" "~/Dropbox/.emacs.d/rc/dotEmacs" "~/Dropbox/.emacs.d/rc/lch-env.el" "~/Dropbox/.emacs.d/rc/lch-var.el" "~/Dropbox/.emacs.d/rc/lch-conf.el" "~/Dropbox/.emacs.d/rc/lch-startup.el" "/home/loochao/Dropbox/.emacs.d/rc/lch-ui.el" "~/‘ÑÏ‘¸è‘Üß_‘Ò»‘¸ö‘Å®‘ÈË‘µÄ‘Ê·‘Ê«.txt" "~/Dropbox/Org/org/Archive/Research/Mica.org" "~/Dropbox/Org/org/Archive/Necbl.org" "~/Dropbox/Org/org/Archive/BBall.Team.Reimbursement.org" "~/Dropbox/Org/org/Culture/PU-MieJueShiTai.org" "~/Dropbox/Org/org/Culture/YuShan.org" "~/Dropbox/Org/org/History/No.CHN.After.Song.org" "~/Dropbox/Org/org/Physics/PU-MieJueShiTai.org" "~/Dropbox/Org/org/Physics/PKU-PHYNotes-Proverb.org" "~/Dropbox/Org/org/Physics/PKU-PHYNotes-Proverb (LCH-X61's conflicted copy 2011-03-01).org" "~/Dropbox/Org/org/Research/Laser.Startup.org" "~/Dropbox/Org/org/Research/Mica.org" "/Volumes/DATA/Dropbox/Org/public_html/Career.html" "/Volumes/DATA/Dropbox/Org/public_html/Humor.html" "/Volumes/DATA/Dropbox/Org/public_html/Life.html" "/Volumes/DATA/Dropbox/Org/public_html/Sitemap.html"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/home/loochao/Dropbox/.emacs.d/rc/lch-startup.el"
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-startup.el"
   "lch-startup.el"
   'emacs-lisp-mode
-  '(global-auto-revert-mode auto-complete-mode outline-minor-mode yas/minor-mode)
-  1113
-  '(nil nil)
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  1368
+  '(1279 nil)
   nil
   nil
   '((buffer-file-coding-system . utf-8-unix)))
@@ -31,43 +31,197 @@
   nil
   "rc"
   'dired-mode
-  '(global-auto-revert-mode)
-  4463
+  '(global-auto-revert-mode highlight-parentheses-mode textmate-mode)
+  4611
   '(1 nil)
   t
-  '("/home/loochao/Dropbox/.emacs.d/rc/")
+  '("/Users/LooChao/Dropbox/.emacs.d/rc/")
   nil)
 
 (desktop-create-buffer 206
-  "/home/loochao/Dropbox/.emacs.d/rc/lch-conf.el"
-  "lch-conf.el"
-  'emacs-lisp-mode
-  '(global-auto-revert-mode auto-complete-mode outline-minor-mode yas/minor-mode)
-  1036
-  '(1595 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix)))
-
-(desktop-create-buffer 206
-  "/home/loochao/Dropbox/.emacs.d/rc/lch-ui.el"
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-ui.el"
   "lch-ui.el"
   'emacs-lisp-mode
-  '(global-auto-revert-mode auto-complete-mode outline-minor-mode yas/minor-mode)
-  1429
-  '(1429 nil)
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-ui.el_archive"
+  "lch-ui.el_archive"
+  'fundamental-mode
+  '(global-auto-revert-mode highlight-parentheses-mode textmate-mode)
+  1014
+  '(3798 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-emacs-unix)))
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-init.el"
+  "lch-init.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  7525
+  '(13994 nil)
+  nil
+  nil
+  '((indicate-buffer-boundaries . t) (tab-width . 8) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-init.el_archive"
+  "lch-init.el_archive"
+  'fundamental-mode
+  '(global-auto-revert-mode highlight-parentheses-mode textmate-mode)
+  1
+  '(1 nil)
   nil
   nil
   '((buffer-file-coding-system . utf-8-unix)))
 
 (desktop-create-buffer 206
-  "/home/loochao/Dropbox/.emacs.d/rc/dotEmacs"
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-ui-theme.el"
+  "lch-ui-theme.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  3324
+  '(3275 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/site-lisp/color-theme/themes/color-theme-loochao.el"
+  "color-theme-loochao.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  11985
+  '(12010 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/site-lisp/color-theme/themes/color-theme-arjen.el"
+  "color-theme-arjen.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  14304
+  '(14270 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "themes"
+  'dired-mode
+  '(global-auto-revert-mode highlight-parentheses-mode textmate-mode)
+  134
+  '(nil nil)
+  t
+  '("/Users/LooChao/Dropbox/.emacs.d/site-lisp/color-theme/themes/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "lch-package"
+  'dired-mode
+  '(global-auto-revert-mode highlight-parentheses-mode textmate-mode)
+  125
+  '(nil nil)
+  t
+  '("/Users/LooChao/Dropbox/.emacs.d/site-lisp/lch-package/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-ui-theme.el_archive"
+  "lch-ui-theme.el_archive"
+  'fundamental-mode
+  '(global-auto-revert-mode highlight-parentheses-mode textmate-mode)
+  14222
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/rc/dotEmacs"
   "dotEmacs"
   'emacs-lisp-mode
-  '(global-auto-revert-mode auto-complete-mode outline-minor-mode yas/minor-mode)
-  4245
-  '(2187 nil)
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  3594
+  '(3594 nil)
   nil
   nil
-  '((buffer-file-coding-system . utf-8) (overwrite-mode)))
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-env.el"
+  "lch-env.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  1675
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-conf.el"
+  "lch-conf.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode dired-omit-mode)
+  2084
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "Camera Uploads"
+  'dired-mode
+  '(global-auto-revert-mode highlight-parentheses-mode textmate-mode)
+  115
+  '(nil nil)
+  t
+  '("/Users/LooChao/Dropbox/Camera Uploads/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "LooChao"
+  'dired-mode
+  '(global-auto-revert-mode highlight-parentheses-mode textmate-mode)
+  86
+  '(nil nil)
+  t
+  '("/Users/LooChao/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/rc/lch-var.el"
+  "lch-var.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  252
+  '(252 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/LooChao/Dropbox/.emacs.d/site-lisp/textmate/textmate.el"
+  "textmate.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode textmate-mode outline-minor-mode yas/minor-mode)
+  18925
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
 
