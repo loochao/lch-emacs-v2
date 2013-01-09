@@ -35,90 +35,50 @@
 ;;; (info "(emacs)Customization")
 (message "=> lch-init: loading...")
 
+;;; (info "(emacs)Kill Ring")
+;; auto-indent pasted code
+(defadvice yank (after indent-region activate)
+  (if (member major-mode
+              '(emacs-lisp-mode scheme-mode lisp-mode c-mode c++-mode
+                                objc-mode latex-mode plain-tex-mode python-mode))
+      (indent-region (region-beginning) (region-end) nil)))
+
+(defadvice yank-pop (after indent-region activate)
+  (if (member major-mode
+              '(emacs-lisp-mode scheme-mode lisp-mode c-mode c++-mode
+                                objc-mode latex-mode plain-tex-mode python-mode))
+      (indent-region (region-beginning) (region-end) nil)))
+
 ;;; Customization
 (setq enable-local-eval t
+      redisplay-dont-pause t
+      delete-by-moving-to-trash nil
+      confirm-nonexistent-file-or-buffer nil
       modeline-click-swaps-buffers t
       undo-limit 100000
       blink-matching-paren-distance 32768
       tab-width 8
       read-file-name-completion-ignore-case t
       completion-ignore-case t
-      message-log-max t                 ;; Don't truncate the message log buffer when it becomes large
-      indicate-buffer-boundaries t      ;; visually indicate buffer boundaries and scrolling
-      inhibit-startup-message t         ;; No splash screen please ... jeez
-      mark-ring-max 200                 ;; # of marks kept in the mark ring.
-      enable-recursive-minibuffers t    ;; Allow recursive minibuffer ops.
-      scroll-step 1                     ;;  Move down 1 line instead of multi.
+      message-log-max t                 ; Don't truncate the message log buffer when it becomes large
+      indicate-buffer-boundaries t      ; ?? visually indicate buffer boundaries and scrolling
+      inhibit-startup-message t         ; No splash screen please ... jeez
+      mark-ring-max 200                 ; # of marks kept in the mark ring.
+      enable-recursive-minibuffers t    ; Allow recursive minibuffer ops.
+      scroll-step 1                     ; Move down 1 line instead of multi.
       scroll-conservatively 10000
       scroll-preserve-screen-position 1
-      next-line-add-newlines nil        ;; Don't add newlines at the end.
-      message-log-max 500               ;; Show lots of *message*.
-     ;kill-whole-line t                 ;; Remove the newlines as well.
+      next-line-add-newlines nil        ; Don't add newlines at the end.
+      message-log-max 500               ; Show lots of *message*.
+                                        ;kill-whole-line t                 ; Remove the newlines as well.
       )
 
-;; Auto refresh buffers
-(global-auto-revert-mode 1)
-
-;; Mouse Jump away
-(mouse-avoidance-mode 'animate)
-;; (mouse-avoidance-mode 'jump)
-
-;; 'y' for 'yes', 'n' for 'no'
-(fset 'yes-or-no-p 'y-or-n-p)
-
-;; Don't beep at me
-(setq visible-bell t)
-
-;; Alter the scratch message
-(setq initial-scratch-message "")
-;; (setq initial-scratch-message "Welcome to the world of Emacs")
-
-;; Display picture
-(auto-image-file-mode)
-
-;;; Run at full power please
-(put 'upcase-region    'disabled nil)
-(put 'downcase-region  'disabled nil)
-(put 'overwrite-mode   'disabled t)
-(put 'narrow-to-page   'disabled nil)
-(put 'narrow-to-region 'disabled nil)
-(put 'erase-buffer 'disabled nil)
-
-;; Turn on all the disabled functions
-(setq disabled-command-function nil)
-
-;;; Backup
-(setq make-backup-files t
-      version-control t
-      kept-old-versions 2
-      kept-new-versions 5
-      delete-old-versions t
-      backup-by-copying t
-      backup-by-copying-when-linked t
-      backup-by-copying-when-mismatch t)
-
-;; Backup path
-(setq backup-directory-alist '(("" . "~/.emacs.var/backup")))
-
-;; Don't make backup files
-;;(setq make-backup-files nil backup-inhibited t)
-
-;;; Auto compile el files
-(defun elisp-compile-hook ()
- (add-hook 'after-save-hook (lambda () (byte-compile-file (buffer-file-name
-(current-buffer)))) nil t))
-(add-hook 'emacs-lisp-mode-hook 'elisp-compile-hook)
-
-;;; User info
-(setq user-full-name "LooChao<LooChao@gmail.com>")
-(setq user-mail-address "LooChao@gmail.com")
-
 ;; Show me empty lines after buffer end
-;(set-default 'indicate-empty-lines t)
+                                        ;(set-default 'indicate-empty-lines t)
 
 (setq sentence-end "\\([。！？。！？]\\|……\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
 
-;(setq safe-local-variable-values (quote ((unibyte . t) (flyspell-mode . -1) (allout-layout * 0 :))))
+                                        ;(setq safe-local-variable-values (quote ((unibyte . t) (flyspell-mode . -1) (allout-layout * 0 :))))
 
 (setq tab-stop-list
       (quote (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60
@@ -126,17 +86,28 @@
 
 ;; Trailing whitespace is unnecessary
 ;; (add-hook 'before-save-hook (lambda () (delete-trailing-whitespace)))
+;; remove all trailing whitespace and trailing blank lines before
+;; saving the file
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;; Default major mode for new buffers and any files with unspecified mode
 (when (locate-library "org.el")
-     (setq-default major-mode 'org-mode))
+  (setq-default major-mode 'org-mode))
+
+;; Auto refresh buffers
+(global-auto-revert-mode 1)
 
 ;; Also auto refresh dired, but be quiet about it
 (setq global-auto-revert-non-file-buffers t)
 (setq auto-revert-verbose nil)
 
 ;; Show keystrokes in progress
-(setq echo-keystrokes 0.1)
+(setq echo-keystrokes 0.02)
+
+;; Enable winner mode for C-c-(<left>|<right>) to navigate the history
+;; of buffer changes i.e. undo a split screen
+(when (fboundp 'winner-mode)
+  (winner-mode t))
 
 ;;; Info directory
 ;; FIXME
@@ -160,7 +131,7 @@
 ;;; Set default browser
 (setq browse-url-browser-function 'browse-url-firefox)
 
-;(setq left-fringe-width 12)
+                                        ;(setq left-fringe-width 12)
 
 
 ;;; Minibuffer
@@ -179,8 +150,25 @@
 ;; (which is determined by the variables `resize-mini-windows' and
 ;; `max-mini-window-height'), it is shown in echo area."
 
+
+;;; Mouse Jump away
+(mouse-avoidance-mode 'animate)
+                                        ;(mouse-avoidance-mode 'jump)
+
+
+;;; Run at full power please
+(put 'upcase-region    'disabled nil)
+(put 'downcase-region  'disabled nil)
+(put 'overwrite-mode   'disabled t)
+(put 'narrow-to-page   'disabled nil)
+(put 'narrow-to-region 'disabled nil)
+
+;;; Turn on all the disabled functions
+(setq disabled-command-function nil)
+
+
 ;;; Display page delimiter ^L as a horizontal line
-;(aset standard-display-table ?\^L (vconcat (make-vector 64 ?-) "^L"))
+                                        ;(aset standard-display-table ?\^L (vconcat (make-vector 64 ?-) "^L"))
 
 ;;; Death to the tabs!
 (setq-default indent-tabs-mode nil)
@@ -191,13 +179,23 @@
 (add-hook 'write-file-hooks
           (lambda () (if (not indent-tabs-mode)
                          (untabify (point-min) (point-max)))))
-;; No ring no screen shaking.
-;(setq ring-bell-function 'ignore)
+
+;;; 'y' for 'yes', 'n' for 'no'
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;;; Alter the scratch message
+(setq initial-scratch-message "")
+                                        ;(setq initial-scratch-message "Welcome to the world of Emacs")
+
+
+;;; Don't beep at me
+(setq visible-bell t)
+                                        ;>~ No ring no screen shaking.
+                                        ;(setq ring-bell-function 'ignore)
 
 
 ;;; Line trancation enable
 (setq truncate-partial-width-windows nil)
-
 
 ;;; Display column & line number
 (when (fboundp 'line-number-mode)
@@ -207,14 +205,14 @@
 
 ;;; Time stamp support
 ;; when there's "Time-stamp: <>" in the first 10 lines of the file
-;; (setq time-stamp-active t
-;;      time-stamp-warn-inactive t
+(setq time-stamp-active t
+      time-stamp-warn-inactive t
       ;; check first 10 buffer lines for Time-stamp: <>
-;;      time-stamp-line-limit 10
-;;      time-stamp-format "%04y-%02m-%02d %02H:%02M:%02S (%u)") ; date format
-;; (add-hook 'write-file-hooks 'time-stamp) ; update when saving
+      time-stamp-line-limit 10
+      time-stamp-format "%04y-%02m-%02d %02H:%02M:%02S (%u)") ; date format
+(add-hook 'write-file-hooks 'time-stamp) ; update when saving
 
-;(setq time-stamp-format "%:y-%02m-%02d %02H:%02M:%02S Lu Chao")
+                                        ;(setq time-stamp-format "%:y-%02m-%02d %02H:%02M:%02S Lu Chao")
 
 ;;; New line
 ;; Interchange these two keys.
@@ -224,12 +222,14 @@
 
 
 ;;; Directly delete current line
-;(define-key global-map (kbd "C-k") 'kill-whole-line)
+                                        ;(define-key global-map (kbd "C-k") 'kill-whole-line)
 
 ;;; Set default major mode org-mode
 ;; Enabled in Org-mode
-;(setq major-mode 'org-mode)
+                                        ;(setq major-mode 'org-mode)
 
+;;; Display picture
+(auto-image-file-mode)
 
 ;;; Grammar highlight
 ;; Significant functionality depends on font-locking being active.
@@ -269,18 +269,36 @@
 ;;; Delete the selection with a keypress
 ;; Remove text in active region if inserting text
 (delete-selection-mode 1)
+
+;;; Enable some function
+(put 'narrow-to-region 'disabled nil)
+(put 'erase-buffer 'disabled nil)
 
 
+;;; Backup policies
+(setq make-backup-files t
+      version-control t
+      kept-old-versions 2
+      kept-new-versions 5
+      delete-old-versions t
+      backup-by-copying t
+      backup-by-copying-when-linked t
+      backup-by-copying-when-mismatch t)
+
+;; Backup path
+(setq backup-directory-alist '(("" . "~/.emacs.var/backup")))
+;; Don't make backup files
+                                        ;(setq make-backup-files nil backup-inhibited t)
 
 
 ;;; Diary file
-;(setq diary-file "~/.emacs.var/.diary")
-;(add-hook 'diary-hook 'appt-make-list)
-;(setq diary-mail-addr "loochao@gmail.com")
+                                        ;(setq diary-file "~/.emacs.var/.diary")
+                                        ;(add-hook 'diary-hook 'appt-make-list)
+                                        ;(setq diary-mail-addr "loochao@gmail.com")
 
 ;;; Auto fill
 ;; Turn on auto-fill mode for all major modes
-;(setq-default auto-fill-function 'do-auto-fill)
+                                        ;(setq-default auto-fill-function 'do-auto-fill)
 ;; Lines should be 80 characters wide, not 72
 (setq fill-column 80)
 ;; Automatically turn on auto-fill-mode when editing text files
@@ -305,13 +323,19 @@
   )
 (define-key global-map (kbd "C-c ^") 'lch-toggle-line-wrapping)
 
-;; (defun byte-recompile-directory-all (bytecomp-directory &optional bytecomp-force)
-;;   (interactive "DByte recompile directory: ")
-;;   (byte-recompile-directory bytecomp-directory 0 bytecomp-force))
+;;; Auto compile el files
+;; (defun elisp-compile-hook ()
+;;   (add-hook 'after-save-hook (lambda () (byte-compile-file (buffer-file-name
+;;                                                             (current-buffer)))) nil t))
+;; (add-hook 'emacs-lisp-mode-hook 'elisp-compile-hook)
 
-;; (defun byte-recompile-special-directory (&optional bytecomp-force)
-;;   (interactive)
-;;   (byte-recompile-directory "~/.emacs.d/rc" 0 bytecomp-force))
+(defun byte-recompile-directory-all (bytecomp-directory &optional bytecomp-force)
+  (interactive "DByte recompile directory: ")
+  (byte-recompile-directory bytecomp-directory 0 bytecomp-force))
+
+(defun byte-recompile-special-directory (&optional bytecomp-force)
+  (interactive)
+  (byte-recompile-directory "~/.emacs.d/rc" 0 bytecomp-force))
 
 
 ;;; Aliases
@@ -353,8 +377,8 @@
         (ispell-mode . t)
         (byte-compile . nil)
         (auto-compile-lisp . nil)
-        ;; (org-export-latex-title-command . "\\maketitle[logo=Forem]")
-      ))
+                                        ;        (org-export-latex-title-command . "\\maketitle[logo=Forem]")
+        ))
 
 
 ;;; Hippie expand is dabbrev expand on steroids
@@ -386,11 +410,13 @@
 ;;         try-expand-line
 ;;      try-expand-line-all-buffers))
 
-
+;;; User info
+(setq user-full-name "LooChao<LooChao@gmail.com>")
+(setq user-mail-address "LooChao@gmail.com")
 
 
 ;;; Grep & find
-;; (info "(emacs)Dired and Find")
+                                        ;- (info "(emacs)Dired and Find")
 ;; Search for files with names matching a wild card pattern and Dired the output
 (define-key global-map (kbd "C-c 1") 'find-name-dired)
 
@@ -410,7 +436,7 @@
                            (let ((buffer-file-name (buffer-name))))
                            (set-auto-mode)))
 ;;; Auto save files in one place
-;; Put autosave files (i.e. #foo#) in one place, *NOT*
+                                        ;- Put autosave files (i.e. #foo#) in one place, *NOT*
 ;; scattered all over the file system!
 
 ;; auto-save every 100 input events
@@ -420,7 +446,7 @@
 (setq auto-save-timeout 15)
 
 (defvar autosave-dir
- (concat emacs-var-dir (user-login-name) "/"))
+  (concat "~/.emacs.var/auto-save-list/" (user-login-name) "/"))
 (make-directory autosave-dir t)
 
 (defun auto-save-file-name-p (filename)
@@ -428,30 +454,14 @@
 
 (defun make-auto-save-file-name ()
   (concat autosave-dir
-   (if buffer-file-name
-      (concat "#" (file-name-nondirectory buffer-file-name) "#")
-    (expand-file-name
-     (concat "#%" (buffer-name) "#")))))
-     
-;;; auto-indent pasted code
-;; (info "(emacs)Kill Ring")
-(defadvice yank (after indent-region activate)
-  (if (member major-mode
-              '(emacs-lisp-mode scheme-mode lisp-mode c-mode c++-mode
-				objc-mode latex-mode plain-tex-mode python-mode))
-      (indent-region (region-beginning) (region-end) nil)))
-
-(defadvice yank-pop (after indent-region activate)
-  (if (member major-mode
-              '(emacs-lisp-mode scheme-mode lisp-mode c-mode c++-mode
-				objc-mode latex-mode plain-tex-mode python-mode))
-      (indent-region (region-beginning) (region-end) nil)))
-
-
+          (if buffer-file-name
+              (concat "#" (file-name-nondirectory buffer-file-name) "#")
+            (expand-file-name
+             (concat "#%" (buffer-name) "#")))))
 
 (provide 'lch-init)
 (message "~~ lch-init: done.")
-
+
 ;;; Local Vars
 ;; Local Variables:
 ;; mode: emacs-lisp

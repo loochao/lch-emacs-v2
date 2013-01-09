@@ -33,14 +33,29 @@
 ;;; Code
 (message "=> lch-ui: loading...")
 
+;;; Mouse
+;; Mouse in terminal
+(require 'mouse)
+
+(xterm-mouse-mode t)
+(setq mouse-yank-at-point t)
+
+(global-set-key [mouse-4] '(lambda ()
+                             (interactive)
+                             (scroll-down 1)))
+
+(global-set-key [mouse-5] '(lambda ()
+                             (interactive)
+                             (scroll-up 1)))
+
 ;;; Frame parameters
 (setq default-frame-alist
       (append
        '(
-	 (default-fringes-outside-margins . 1)
-	 (default-left-fringe-width . 12)
-	 (default-left-margin-width . 14)
-	 (cursor-color . "sienna1")
+         (default-fringes-outside-margins . 1)
+         (default-left-fringe-width . 12)
+         (default-left-margin-width . 14)
+         (cursor-color . "sienna1")
          ;; (background-color . "Black")
          ;; (foreground-color . "moccasin")
          ;; (top . 42)
@@ -366,7 +381,7 @@ Return a list of one element based on major mode."
   (interactive "p")
   (let (colorList colorToUse currentState nextState)
     (setq colorList (list
-		     "MistyRose3"  "Wheat3" "Wheat2" "OliveDrab" "YellowGreen"))
+                     "MistyRose3"  "Wheat3" "Wheat2" "OliveDrab" "YellowGreen"))
     (setq currentState (if (get 'lch-cycle-fg-color 'state) (get 'lch-cycle-fg-color 'state) 0))
     (setq nextState (% (+ currentState (length colorList) num) (length colorList)))
     (setq colorToUse (nth nextState colorList))
@@ -398,7 +413,7 @@ See `cycle-color'."
   (interactive "p")
   (let (colorList colorToUse currentState nextState)
     (setq colorList (list
-		     "Black" "DarkSlateGray"))
+                     "Black" "DarkSlateGray"))
     (setq currentState (if (get 'lch-cycle-bg-color 'state) (get 'lch-cycle-bg-color 'state) 0))
     (setq nextState (% (+ currentState (length colorList) num) (length colorList)))
     (setq colorToUse (nth nextState colorList))
@@ -437,14 +452,14 @@ Warning: tested on Windows Vista only."
   ;; this function sets a property ¡°state¡±. It is a integer. Possible values are any index to the fontList.
   (let (fontList fontToUse currentState nextState )
     (setq fontList (list
-		    "-outline-Lucida Console-normal-normal-normal-mono-18-*-*-*-c-*-iso8859-1"
-		    "-outline-Lucida Console-normal-normal-normal-mono-21-*-*-*-c-*-iso8859-1"
-		    "-outline-Lucida Console-normal-normal-normal-mono-24-*-*-*-c-*-iso8859-1"
-		    "-outline-Monaco-normal-normal-normal-mono-18-*-*-*-c-*-iso8859-1"
-		    "-outline-Monaco-normal-normal-normal-mono-21-*-*-*-c-*-iso8859-1"
-		    "-outline-Monaco-normal-normal-normal-mono-24-*-*-*-c-*-iso8859-1"
-;		    "-*-Courier New-normal-r-*-*-24-112-96-96-c-*-iso8859-1"
-;		    "-outline-Lucida Sans Unicode-normal-normal-normal-sans-24-*-*-*-p-*-iso8859-1"
+                    "-outline-Lucida Console-normal-normal-normal-mono-18-*-*-*-c-*-iso8859-1"
+                    "-outline-Lucida Console-normal-normal-normal-mono-21-*-*-*-c-*-iso8859-1"
+                    "-outline-Lucida Console-normal-normal-normal-mono-24-*-*-*-c-*-iso8859-1"
+                    "-outline-Monaco-normal-normal-normal-mono-18-*-*-*-c-*-iso8859-1"
+                    "-outline-Monaco-normal-normal-normal-mono-21-*-*-*-c-*-iso8859-1"
+                    "-outline-Monaco-normal-normal-normal-mono-24-*-*-*-c-*-iso8859-1"
+;                   "-*-Courier New-normal-r-*-*-24-112-96-96-c-*-iso8859-1"
+;                   "-outline-Lucida Sans Unicode-normal-normal-normal-sans-24-*-*-*-p-*-iso8859-1"
                     ))
     ;; fixed-width "Courier New" "Unifont"  "FixedsysTTF" "Miriam Fixed" "Lucida Console" "Lucida Sans Typewriter"
     ;; variable-width "Code2000"

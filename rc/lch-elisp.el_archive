@@ -1,0 +1,4 @@
+;;; Volatile-highlights
+;; Conflict with M-x shell
+(require 'volatile-highlights)
+(volatile-highlights-mode t)

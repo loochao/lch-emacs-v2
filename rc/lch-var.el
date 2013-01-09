@@ -35,8 +35,8 @@
 ;; (setq semanticdb-default-save-directory "~/.emacs.d/.semantic")
 (setq tetris-score-file (concat emacs-var-dir "/tetris-scores"))
 (setq session-save-file (concat emacs-var-dir "/emacs-session"))
-;(setq recentf-save-file (concat emacs-var-dir "/emacs-recentf")) => lch-org.el
-;(setq ido-save-directory-list-file (concat emacs-var-dir "/emacs-ido-last")) => lch-elisp.el
+;; (setq recentf-save-file (concat emacs-var-dir "/emacs-recentf")) => lch-org.el
+;; (setq ido-save-directory-list-file (concat emacs-var-dir "/emacs-ido-last")) => lch-elisp.el
 (setq bookmark-default-file (concat emacs-var-dir "/emacs-bmk"))
 (setq abbrev-file-name (concat emacs-var-dir "/abbrev"))
 (setq bbdb-file (concat emacs-var-dir "/bbdb"))

@@ -4,7 +4,7 @@
 
 ;;; Copyright
 ;;
-;; Copyright (C) 2005 2006 2007 2008 2009 2010 2011
+;; Copyright (C) 2005 2006 2007 2008 2009 2010 2011 2012 2013
 ;; Author: Chao LU <(concat "Loochao" at-symbol "gmail.com")>
 ;; Keywords: dotemacs, init, loochao, lch
 ;; URL: <>
@@ -47,6 +47,20 @@
 ;; "While any text editor can save your files, only Emacs can save your
 ;; soul."
 ;;                                                     [Per Abrahamsen]
+;; This is where everything starts. Do you remember this place?
+;; It remembers you...
+;;                                                         [Emacs Live]
+;;                _.-^^---....,,--
+;;            _--                  --_
+;;           <          SONIC         >)
+;;           |       BOOOOOOOOM!       |
+;;            \._                   _./
+;;               ```--. . , ; .--'''
+;;                     | |   |
+;;                  .-=||  | |=-.
+;;                  `-=#$%&%$#=-'
+;;                     | ;  :|
+;;            _____.,-#%&$@%#&#~,._____
 
 (message "* --[ Loading my Emacs init file ]--")
 
@@ -112,6 +126,40 @@
 (require 'lch-conf)
 ;; (require 'lch-startup)
 
+;;; Scratch message
+(defvar lch-welcome-messages
+      (if (user-login-name)
+          (list (concat "Hello " (user-login-name) ", somewhere in the world the sun is shining for you right now.\n")
+                (concat "Hello " (user-login-name) ", it's lovely to see you again. I do hope that you're well.\n")
+                (concat "Hello " (user-login-name) ", turn your head towards the sun and the shadows will fall behind you.\n")
+                )
+        (list  "Hello, somewhere in the world the sun is shining for you right now."
+               "Hello, it's lovely to see you again. I do hope that you're well."
+               "Turn your head towards the sun and the shadows will fall behind you.")))
+
+
+(defun lch-welcome-message ()
+  (nth (random (length lch-welcome-messages)) lch-welcome-messages))
+
+;; (setq initial-scratch-message (concat ";;
+;; ;;     MM\"\"\"\"\"\"\"\"`M
+;; ;;     MM  mmmmmmmM
+;; ;;     M`      MMMM 88d8b.d8b. .d8888b. .d8888b. .d8888b.
+;; ;;     MM  MMMMMMMM 88''88'`88 88'  `88 88'  `\"\" Y8ooooo.
+;; ;;     MM  MMMMMMMM 88  88  88 88.  .88 88.  ...       88
+;; ;;     MM        .M dP  dP  dP `88888P8 '88888P' '88888P'
+;; ;;     MMMMMMMMMMMM
+;; ;;
+;; ;;"  ""                                                     (lch-welcome-message) "
+;; "))
+
+(setq initial-scratch-message (concat ";; " (lch-welcome-message)))
+
+;;; Zone
+(defvar lch-disable-zone nil)
+(if (not lch-disable-zone)
+    (add-hook 'term-setup-hook 'zone))
+
 ;; CONF From Others
 ;(require 'lch-other-conf)
 
@@ -127,6 +175,7 @@
 ;; coding: utf-8
 ;; mode: emacs-lisp
 ;; mode: outline-minor
+;; outline-regexp: ";;;;* "
 ;; ispell-local-dictionary: "en_US"
 ;; byte-compile: nil
 ;; End:

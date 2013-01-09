@@ -32,6 +32,16 @@
 
 ;;; Code
 
+;;; Open-archive-file
+;; Say, if you are editing lch-elisp.el, there's some function you
+;; wanna put into lch-elisp.el_achive, just simple press <f10> a
+(defun lch-open-archive ()
+  (interactive)
+  (let ((archive-buffer (concat (buffer-file-name (current-buffer)) "_archive")))
+    (if (file-exists-p archive-buffer)
+        (switch-to-buffer (find-file archive-buffer))
+      (switch-to-buffer (get-buffer-create archive-buffer)))))
+(define-key global-map (kbd "<f10> a") 'lch-open-archive)
 ;;; Buffer count
 (defun count-buffer ()
   (interactive)
@@ -191,8 +201,6 @@ file of a buffer in an external program."
   (save-buffer)
   (or shell-command-history (error "Nothing to repeat."))
   (shell-command (car shell-command-history)))
-
-(global-set-key (kbd "C-c j") 'repeat-shell-command)
 
 ;;; Shift a line up or down
 (defun move-line (n)
@@ -488,7 +496,7 @@ end tell" mydir)))
         (lch-indent-buffer)
         (message "Indented buffer.")))))
 
-(define-key global-map (kbd "C-c i") 'lch-indent-region-or-buffer)
+(define-key global-map (kbd "<f1> i") 'lch-indent-region-or-buffer)
 
 (defun lch-untabify-buffer ()
   "Convert all tabs in buffer with multiple spaces, preserving columns."
@@ -698,17 +706,18 @@ the frame title bar."
 
 ;;; Go-to-char
 ;; C-c a x goto x, then press x to go to next 'x'
-(defun lch-go-to-char (n char)
-  "Move forward to Nth occurence of CHAR.
-Typing `lch-go-to-char-key' again will move forwad to the next Nth
-occurence of CHAR."
-  (interactive "p\ncGo to char: ")
-  (search-forward (string char) nil nil n)
-  (while (char-equal (read-char)
-                     char)
-    (search-forward (string char) nil nil n))
-  (setq unread-command-events (list last-input-event)))
-(define-key global-map (kbd "C-x g") 'lch-go-to-char)
+;; Found a beter written iy-go-to-char.el
+;; (defun lch-go-to-char (n char)
+;;   "Move forward to Nth occurence of CHAR.
+;; Typing `lch-go-to-char-key' again will move forwad to the next Nth
+;; occurence of CHAR."
+;;   (interactive "p\ncGo to char: ")
+;;   (search-forward (string char) nil nil n)
+;;   (while (char-equal (read-char)
+;;                      char)
+;;     (search-forward (string char) nil nil n))
+;;   (setq unread-command-events (list last-input-event)))
+;; (define-key global-map (kbd "C-x g") 'lch-go-to-char)
 
 ;;; Nuke buffers
 (defun nuke-some-buffers (&optional list)

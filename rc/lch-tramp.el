@@ -59,13 +59,13 @@
 ;; just saves faster.
 (setq tramp-default-method  ; `scp' by default
       (cond (lch-win32-p
-	     ;; (issues with Cygwin `ssh' which does not cooperate with
-	     ;; Emacs processes -> use `plink' from PuTTY, it definitely
-	     ;; does work under Windows)
-	     ;; C-x C-f /plink:myuser@host:/some/directory/file
-	     "plink")
-	    (t
-	     "ssh")))
+             ;; (issues with Cygwin `ssh' which does not cooperate with
+             ;; Emacs processes -> use `plink' from PuTTY, it definitely
+             ;; does work under Windows)
+             ;; C-x C-f /plink:myuser@host:/some/directory/file
+             "plink")
+            (t
+             "ssh")))
 
 ;;; Default user (info "(tramp)Default User")
 (setq tramp-default-user "chaol")
@@ -80,9 +80,9 @@
 ;; (info "(tramp)Remote shell setup") hints
 (setq tramp-rsh-end-of-line  ; `\n' by default
       (cond (lch-win32-p
-	     "\n")
-	    (t
-	     "\r")))
+             "\n")
+            (t
+             "\r")))
 
 
 ;;; Faster auto saves (info "(tramp)Auto-save and Backup") configuration
@@ -92,6 +92,13 @@
 ;;; (info "(tramp)Traces and Profiles")
 ;;; Debugging
 (setq tramp-verbose 9)  ; default is 0
+
+(defun sudo-edit (&optional arg)
+  (interactive "p")
+  (if (or arg (not buffer-file-name))
+      (find-file (concat "/sudo:root@localhost:" (ido-read-file-name "File: ")))
+    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+(define-key global-map (kbd "C-c f") 'sudo-edit)
 
 ;; Open a file as root
 ;; (defvar find-file-root-prefix "/sudo:root@localhost:"
@@ -112,16 +119,16 @@
 ;;   (interactive)
 ;;   (require 'tramp)
 ;;   (let* (;; We bind the variable `file-name-history' locally so we can
-;; 	 ;; use a separate history list for "root" files.
-;; 	 (file-name-history find-file-root-history)
-;; 	 (name (or buffer-file-name default-directory))
-;; 	 (tramp (and (tramp-tramp-file-p name)
-;; 		     (tramp-dissect-file-name name)))
-;; 	 path dir file)
+;;       ;; use a separate history list for "root" files.
+;;       (file-name-history find-file-root-history)
+;;       (name (or buffer-file-name default-directory))
+;;       (tramp (and (tramp-tramp-file-p name)
+;;                   (tramp-dissect-file-name name)))
+;;       path dir file)
 ;;     ;; If called from a "root" file, we need to fix up the path.
 ;;     (when tramp
 ;;       (setq path (tramp-file-name-path tramp)
-;; 	    dir (file-name-directory path)))
+;;          dir (file-name-directory path)))
 ;;     (when (setq file (read-file-name "Find file (UID = 0): " dir path))
 ;;       (find-file (concat find-file-root-prefix file))
 ;;       ;; If this all succeeded save our new history list.
@@ -137,24 +144,17 @@
 ;;   "*Display a warning in header line of the current buffer.
 ;;       This function is suitable to add to `find-file-root-hook'."
 ;;   (let* ((warning "WARNING: EDITING FILE WITH ROOT PRIVILEGES!")
-;; 	 (space (+ 6 (- (frame-width) (length warning))))
-;; 	 (bracket (make-string (/ space 2) ?-))
-;; 	 (warning (concat bracket warning bracket)))
+;;       (space (+ 6 (- (frame-width) (length warning))))
+;;       (bracket (make-string (/ space 2) ?-))
+;;       (warning (concat bracket warning bracket)))
 ;;     (setq header-line-format
-;; 	  (propertize warning 'face 'find-file-root-header-face))))
+;;        (propertize warning 'face 'find-file-root-header-face))))
 
 ;; (add-hook 'find-file-root-hook 'find-file-root-header-warning)
 
 ;; (global-set-key (kbd "C-x C-S-r") 'find-file-root)
 
 (provide 'lch-tramp)
-
-;; Open file by sudo -- Not working FIXME
-;; (defun lch-sudo-edit (&optional arg)
-;;   (interactive "p")
-;;   (if (or arg (not buffer-file-name))
-;;       (find-file (concat "/sudo:root@localhost:" (ido-read-file-name "File: ")))
-;;     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
 ;;; TRAMP NOTEs
 ;; ;; new proxy system (introduced with Tramp 2.1, instead of the old

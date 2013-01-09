@@ -48,15 +48,15 @@
     (setq exec-path
           `(
 ;            "C:/Program Files/ErgoEmacs 1.8.1/msys/bin/"
-	    ,cygwin-root
-	    ,cygwin-bin
+            ,cygwin-root
+            ,cygwin-bin
             (concat cygwin-root "usr/bin/")
 ;            "C:/Program Files/Java/jdk1.6.0_14/bin/"
 ;            "C:/Program Files (x86)/Emacs/EmacsW32/gnuwin32/bin/"
             "C:/Windows/system32/"
             "C:/Windows/"
             "C:/Windows/System32/Wbem/"
-	    ))))
+            ))))
 
 
 
@@ -66,7 +66,7 @@
 
 
 (when (and (eq 'windows-nt system-type)
-	   (file-readable-p cygwin-root))
+           (file-readable-p cygwin-root))
   (setq exec-path (cons cygwin-bin exec-path))
   (setenv "PATH" (concat cygwin-bin ";" (getenv "PATH")))
 
@@ -88,6 +88,13 @@
   ;; appear in the output of java applications.
   (add-hook 'comint-output-filter-functions 'comint-strip-ctrl-m))
 
+;;; Print for w32
+(if lch-win32-p
+    (progn
+      (require 'w32-winprint)
+      (define-key global-map (kbd "<f2> p") 'w32-winprint-print-buffer-htmlize)
+      (define-key global-map (kbd "<f2> P") 'w32-winprint-print-buffer-notepad)))
+
 ;;;###autoload
 (defun bash ()
   "Start `bash' shell."
@@ -95,6 +102,20 @@
   (let ((binary-process-input t)
         (binary-process-output nil))
     (shell)))
+
+;;; W32 max/restore frame
+(if lch-win32-p
+    (when (fboundp 'w32-send-sys-command)
+      (progn
+        (defun w32-restore-frame ()
+          "Restore a minimized frame"
+          (interactive)
+          (w32-send-sys-command 61728))
+        (defun w32-maximize-frame ()
+          "Maximize the current frame"
+          (interactive)
+          (w32-send-sys-command 61488))
+        (define-key global-map (kbd "<f11> m") 'w32-maximize-frame))))
 
 (setq process-coding-system-alist
       (cons '("bash" . (raw-text-dos . raw-text-unix)) process-coding-system-alist))

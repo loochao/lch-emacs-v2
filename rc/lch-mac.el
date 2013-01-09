@@ -68,6 +68,14 @@
       (dolist (path-to-add my-paths (getenv "PATH"))
         (my-add-path path-to-add))))
 
+;; Work around a bug on OS X where system-name is a fully qualified
+;; domain name
+(setq system-name (car (split-string system-name "\\.")))
+
+;; Ensure the exec-path honours the shell PATH
+(require 'exec-path-from-shell)
+(exec-path-from-shell-initialize)
+
 ;; Provide
 (provide 'lch-mac)
 (message "~~ lch-mac: done.")

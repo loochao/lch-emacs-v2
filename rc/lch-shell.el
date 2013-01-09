@@ -57,8 +57,10 @@
 (setq shell-prompt-pattern (concat "^" (system-name) " [^ ]+ \\[[0-9]+\\] "))
 
 ;; translate ANSI escape sequences into faces
+;; (require 'ansi-color)
 (autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
 ;;; Popup shell
 ;; (defvar th-shell-popup-buffer nil)
 
@@ -69,13 +71,13 @@
 ;;     (save-window-excursion (shell "*Shell*"))
 ;;     (setq th-shell-popup-buffer (get-buffer "*Shell*")))
 ;;   (let ((win (get-buffer-window th-shell-popup-buffer))
-;; 	(dir (file-name-directory (or (buffer-file-name)
-;; 				      ;; dired
-;; 				      dired-directory
-;; 				      ;; use HOME
-;; 				      "~/"))))
+;;      (dir (file-name-directory (or (buffer-file-name)
+;;                                    ;; dired
+;;                                    dired-directory
+;;                                    ;; use HOME
+;;                                    "~/"))))
 ;;     (if win
-;; 	(delete-window win)
+;;      (delete-window win)
 ;;       (pop-to-buffer th-shell-popup-buffer nil t)
 ;;       (comint-send-string nil (concat "cd " dir "\n")))))
 ;; ;(global-set-key (kbd "<f1> ") 'th-shell-popup)
@@ -131,4 +133,3 @@
 ;; mode: outline-minor
 ;; outline-regexp: ";;;;* "
 ;; End:
-

@@ -1,17 +1,22 @@
 
 ;; ----- smex-history -----
 (
+ shell
+ zone
+ auto-fill-mode
+ eval-region
  emacs-version
- lch-modeline
  cd
- 5x5
- arp
- dbx
- dig
+ lm
 )
 
 ;; ----- smex-data -----
 (
- (lch-modeline . 1)
  (emacs-version . 1)
+ (eval-region . 1)
+ (auto-fill-mode . 1)
+ (lch-ascii-table . 1)
+ (my-digital-clock . 1)
+ (zone . 1)
+ (shell . 3)
 )

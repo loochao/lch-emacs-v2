@@ -46,7 +46,7 @@
 (require 'lch-skeleton)
 (require 'lch-alias)
 (require 'lch-util)
-(require 'lch-pgm)
+(require 'lch-lang)
 (require 'lch-dict)
 (require 'lch-emms)
 (require 'lch-web)

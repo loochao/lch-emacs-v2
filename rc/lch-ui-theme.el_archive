@@ -1,30 +1,5 @@
-;;; Arjen
-(autoload 'color-theme-arjen "color-theme-arjen.el" "" t)
-(define-key global-map (kbd "<f11> <f3>") (lambda() (interactive) (color-theme-arjen) (lch-modeline) (message "color theme arjen selected")))
-;;; Tango
-(autoload 'color-theme-tango "color-theme-tango.el" "" t)
-(define-key global-map (kbd "<f11> <f4>") (lambda() (interactive) (color-theme-tango) (lch-modeline) (message "color theme tango selected")))
-;;; Tango2
-(autoload 'color-theme-tango2 "color-theme-tango2.el" "" t)
-(define-key global-map (kbd "<f11> <f5>") (lambda() (interactive) (color-theme-tango2) (lch-modeline) (message "color theme tango2 selected")))
-;;; railscasts
-(autoload 'color-theme-railscasts "color-theme-railscasts" "" t)
-(define-key global-map (kbd "<f11> <f6>") (lambda() (interactive) (color-theme-railscasts) (lch-modeline) (message "color theme railscast selected")))
-;;; Jimmy
-(autoload 'color-theme-jimmy "color-theme-jimmy.el" "Load color-theme-jimmy" t)
-(define-key global-map (kbd "<f11> <f7>") (lambda() (interactive) (color-theme-jimmy) (lch-modeline) (message "color theme jimmy selected")))
-;;; Zenburn
-(autoload 'color-theme-zenburn "color-theme-zenburn.el" "" t)
-(define-key global-map (kbd "<f11> <f8>") (lambda() (interactive) (color-theme-zenburn) (lch-modeline) (message "color theme zenburn selected")))
-;;; Tomorrow
-(require 'color-theme-tomorrow)
-(require 'color-theme-tomorrow-night)
-(define-key global-map (kbd "<f11> <f9>") (lambda() (interactive) (color-theme-tomorrow-night) (lch-modeline) (message "color theme tomorrow-night selected")))
-(require 'color-theme-tomorrow-night-eighties)
-(require 'color-theme-tomorrow-night-bright)
-(define-key global-map (kbd "<f11> <f10>") (lambda() (interactive) (color-theme-tomorrow-night-bright) (lch-modeline) (message "color theme tomorrow-night-bright selected")))
 
-;;; Modeline
+;; Modeline
 (defun lch-modeline ()
   (interactive)
   (if lch-mac-p
