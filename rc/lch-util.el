@@ -38,9 +38,9 @@
 (defun lch-open-archive ()
   (interactive)
   (let ((archive-buffer (concat (buffer-file-name (current-buffer)) "_archive")))
-    (if (file-exists-p archive-buffer)
-        (switch-to-buffer (find-file archive-buffer))
-      (switch-to-buffer (get-buffer-create archive-buffer)))))
+                                                                (if (file-exists-p archive-buffer)
+                                                                                                                                (switch-to-buffer (find-file archive-buffer))
+                                                                  (switch-to-buffer (get-buffer-create archive-buffer)))))
 (define-key global-map (kbd "<f10> a") 'lch-open-archive)
 ;;; Buffer count
 (defun count-buffer ()
@@ -51,11 +51,11 @@
   "Copy the current buffer file name to the clipboard."
   (interactive)
   (let ((filename (if (equal major-mode 'dired-mode)
-                      default-directory
-                    (buffer-file-name))))
-    (when filename
-      (kill-new filename)
-      (message "Copied buffer file name '%s' to the clipboard." filename))))
+                                                                                                                                                                                                                                                                                                                                  default-directory
+                                                                                                                                                                                                                                                                                                                                (buffer-file-name))))
+                                                                (when filename
+                                                                  (kill-new filename)
+                                                                  (message "Copied buffer file name '%s' to the clipboard." filename))))
 (define-key global-map (kbd "C-x C-3") 'lch-copy-file-name-to-clipboard)
 
 
@@ -67,9 +67,9 @@
   (let ((filename (buffer-file-name)))
     (when filename
       (if (y-or-n-p "FILE DELETE! ")
-        (progn (delete-file filename)
-               (message "Deleted file %s" filename)
-               (kill-buffer))
+          (progn (delete-file filename)
+                 (message "Deleted file %s" filename)
+                 (kill-buffer))
         (message "DELETION Canceled")))))
 (define-key global-map (kbd "C-c k") 'lch-delete-file-and-buffer)
 
@@ -78,8 +78,8 @@
 (defun lch-sudo-edit (&optional arg)
   (interactive "p")
   (if (or arg (not buffer-file-name))
-      (find-file (concat "/sudo:root@localhost:" (ido-read-file-name "File: ")))
-    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+                                                                  (find-file (concat "/sudo:root@localhost:" (ido-read-file-name "File: ")))
+                                                                (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 (define-key global-map (kbd "C-c r") 'lch-sudo-edit)
 ;;; Delete the trailing Chinese space in Douban comments
 (defun lch-douban-delete-trailing-white-space ()
@@ -94,49 +94,49 @@
   "Refresh imenu and jump to a place in the buffer using Ido."
   (interactive)
   (unless (featurep 'imenu)
-    (require 'imenu nil t))
+                                                                (require 'imenu nil t))
   (cond
    ((not symbol-list)
-    (let ((ido-mode ido-mode)
-          (ido-enable-flex-matching
-           (if (boundp 'ido-enable-flex-matching)
-               ido-enable-flex-matching t))
-          name-and-pos symbol-names position)
-      (unless ido-mode
-        (ido-mode 1)
-        (setq ido-enable-flex-matching t))
-      (while (progn
-               (imenu--cleanup)
-               (setq imenu--index-alist nil)
-               (prelude-ido-goto-symbol (imenu--make-index-alist))
-               (setq selected-symbol
-                     (ido-completing-read "Symbol? " symbol-names))
-               (string= (car imenu--rescan-item) selected-symbol)))
-      (unless (and (boundp 'mark-active) mark-active)
-        (push-mark nil t nil))
-      (setq position (cdr (assoc selected-symbol name-and-pos)))
-      (cond
-       ((overlayp position)
-        (goto-char (overlay-start position)))
-       (t
-        (goto-char position)))))
+                                                                (let ((ido-mode ido-mode)
+                                                                                                                                  (ido-enable-flex-matching
+                                                                                                                                   (if (boundp 'ido-enable-flex-matching)
+                                                                                                                                                                                                   ido-enable-flex-matching t))
+                                                                                                                                  name-and-pos symbol-names position)
+                                                                  (unless ido-mode
+                                                                                                                                (ido-mode 1)
+                                                                                                                                (setq ido-enable-flex-matching t))
+                                                                  (while (progn
+                                                                                                                                                                                                   (imenu--cleanup)
+                                                                                                                                                                                                   (setq imenu--index-alist nil)
+                                                                                                                                                                                                   (prelude-ido-goto-symbol (imenu--make-index-alist))
+                                                                                                                                                                                                   (setq selected-symbol
+                                                                                                                                                                                                                                                                                                                                 (ido-completing-read "Symbol? " symbol-names))
+                                                                                                                                                                                                   (string= (car imenu--rescan-item) selected-symbol)))
+                                                                  (unless (and (boundp 'mark-active) mark-active)
+                                                                                                                                (push-mark nil t nil))
+                                                                  (setq position (cdr (assoc selected-symbol name-and-pos)))
+                                                                  (cond
+                                                                   ((overlayp position)
+                                                                                                                                (goto-char (overlay-start position)))
+                                                                   (t
+                                                                                                                                (goto-char position)))))
    ((listp symbol-list)
-    (dolist (symbol symbol-list)
-      (let (name position)
-        (cond
-         ((and (listp symbol) (imenu--subalist-p symbol))
-          (prelude-ido-goto-symbol symbol))
-         ((listp symbol)
-          (setq name (car symbol))
-          (setq position (cdr symbol)))
-         ((stringp symbol)
-          (setq name symbol)
-          (setq position
-                (get-text-property 1 'org-imenu-marker symbol))))
-        (unless (or (null position) (null name)
-                    (string= (car imenu--rescan-item) name))
-          (add-to-list 'symbol-names name)
-          (add-to-list 'name-and-pos (cons name position))))))))
+                                                                (dolist (symbol symbol-list)
+                                                                  (let (name position)
+                                                                                                                                (cond
+                                                                                                                                 ((and (listp symbol) (imenu--subalist-p symbol))
+                                                                                                                                  (prelude-ido-goto-symbol symbol))
+                                                                                                                                 ((listp symbol)
+                                                                                                                                  (setq name (car symbol))
+                                                                                                                                  (setq position (cdr symbol)))
+                                                                                                                                 ((stringp symbol)
+                                                                                                                                  (setq name symbol)
+                                                                                                                                  (setq position
+                                                                                                                                                                                                                                                                (get-text-property 1 'org-imenu-marker symbol))))
+                                                                                                                                (unless (or (null position) (null name)
+                                                                                                                                                                                                                                                                                                                                (string= (car imenu--rescan-item) name))
+                                                                                                                                  (add-to-list 'symbol-names name)
+                                                                                                                                  (add-to-list 'name-and-pos (cons name position))))))))
 (global-set-key (kbd "M-i") 'prelude-ido-goto-symbol)
 
 
@@ -146,8 +146,8 @@
   "When called interactively with no active region, kill a single line instead."
   (interactive
    (if mark-active (list (region-beginning) (region-end))
-     (list (line-beginning-position)
-           (line-beginning-position 2)))))
+                                                                 (list (line-beginning-position)
+                                                                                                                                   (line-beginning-position 2)))))
 ;;; Special words
 ;; (require 'lch-special-words)
 ;;; Open file in external program
@@ -156,12 +156,12 @@
 file of a buffer in an external program."
   (interactive)
   (when buffer-file-name
-    (shell-command (concat
-                    (if (eq system-type 'darwin)
-                        "open"
-                      (read-shell-command "Open current file with: "))
-                    " "
-                    buffer-file-name))))
+                                                                (shell-command (concat
+                                                                                                                                                                                                                                                                                                                                (if (eq system-type 'darwin)
+                                                                                                                                                                                                                                                                                                                                                                                                "open"
+                                                                                                                                                                                                                                                                                                                                  (read-shell-command "Open current file with: "))
+                                                                                                                                                                                                                                                                                                                                " "
+                                                                                                                                                                                                                                                                                                                                buffer-file-name))))
 (global-set-key (kbd "C-c o") 'lch-open-with)
 
 ;;; Underline prev line.
@@ -169,27 +169,27 @@ file of a buffer in an external program."
   "Underline the previous line with dashes."
   (interactive)
   (let ((start-pos (point))
-        (start-col nil)
-        (end-col nil))
-    (beginning-of-line 0)
-    (if (re-search-forward "[^ ]" (save-excursion (end-of-line) (point)) t)
-        (progn
-          (setq start-col (- (current-column) 1))
+                                                                                                                                (start-col nil)
+                                                                                                                                (end-col nil))
+                                                                (beginning-of-line 0)
+                                                                (if (re-search-forward "[^ ]" (save-excursion (end-of-line) (point)) t)
+                                                                                                                                (progn
+                                                                                                                                  (setq start-col (- (current-column) 1))
 
-          (end-of-line)
-          (re-search-backward "[^ ]" nil t)
-          (setq end-col (current-column))
+                                                                                                                                  (end-of-line)
+                                                                                                                                  (re-search-backward "[^ ]" nil t)
+                                                                                                                                  (setq end-col (current-column))
 
-          ;; go to next line and insert dashes
-          (beginning-of-line 2)
-          (insert
-           (make-string start-col ?\ )
-           (make-string (+ 1 (- end-col start-col)) ?-)
-           "\n")
-          )
-      (goto-char start-pos)
-      (error "No text on previous line"))
-    ))
+                                                                                                                                  ;; go to next line and insert dashes
+                                                                                                                                  (beginning-of-line 2)
+                                                                                                                                  (insert
+                                                                                                                                   (make-string start-col ?\ )
+                                                                                                                                   (make-string (+ 1 (- end-col start-col)) ?-)
+                                                                                                                                   "\n")
+                                                                                                                                  )
+                                                                  (goto-char start-pos)
+                                                                  (error "No text on previous line"))
+                                                                ))
 
 (global-set-key (kbd "C-c -") 'gse-underline-previous-line)
 (global-set-key (kbd "C-c _") 'gse-underline-previous-line)
@@ -207,19 +207,19 @@ file of a buffer in an external program."
   "Move the current line up or down by N lines."
   (interactive "p")
   (let ((col (current-column))
-        start
-        end)
-    (beginning-of-line)
-    (setq start (point))
-    (end-of-line)
-    (forward-char)
-    (setq end (point))
-    (let ((line-text (delete-and-extract-region start end)))
-      (forward-line n)
-      (insert line-text)
-      ;; restore point to original column in moved line
-      (forward-line -1)
-      (forward-char col))))
+                                                                                                                                start
+                                                                                                                                end)
+                                                                (beginning-of-line)
+                                                                (setq start (point))
+                                                                (end-of-line)
+                                                                (forward-char)
+                                                                (setq end (point))
+                                                                (let ((line-text (delete-and-extract-region start end)))
+                                                                  (forward-line n)
+                                                                  (insert line-text)
+                                                                  ;; restore point to original column in moved line
+                                                                  (forward-line -1)
+                                                                  (forward-char col))))
 
 (defun move-line-up (n)
   "Move the current line up by N lines."
@@ -241,40 +241,40 @@ Show digital clock in the same Emacs frame if called with C-0.
 Cancel the clock if called with C-u."
   (interactive "P")
   (and (boundp 'my-digital-clock-timer) (timerp my-digital-clock-timer)
-       (cancel-timer my-digital-clock-timer))
+                                                                   (cancel-timer my-digital-clock-timer))
   (and (boundp 'my-digital-clock-frame) (framep my-digital-clock-frame)
-       (delete-frame my-digital-clock-frame))
+                                                                   (delete-frame my-digital-clock-frame))
   (if (or (not arg) (numberp arg))
-      (setq my-digital-clock-timer
-            (run-at-time
-             t 1
-             (lambda ()
-               (message "%s"
-                        ;; (round (float-time)) ; e.g. 1234567890
-                        (format-time-string "%Y-%m-%d %H:%M:%S" (current-time))
-                        )))))
+                                                                  (setq my-digital-clock-timer
+                                                                                                                                                                                                (run-at-time
+                                                                                                                                                                                                 t 1
+                                                                                                                                                                                                 (lambda ()
+                                                                                                                                                                                                   (message "%s"
+                                                                                                                                                                                                                                                                                                                                                                                                ;; (round (float-time)) ; e.g. 1234567890
+                                                                                                                                                                                                                                                                                                                                                                                                (format-time-string "%Y-%m-%d %H:%M:%S" (current-time))
+                                                                                                                                                                                                                                                                                                                                                                                                )))))
   (or arg
-      (setq my-digital-clock-frame
-            (make-frame
-             `((top . 478) (left . 80) (width . 24) (height . 1)
-               (name . "TIME")
-               (minibuffer . only)
-               (buffer-predicate . nil)
-               (user-position . t)
-               (vertical-scroll-bars . nil)
-               (scrollbar-width . 0)
-               (menu-bar-lines . 0)
-               (foreground-color . "green")
-               (background-color . "black")
-               ,(cond
-                 ((eq window-system 'x)
-                  '(font . "-*-Fixed-Medium-R-*--64-*-*-*-C-*-*-*")))
-               (cursor-color . "gray2")
-               (cursor-type . bar)
-               (auto-lower . nil)
-               (auto-raise . t)
-               (border-width . 0)
-               (internal-border-width . 0))))))
+                                                                  (setq my-digital-clock-frame
+                                                                                                                                                                                                (make-frame
+                                                                                                                                                                                                 `((top . 478) (left . 80) (width . 24) (height . 1)
+                                                                                                                                                                                                   (name . "TIME")
+                                                                                                                                                                                                   (minibuffer . only)
+                                                                                                                                                                                                   (buffer-predicate . nil)
+                                                                                                                                                                                                   (user-position . t)
+                                                                                                                                                                                                   (vertical-scroll-bars . nil)
+                                                                                                                                                                                                   (scrollbar-width . 0)
+                                                                                                                                                                                                   (menu-bar-lines . 0)
+                                                                                                                                                                                                   (foreground-color . "green")
+                                                                                                                                                                                                   (background-color . "black")
+                                                                                                                                                                                                   ,(cond
+                                                                                                                                                                                                                                                                 ((eq window-system 'x)
+                                                                                                                                                                                                                                                                  '(font . "-*-Fixed-Medium-R-*--64-*-*-*-C-*-*-*")))
+                                                                                                                                                                                                   (cursor-color . "gray2")
+                                                                                                                                                                                                   (cursor-type . bar)
+                                                                                                                                                                                                   (auto-lower . nil)
+                                                                                                                                                                                                   (auto-raise . t)
+                                                                                                                                                                                                   (border-width . 0)
+                                                                                                                                                                                                   (internal-border-width . 0))))))
 
 
 (defun lch-insert-date (&optional prefix)
@@ -283,9 +283,9 @@ add day of week. With two prefix arguments (C-u twice), add day of week and
 time."
   (interactive "P")
   (let ((format (cond ((not prefix) "%Y/%m/%d")
-                      ((equal prefix '(4)) "%Y-%m-%d %a")
-                      ((equal prefix '(16)) "%Y-%m-%d %a %H:%M"))))
-    (insert (format-time-string format (current-time)))))
+                                                                                                                                                                                                                                                                                                                                  ((equal prefix '(4)) "%Y-%m-%d %a")
+                                                                                                                                                                                                                                                                                                                                  ((equal prefix '(16)) "%Y-%m-%d %a %H:%M"))))
+                                                                (insert (format-time-string format (current-time)))))
 (define-key global-map (kbd "C-c d") 'lch-insert-date)
 
 ;;; lch-search
@@ -320,15 +320,15 @@ time."
 ;;; Automatically add execute permission to a script file.
 (defun lch-chmod-x ()
   (and (save-excursion
-         (save-restriction
-           (widen)
-           (goto-char (point-min))
-           (save-match-data
-             (looking-at "^#!"))))
-       (not (file-executable-p buffer-file-name))
-       (if (= 0 (shell-command (concat "chmod u+x " buffer-file-name)))
-           (message
-            (concat "Saved as script: " buffer-file-name)))))
+                                                                                                                                 (save-restriction
+                                                                                                                                   (widen)
+                                                                                                                                   (goto-char (point-min))
+                                                                                                                                   (save-match-data
+                                                                                                                                                                                                 (looking-at "^#!"))))
+                                                                   (not (file-executable-p buffer-file-name))
+                                                                   (if (= 0 (shell-command (concat "chmod u+x " buffer-file-name)))
+                                                                                                                                   (message
+                                                                                                                                                                                                (concat "Saved as script: " buffer-file-name)))))
 
 (add-hook 'after-save-hook 'lch-chmod-x)
 
@@ -338,11 +338,11 @@ time."
    Currently, just work under Mac OSX."
   (interactive)
   (let (mydir)
-    (setq mydir (pwd))
-    (string-match "Directory " mydir)
-    (setq mydir (replace-match "" nil nil mydir 0))
-    (when lch-mac-p (shell-command (format "open -a Finder %s" mydir)))
-    ))
+                                                                (setq mydir (pwd))
+                                                                (string-match "Directory " mydir)
+                                                                (setq mydir (replace-match "" nil nil mydir 0))
+                                                                (when lch-mac-p (shell-command (format "open -a Finder %s" mydir)))
+                                                                ))
 (define-key global-map (kbd "<f4> <f4>") 'lch-start-file-browser)
 
 ;;; Start terminal
@@ -351,17 +351,17 @@ time."
    Currently, just work under Mac OSX."
   (interactive)
   (let (mydir)
-    (setq mydir (pwd))
-    (string-match "Directory " mydir)
-    (setq mydir (replace-match "" nil nil mydir 0))
-    (when lch-mac-p
-      (do-applescript
-       (format
-        "tell application \"Terminal\"
+                                                                (setq mydir (pwd))
+                                                                (string-match "Directory " mydir)
+                                                                (setq mydir (replace-match "" nil nil mydir 0))
+                                                                (when lch-mac-p
+                                                                  (do-applescript
+                                                                   (format
+                                                                                                                                "tell application \"Terminal\"
 activate
 do script \"cd '%s'; bash \"
 end tell" mydir)))
-    ))
+                                                                ))
 (define-key global-map (kbd "<f1> 1") 'lch-start-terminal)
 
 
@@ -370,46 +370,46 @@ end tell" mydir)))
   "Substitute Chinese punctuation to English ones"
   (interactive)
   (save-excursion
-    (goto-char (point-min))
-    (while (search-forward "。" nil t)
-      (replace-match ". " nil t))
-    (goto-char (point-min))
-    (while (search-forward "，" nil t)
-      (replace-match ", " nil t))
-    (goto-char (point-min))
-    (while (search-forward "“" nil t)
-      (replace-match "\"" nil t))
-    (goto-char (point-min))
-    (while (search-forward "”" nil t)
-      (replace-match "\"" nil t))
-    (goto-char (point-min))
-    (while (search-forward "：" nil t)
-      (replace-match ": " nil t))
-    (goto-char (point-min))
-    (while (search-forward "（" nil t)
-      (replace-match "(" nil t))
-    (goto-char (point-min))
-    (while (search-forward "）" nil t)
-      (replace-match ")" nil t))
-    (goto-char (point-min))
-    (while (search-forward "；" nil t)
-      (replace-match ";" nil t))
-    (goto-char (point-min))
-    (while (search-forward "！" nil t)
-      (replace-match "! " nil t))
-    (goto-char (point-min))
-    (while (search-forward "、" nil t)
-      (replace-match ", " nil t))
-    (goto-char (point-min))
-    (while (search-forward "？" nil t)
-      (replace-match "? " nil t))
-    (goto-char (point-min))
-    (while (search-forward "【" nil t)
-      (replace-match "[" nil t))
-    (goto-char (point-min))
-    (while (search-forward "】" nil t)
-      (replace-match "]" nil t))
-    ))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "。" nil t)
+                                                                  (replace-match ". " nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "，" nil t)
+                                                                  (replace-match ", " nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "“" nil t)
+                                                                  (replace-match "\"" nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "”" nil t)
+                                                                  (replace-match "\"" nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "：" nil t)
+                                                                  (replace-match ": " nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "（" nil t)
+                                                                  (replace-match "(" nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "）" nil t)
+                                                                  (replace-match ")" nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "；" nil t)
+                                                                  (replace-match ";" nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "！" nil t)
+                                                                  (replace-match "! " nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "、" nil t)
+                                                                  (replace-match ", " nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "？" nil t)
+                                                                  (replace-match "? " nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "【" nil t)
+                                                                  (replace-match "[" nil t))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "】" nil t)
+                                                                  (replace-match "]" nil t))
+                                                                ))
 
 ;;; Delete trailing spaces
 ;; It is better to go to the next line here because this way we can
@@ -418,10 +418,10 @@ end tell" mydir)))
   "Remove all the tabs and spaces at the end of lines."
   (interactive "p")
   (while (> arg 0)
-    (end-of-line nil)
-    (delete-horizontal-space)
-    (forward-line 1)
-    (decf arg 1)))
+                                                                (end-of-line nil)
+                                                                (delete-horizontal-space)
+                                                                (forward-line 1)
+                                                                (decf arg 1)))
 
 ;;; Remove all the tabs and spaces at the end of the lines.
 (defun buffer-delete-trailing-spaces ()
@@ -429,9 +429,9 @@ end tell" mydir)))
   (interactive)
   (message "Deleting trailing spaces...")
   (save-excursion
-    (goto-char (point-min))
-    (while (not (eobp))
-      (delete-trailing-spaces 1)))
+                                                                (goto-char (point-min))
+                                                                (while (not (eobp))
+                                                                  (delete-trailing-spaces 1)))
   (message "Deleting trailing spaces... done"))
 
 
@@ -447,13 +447,13 @@ end tell" mydir)))
   "Print number of words in the region."
   (interactive "r")
   (save-excursion
-    (let ((n 0))
-      (goto-char start)
-      (while (< (point) end)
-        (when (forward-word 1)
-          (setq n (1+ n))))
-      (message "Region has %d words" n)
-      n)))
+                                                                (let ((n 0))
+                                                                  (goto-char start)
+                                                                  (while (< (point) end)
+                                                                                                                                (when (forward-word 1)
+                                                                                                                                  (setq n (1+ n))))
+                                                                  (message "Region has %d words" n)
+                                                                  n)))
 
 
 ;;; Show ascii table
@@ -464,18 +464,18 @@ end tell" mydir)))
   (local-set-key "q" 'bury-buffer)
   (erase-buffer)
   (save-excursion
-    (let ((i -1))
-      (insert "                   ASCII chars from 0 to 127 \n")
-      (insert "----------------------------------------------------------------- \n")
-      (insert " HEX  DEC CHAR |  HEX  DEC CHAR |  HEX  DEC CHAR |  HEX  DEC CHAR\n")
-      (while (< i 31)
-        (insert (format "%4x %4d %4s | %4x %4d %4s | %4x %4d %4s | %4x %4d %4s\n"
-                        (setq i (+ 1 i)) i (single-key-description i)
-                        (setq i (+ 32 i)) i (single-key-description i)
-                        (setq i (+ 32 i)) i (single-key-description i)
-                        (setq i (+ 32 i)) i (single-key-description i)))
-        (setq i (- i 96))
-        ))))
+                                                                (let ((i -1))
+                                                                  (insert "                   ASCII chars from 0 to 127 \n")
+                                                                  (insert "----------------------------------------------------------------- \n")
+                                                                  (insert " HEX  DEC CHAR |  HEX  DEC CHAR |  HEX  DEC CHAR |  HEX  DEC CHAR\n")
+                                                                  (while (< i 31)
+                                                                                                                                (insert (format "%4x %4d %4s | %4x %4d %4s | %4x %4d %4s | %4x %4d %4s\n"
+                                                                                                                                                                                                                                                                                                                                                                                                (setq i (+ 1 i)) i (single-key-description i)
+                                                                                                                                                                                                                                                                                                                                                                                                (setq i (+ 32 i)) i (single-key-description i)
+                                                                                                                                                                                                                                                                                                                                                                                                (setq i (+ 32 i)) i (single-key-description i)
+                                                                                                                                                                                                                                                                                                                                                                                                (setq i (+ 32 i)) i (single-key-description i)))
+                                                                                                                                (setq i (- i 96))
+                                                                                                                                ))))
 
 
 ;;; Indent/untabify/clean buffer
@@ -505,13 +505,24 @@ end tell" mydir)))
   (untabify (point-min) (point-max))
   (message "Untabify done"))
 
-(defun lch-cleanup-buffer ()
-  "Perform a bunch of operations on the whitespace content of a buffer."
+(defun lch-cleanup-buffer-safe ()
+  "Perform a bunch of safe operations on the whitespace content of a buffer.
+Does not indent buffer, because it is used for a before-save-hook, and that
+might be bad."
   (interactive)
-  (message "Cleaning up buffer...")
-  (lch-indent-buffer)
   (lch-untabify-buffer)
   (delete-trailing-whitespace)
+  (set-buffer-file-coding-system 'utf-8))
+
+;; Various superfluous white-space. Just say no.
+;; (add-hook 'before-save-hook 'lch-cleanup-buffer-safe)
+
+(defun lch-cleanup-buffer ()
+  "Perform a bunch of operations on the whitespace content of a buffer.
+Including indent-buffer, which should not be called automatically on save."
+  (interactive)
+  (lch-cleanup-buffer-safe)
+  (lch-indent-buffer)
   (message "Cleanup  done"))
 (define-key global-map (kbd "<f1> c") 'lch-cleanup-buffer)
 
@@ -527,14 +538,14 @@ end tell" mydir)))
   "Removes file connected to current buffer and kills buffer."
   (interactive)
   (let ((filename (buffer-file-name))
-        (buffer (current-buffer))
-        (name (buffer-name)))
-    (if (not (and filename (file-exists-p filename)))
-        (error "Buffer '%s' is not visiting a file!" name)
-      (when (yes-or-no-p "Are you sure you want to remove this file? ")
-        (delete-file filename)
-        (kill-buffer buffer)
-        (message "File '%s' successfully removed" filename)))))
+                                                                                                                                (buffer (current-buffer))
+                                                                                                                                (name (buffer-name)))
+                                                                (if (not (and filename (file-exists-p filename)))
+                                                                                                                                (error "Buffer '%s' is not visiting a file!" name)
+                                                                  (when (yes-or-no-p "Are you sure you want to remove this file? ")
+                                                                                                                                (delete-file filename)
+                                                                                                                                (kill-buffer buffer)
+                                                                                                                                (message "File '%s' successfully removed" filename)))))
 
 (global-set-key (kbd "C-c k") 'delete-this-buffer-and-file)
 
@@ -543,10 +554,10 @@ end tell" mydir)))
   "Insert a time stamp."
   (interactive "*")
   (insert (format "%s %s %s %s"
-                  comment-start
-                  (format-time-string "%Y-%m-%d")
-                  (user-login-name)
-                  comment-end)))
+                                                                                                                                                                                                                                                                  comment-start
+                                                                                                                                                                                                                                                                  (format-time-string "%Y-%m-%d")
+                                                                                                                                                                                                                                                                  (user-login-name)
+                                                                                                                                                                                                                                                                  comment-end)))
 
 
 ;;; dos<->unix
@@ -554,36 +565,36 @@ end tell" mydir)))
   "Cut all visible ^M from the current buffer."
   (interactive)
   (save-excursion
-    (goto-char (point-min))
-    (while (search-forward "\r" nil t)
-      (replace-match ""))))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "\r" nil t)
+                                                                  (replace-match ""))))
 
 ;;; convert a buffer from Unix end of lines to DOS `^M(\n)' end of lines
 (defun unix2dos ()
   (interactive)
   (save-excursion
-    (goto-char (point-min))
-    (while (search-forward "\n" nil t)
-      (replace-match "\r\n"))))
+                                                                (goto-char (point-min))
+                                                                (while (search-forward "\n" nil t)
+                                                                  (replace-match "\r\n"))))
 
 ;;; Reverse words/region
 (defun reverse-words (start end)
   (interactive "r")
   (let ((words (reverse (split-string (buffer-substring start end)))))
-    (delete-region start end)
-    (dolist (word words)
-      (insert word " "))
-    (backward-char 1)
-    (delete-char 1)))
+                                                                (delete-region start end)
+                                                                (dolist (word words)
+                                                                  (insert word " "))
+                                                                (backward-char 1)
+                                                                (delete-char 1)))
 
 (defun reverse-region-by-line (beg end)
   (interactive "r")
   (save-excursion
-    (goto-char beg)
-    (while (and (< (point) end) (re-search-forward "\\=.*$" end t))
-      (replace-match (apply #'string
-                            (nreverse (string-to-list (match-string 0)))))
-      (forward-line))))
+                                                                (goto-char beg)
+                                                                (while (and (< (point) end) (re-search-forward "\\=.*$" end t))
+                                                                  (replace-match (apply #'string
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                (nreverse (string-to-list (match-string 0)))))
+                                                                  (forward-line))))
 
 ;;; Shuffle vector
 (defun shuffle-vector (vector)
@@ -593,7 +604,7 @@ end tell" mydir)))
    for swap = (random (1+ pos))
    unless (= pos swap)
    do (rotatef (aref vector pos)
-               (aref vector swap)))
+                                                                                                                                                                                                   (aref vector swap)))
   vector)
 
 ;;; Randomize region
@@ -601,22 +612,22 @@ end tell" mydir)))
   "Randomly re-order the lines in the region."
   (interactive "r")
   (save-excursion
-    (save-restriction
-      ;; narrow to the region
-      (narrow-to-region start end)
-      (goto-char (point-min))
-      (let* ((nlines (line-number-at-pos end))
-             (lines (make-vector nlines nil)))
-        ;;
-        (while (not (eobp))
-          (setf (aref lines (decf nlines)) ; if it's random backwards
-                (delete-and-extract-region (point)
-                                           (progn (forward-visible-line 1)
-                                                  (point)))))
-        ;;
-        (let ((rlines (shuffle-vector lines)))
-          (dotimes (linenum (length rlines))
-            (insert (aref rlines linenum))))))))
+                                                                (save-restriction
+                                                                  ;; narrow to the region
+                                                                  (narrow-to-region start end)
+                                                                  (goto-char (point-min))
+                                                                  (let* ((nlines (line-number-at-pos end))
+                                                                                                                                                                                                 (lines (make-vector nlines nil)))
+                                                                                                                                ;;
+                                                                                                                                (while (not (eobp))
+                                                                                                                                  (setf (aref lines (decf nlines)) ; if it's random backwards
+                                                                                                                                                                                                                                                                (delete-and-extract-region (point)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   (progn (forward-visible-line 1)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (point)))))
+                                                                                                                                ;;
+                                                                                                                                (let ((rlines (shuffle-vector lines)))
+                                                                                                                                  (dotimes (linenum (length rlines))
+                                                                                                                                                                                                (insert (aref rlines linenum))))))))
 
 ;;; Jump to matched paren
 ;;###autoload
@@ -624,10 +635,10 @@ end tell" mydir)))
   "Go to the matching paren if on a paren; otherwise insert %."
   (interactive "p")
   (let ((prev-char (char-to-string (preceding-char)))
-        (next-char (char-to-string (following-char))))
-    (cond ((string-match "[[{(<]" next-char) (forward-sexp 1))
-          ((string-match "[\]})>]" prev-char) (backward-sexp 1))
-          (t (self-insert-command (or arg 1))))))
+                                                                                                                                (next-char (char-to-string (following-char))))
+                                                                (cond ((string-match "[[{(<]" next-char) (forward-sexp 1))
+                                                                                                                                  ((string-match "[\]})>]" prev-char) (backward-sexp 1))
+                                                                                                                                  (t (self-insert-command (or arg 1))))))
 (define-key global-map "%" 'his-match-paren)
 
 
@@ -639,13 +650,13 @@ end tell" mydir)))
   (or percent (setq percent 50))
   (setq percent (/ percent 100.0))
   (let (buf)
-    (if (> (length (window-list)) 1)
-        (setq buf (window-buffer (next-window))))
-    (delete-other-windows)
-    (let ((maxwidth (window-width)))
-      (split-window-horizontally (round (* maxwidth percent))))
-    (if buf (save-selected-window
-              (pop-to-buffer buf))))
+                                                                (if (> (length (window-list)) 1)
+                                                                                                                                (setq buf (window-buffer (next-window))))
+                                                                (delete-other-windows)
+                                                                (let ((maxwidth (window-width)))
+                                                                  (split-window-horizontally (round (* maxwidth percent))))
+                                                                (if buf (save-selected-window
+                                                                                                                                                                                                  (pop-to-buffer buf))))
   (call-interactively 'his-transpose-windows))
 (define-key global-map (kbd "<f1> w") 'ywb-favorite-window-config)
 
@@ -655,13 +666,13 @@ end tell" mydir)))
   "Transpose the buffers shown in two windows."
   (interactive "p")
   (let ((selector (if (>= arg 0) 'next-window 'previous-window)))
-    (while (/= arg 0)
-      (let ((this-win (window-buffer))
-            (next-win (window-buffer (funcall selector))))
-        (set-window-buffer (selected-window) next-win)
-        (set-window-buffer (funcall selector) this-win)
-        (select-window (funcall selector)))
-      (setq arg (if (plusp arg) (1- arg) (1+ arg))))))
+                                                                (while (/= arg 0)
+                                                                  (let ((this-win (window-buffer))
+                                                                                                                                                                                                (next-win (window-buffer (funcall selector))))
+                                                                                                                                (set-window-buffer (selected-window) next-win)
+                                                                                                                                (set-window-buffer (funcall selector) this-win)
+                                                                                                                                (select-window (funcall selector)))
+                                                                  (setq arg (if (plusp arg) (1- arg) (1+ arg))))))
 
 ;;; Kill current buffer without confirmation
 (define-key global-map (kbd "C-x C-k") 'kill-current-buffer)
@@ -675,9 +686,9 @@ end tell" mydir)))
 (defun ywb-create/switch-scratch ()
   (interactive)
   (let ((buf (get-buffer "*scratch*")))
-    (switch-to-buffer (get-buffer-create "*scratch*"))
-    (when (null buf)
-      (lisp-interaction-mode))))
+                                                                (switch-to-buffer (get-buffer-create "*scratch*"))
+                                                                (when (null buf)
+                                                                  (lisp-interaction-mode))))
 (define-key global-map (kbd "C-c s") 'ywb-create/switch-scratch)
 
 ;;; Alt+F4 closes the frame (Win32 ONLY)
@@ -687,11 +698,11 @@ frame. It simulates the same functionality of the Close button in
 the frame title bar."
   (interactive)
   (if multiple-frames
-      (delete-frame)
-    (save-buffers-kill-terminal)))
+                                                                  (delete-frame)
+                                                                (save-buffers-kill-terminal)))
 
 (if (and (boundp 'w32-initialized) w32-initialized)
-    (define-key global-map (kbd "M-<f4>") 'close-frame))
+                                                                (define-key global-map (kbd "M-<f4>") 'close-frame))
 
 ;;; Zoom
 (defun text-scale-normal-size ()
@@ -725,23 +736,23 @@ the frame title bar."
 LIST defaults to all existing live buffers."
   (interactive)
   (if (null list)
-      (setq list (buffer-list)))
+                                                                  (setq list (buffer-list)))
   (while list
-    (let* ((buffer (car list))
-           (name (buffer-name buffer)))
-      (and (not (string-equal name ""))
-           (not (string-equal name "*Messages*"))
-           ;; (not (string-equal name "*Buffer List*"))
-           (not (string-equal name "*buffer-selection*"))
-           (not (string-equal name "*Shell Command Output*"))
-           (not (string-equal name "*scratch*"))
-           (/= (aref name 0) ? )
-           (if (buffer-modified-p buffer)
-               (if (yes-or-no-p
-                    (format "Buffer %s has been edited. Kill? " name))
-                   (kill-buffer buffer))
-             (kill-buffer buffer))))
-    (setq list (cdr list))))
+                                                                (let* ((buffer (car list))
+                                                                                                                                   (name (buffer-name buffer)))
+                                                                  (and (not (string-equal name ""))
+                                                                                                                                   (not (string-equal name "*Messages*"))
+                                                                                                                                   ;; (not (string-equal name "*Buffer List*"))
+                                                                                                                                   (not (string-equal name "*buffer-selection*"))
+                                                                                                                                   (not (string-equal name "*Shell Command Output*"))
+                                                                                                                                   (not (string-equal name "*scratch*"))
+                                                                                                                                   (/= (aref name 0) ? )
+                                                                                                                                   (if (buffer-modified-p buffer)
+                                                                                                                                                                                                   (if (yes-or-no-p
+                                                                                                                                                                                                                                                                                                                                (format "Buffer %s has been edited. Kill? " name))
+                                                                                                                                                                                                                                                                   (kill-buffer buffer))
+                                                                                                                                                                                                 (kill-buffer buffer))))
+                                                                (setq list (cdr list))))
 (define-key global-map (kbd "C-c n") 'nuke-some-buffers)
 
 ;;; Auto scroll
@@ -752,15 +763,15 @@ With a numeric prefix ARG, use its value as frequency in seconds.
 With C-u, C-0 or M-0, cancel the timer."
   (interactive
    (list (progn
-           (if (and (boundp 'my-scroll-auto-timer)
-                    (timerp  my-scroll-auto-timer))
-               (cancel-timer my-scroll-auto-timer))
-           (or current-prefix-arg
-               (read-from-minibuffer
-                "Enter scroll frequency measured in seconds (0 or RET for cancel): "
-                nil nil t nil "0")))))
+                                                                                                                                   (if (and (boundp 'my-scroll-auto-timer)
+                                                                                                                                                                                                                                                                                                                                (timerp  my-scroll-auto-timer))
+                                                                                                                                                                                                   (cancel-timer my-scroll-auto-timer))
+                                                                                                                                   (or current-prefix-arg
+                                                                                                                                                                                                   (read-from-minibuffer
+                                                                                                                                                                                                                                                                "Enter scroll frequency measured in seconds (0 or RET for cancel): "
+                                                                                                                                                                                                                                                                nil nil t nil "0")))))
   (if (not (or (eq arg 0) (equal arg '(4))))
-      (setq my-scroll-auto-timer (run-at-time t arg 'scroll-up 1))))
+                                                                  (setq my-scroll-auto-timer (run-at-time t arg 'scroll-up 1))))
 
 
 ;;; Inserts the user name
@@ -773,32 +784,32 @@ With C-u, C-0 or M-0, cancel the timer."
 ;;; Process
 (define-key global-map (kbd "C-z p")
   (lambda () (interactive)
-    (let* ((n "*top*")
-           (b (get-buffer n)))
-      (if b (switch-to-buffer b)
-        (if (eq system-type 'windows-nt)
-            (progn
-              (proced)
-              (proced-toggle-tree 1))
-          (ansi-term "top"))
-        (rename-buffer n)
-        (local-set-key "q" '(lambda () (interactive) (kill-buffer (current-buffer))))
-        (hl-line-mode 1)))))
+                                                                (let* ((n "*top*")
+                                                                                                                                   (b (get-buffer n)))
+                                                                  (if b (switch-to-buffer b)
+                                                                                                                                (if (eq system-type 'windows-nt)
+                                                                                                                                                                                                (progn
+                                                                                                                                                                                                  (proced)
+                                                                                                                                                                                                  (proced-toggle-tree 1))
+                                                                                                                                  (ansi-term "top"))
+                                                                                                                                (rename-buffer n)
+                                                                                                                                (local-set-key "q" '(lambda () (interactive) (kill-buffer (current-buffer))))
+                                                                                                                                (hl-line-mode 1)))))
 
 ;;; Rename file and buffer
 (defun rename-file-and-buffer (new-name)
   (interactive "sNew name: ")
   (let ((name (buffer-name))
-        (filename (buffer-file-name)))
-    (if (not filename)
-        (message "Buffer '%s' is not visiting a file!" name)
-      (if (get-buffer new-name)
-          (message "A buffer named '%s' already exists!" new-name)
-        (progn
-          (rename-file name new-name 1)
-          (rename-buffer new-name)
-          (set-visited-file-name new-name)
-          (set-buffer-modified-p nil))))))
+                                                                                                                                (filename (buffer-file-name)))
+                                                                (if (not filename)
+                                                                                                                                (message "Buffer '%s' is not visiting a file!" name)
+                                                                  (if (get-buffer new-name)
+                                                                                                                                  (message "A buffer named '%s' already exists!" new-name)
+                                                                                                                                (progn
+                                                                                                                                  (rename-file name new-name 1)
+                                                                                                                                  (rename-buffer new-name)
+                                                                                                                                  (set-visited-file-name new-name)
+                                                                                                                                  (set-buffer-modified-p nil))))))
 ;;; Switch Mode
 ;; The mode selected last time is remembered.
 (defvar switch-major-mode-last-mode nil)
@@ -806,22 +817,22 @@ With C-u, C-0 or M-0, cancel the timer."
 
 (defun major-mode-heuristic (symbol)
   (and (fboundp symbol)
-       (string-match ".*-mode$" (symbol-name symbol))))
+                                                                   (string-match ".*-mode$" (symbol-name symbol))))
 
 (defun switch-major-mode (mode)
   (interactive
    (let ((fn switch-major-mode-last-mode)
-         val)
-     (setq val
-           (completing-read
-            (if fn
-                (format "Switch major mode to (default %s): " fn)
-              "Switch major mode to: ")
-            obarray 'major-mode-heuristic t nil nil (symbol-name fn)))
-     (list (intern val))))
+                                                                                                                                 val)
+                                                                 (setq val
+                                                                                                                                   (completing-read
+                                                                                                                                                                                                (if fn
+                                                                                                                                                                                                                                                                (format "Switch major mode to (default %s): " fn)
+                                                                                                                                                                                                  "Switch major mode to: ")
+                                                                                                                                                                                                obarray 'major-mode-heuristic t nil nil (symbol-name fn)))
+                                                                 (list (intern val))))
   (let ((last-mode major-mode))
-    (funcall mode)
-    (setq switch-major-mode-last-mode last-mode)))
+                                                                (funcall mode)
+                                                                (setq switch-major-mode-last-mode last-mode)))
 
 ;;; Inserts Date
 (defun insert-date()
@@ -836,9 +847,9 @@ With C-u, C-0 or M-0, cancel the timer."
   "Opens a new empty buffer."
   (interactive)
   (let ((buf (generate-new-buffer "INBOX")))
-    (switch-to-buffer buf)
-    (funcall (and initial-major-mode))
-    (setq buffer-offer-save t)))
+                                                                (switch-to-buffer buf)
+                                                                (funcall (and initial-major-mode))
+                                                                (setq buffer-offer-save t)))
 
 ;;; M$CMD Shell
 (defun cmd-shell (&optional arg)
@@ -846,14 +857,14 @@ With C-u, C-0 or M-0, cancel the timer."
 arg switches to the specified session, creating it if necessary."
   (interactive "P")
   (let ((buf-name (cond ((numberp arg)
-                         (format "*cmd<%s>*" arg))
-                        (arg
-                         (generate-new-buffer-name "*cmd*"))
-                        (t
-                         "*cmd*")))
-        (explicit-shell-file-name (or (and (w32-using-nt) "cmd.exe")
-                                      "command.com")))
-    (shell buf-name)))
+                                                                                                                                                                                                                                                                                                                                                                                                 (format "*cmd<%s>*" arg))
+                                                                                                                                                                                                                                                                                                                                                                                                (arg
+                                                                                                                                                                                                                                                                                                                                                                                                 (generate-new-buffer-name "*cmd*"))
+                                                                                                                                                                                                                                                                                                                                                                                                (t
+                                                                                                                                                                                                                                                                                                                                                                                                 "*cmd*")))
+                                                                                                                                (explicit-shell-file-name (or (and (w32-using-nt) "cmd.exe")
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "command.com")))
+                                                                (shell buf-name)))
 (define-key global-map (kbd "C-S-<f1>") 'cmd-shell)
 
 ;;; MSYS Shell
@@ -863,13 +874,13 @@ A numeric prefix arg switches to the specified session, creating
 it if necessary."
   (interactive "P")
   (let ((buf-name (cond ((numberp arg)
-                         (format "*msys<%d>*" arg))
-                        (arg
-                         (generate-new-buffer-name "*msys*"))
-                        (t
-                         "*msys*")))
-        (explicit-shell-file-name "sh.exe"))
-    (shell buf-name)))
+                                                                                                                                                                                                                                                                                                                                                                                                 (format "*msys<%d>*" arg))
+                                                                                                                                                                                                                                                                                                                                                                                                (arg
+                                                                                                                                                                                                                                                                                                                                                                                                 (generate-new-buffer-name "*msys*"))
+                                                                                                                                                                                                                                                                                                                                                                                                (t
+                                                                                                                                                                                                                                                                                                                                                                                                 "*msys*")))
+                                                                                                                                (explicit-shell-file-name "sh.exe"))
+                                                                (shell buf-name)))
 (define-key global-map (kbd "C-M-<f1>") 'msys-shell)
 
 
@@ -879,16 +890,16 @@ it if necessary."
   (cond
    ;; In buffers with file name
    ((buffer-file-name)
-    (shell-command (concat "start explorer /e,/select,\"" (replace-regexp-in-string "/" "\\\\" (buffer-file-name)) "\"")))
+                                                                (shell-command (concat "start explorer /e,/select,\"" (replace-regexp-in-string "/" "\\\\" (buffer-file-name)) "\"")))
    ;; In dired mode
    ((eq major-mode 'dired-mode)
-    (shell-command (concat "start explorer /e,\"" (replace-regexp-in-string "/" "\\\\" (dired-current-directory)) "\"")))
+                                                                (shell-command (concat "start explorer /e,\"" (replace-regexp-in-string "/" "\\\\" (dired-current-directory)) "\"")))
    ;; In eshell mode
-                                        ;   ((eq major-mode 'eshell-mode)
-                                        ;    (shell-command (concat "start explorer /e,\"" (replace-regexp-in-string "/" "\\\\" (eshell/pwd)) "\"")))
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;   ((eq major-mode 'eshell-mode)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;    (shell-command (concat "start explorer /e,\"" (replace-regexp-in-string "/" "\\\\" (eshell/pwd)) "\"")))
    ;; Use default-directory as last resource
    (t
-    (shell-command (concat "start explorer /e,\"" (replace-regexp-in-string "/" "\\\\" default-directory) "\"")))))
+                                                                (shell-command (concat "start explorer /e,\"" (replace-regexp-in-string "/" "\\\\" default-directory) "\"")))))
 
 (if lch-win32-p (define-key global-map (kbd "<f4> <f4>") 'locate-current-file-in-explorer))
 
@@ -902,31 +913,31 @@ it if necessary."
   "Convert multiple spaces in buffer into tabs, preserving columns."
   (interactive)
   (progn
-    (message "Tabifying buffer...")
-    (save-excursion
-      (goto-char (point-min))
-      (let ((percent 0) (old-percent 0) (indent-tabs-mode nil)
-            (characters (- (point-max) (point-min))) (line 1)
-            b e column)
-        (while (not (eobp))
-          (goto-line line)
-          (beginning-of-line)
-          (when (looking-at "[ \t]*")
-            (setq b (match-beginning 0)
-                  e (match-end 0))
-            (unless (eq e b)
-              (goto-char e)
-              (setq column (current-column))
-              (unless (equal (buffer-substring b e) (make-string (- e b) ?\ ))
-                (delete-region b e)
-                (indent-to column))))
-          (setq percent (/ (* 100 (point)) characters))
-          (when (> percent old-percent)
-            (message "Tabifying buffer... (%d%%)" percent))
-          (setq old-percent percent)
-          (end-of-line)
-          (setq line (1+ line)))))
-    (message "Tabifying buffer... done")))
+                                                                (message "Tabifying buffer...")
+                                                                (save-excursion
+                                                                  (goto-char (point-min))
+                                                                  (let ((percent 0) (old-percent 0) (indent-tabs-mode nil)
+                                                                                                                                                                                                (characters (- (point-max) (point-min))) (line 1)
+                                                                                                                                                                                                b e column)
+                                                                                                                                (while (not (eobp))
+                                                                                                                                  (goto-line line)
+                                                                                                                                  (beginning-of-line)
+                                                                                                                                  (when (looking-at "[ \t]*")
+                                                                                                                                                                                                (setq b (match-beginning 0)
+                                                                                                                                                                                                                                                                  e (match-end 0))
+                                                                                                                                                                                                (unless (eq e b)
+                                                                                                                                                                                                  (goto-char e)
+                                                                                                                                                                                                  (setq column (current-column))
+                                                                                                                                                                                                  (unless (equal (buffer-substring b e) (make-string (- e b) ?\ ))
+                                                                                                                                                                                                                                                                (delete-region b e)
+                                                                                                                                                                                                                                                                (indent-to column))))
+                                                                                                                                  (setq percent (/ (* 100 (point)) characters))
+                                                                                                                                  (when (> percent old-percent)
+                                                                                                                                                                                                (message "Tabifying buffer... (%d%%)" percent))
+                                                                                                                                  (setq old-percent percent)
+                                                                                                                                  (end-of-line)
+                                                                                                                                  (setq line (1+ line)))))
+                                                                (message "Tabifying buffer... done")))
 
 ;;; Provide
 (message "~~ lch-util: done.")

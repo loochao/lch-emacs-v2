@@ -78,9 +78,9 @@
 (setq dired-recursive-deletes 'always)
 
 ;; Switch infos on/off
-;; (require 'dired-details)
-;; (setq-default dired-details-hidden-string "--- ")
-;; (dired-details-install)
+(require 'dired-details)
+(setq-default dired-details-hidden-string "--- ")
+(dired-details-install)
 
 ;; Reload dired after creating a directory
 (defadvice dired-create-directory (after revert-buffer-after-create activate)
@@ -136,7 +136,7 @@ end tell" d)))
   (interactive)
   (let ((file (file-name-nondirectory (dired-get-filename))))
     (if (y-or-n-p (format "Use emacs-w3m to browse %s? " file))
-	(w3m-find-file file))))
+        (w3m-find-file file))))
 (define-key dired-mode-map (kbd "v") 'xwl-dired-w3m-find-file)
 
 ;; Use tar to compress marked file or dir.
@@ -241,12 +241,12 @@ end tell" d)))
 
 (setq dired-omit-extensions
       '("CVS/" ".o" "~" ".bin" ".lbin" ".fasl" ".ufsl" ".ln" ".blg"
-	".bbl" ".elc" ".lof" ".glo" ".idx" ".lot" ".fmt" ".tfm"
-	".class" ".fas" ".x86f" ".sparcf" ".lo" ".la"
-	".toc" ".aux" ".cp" ".fn" ".ky" ".pg" ".tp" ".vr" ".cps"
-	".fns" ".kys" ".pgs" ".tps" ".vrs" ".pyc" ".pyo" ".idx" ".lof"
-	".lot" ".glo" ".blg" ".bbl" ".cp" ".cps" ".fn" ".fns" ".ky"
-	".kys" ".pg" ".pgs" ".tp" ".tps" ".vr" ".vrs" ".flc"
+        ".bbl" ".elc" ".lof" ".glo" ".idx" ".lot" ".fmt" ".tfm"
+        ".class" ".fas" ".x86f" ".sparcf" ".lo" ".la"
+        ".toc" ".aux" ".cp" ".fn" ".ky" ".pg" ".tp" ".vr" ".cps"
+        ".fns" ".kys" ".pgs" ".tps" ".vrs" ".pyc" ".pyo" ".idx" ".lof"
+        ".lot" ".glo" ".blg" ".bbl" ".cp" ".cps" ".fn" ".fns" ".ky"
+        ".kys" ".pg" ".pgs" ".tp" ".tps" ".vr" ".vrs" ".flc"
         ".hi" ".p_hi" ".p_o" ".hi-boot" ".o-boot" ".p_o-boot"
         ".p_hi-boot" ".hs-boot" ".obj" ".ncb" ".suo" ".user" ".idb"
         ".pdb" ".moc" ".manifest" ".ilk"))
@@ -331,12 +331,12 @@ end tell" d)))
 
 (define-key dired-mode-map (kbd "M-<") (lambda ()
                                          (interactive)
-					 (goto-char (point-min))
+                                         (goto-char (point-min))
                                          (dired-next-line 2)))
 
 (define-key dired-mode-map (kbd "M->") (lambda ()
                                          (interactive)
-					 (goto-char (point-max))
+                                         (goto-char (point-max))
                                          (dired-previous-line 1)))
 ;; TC-like F4 View file
 ;(define-key dired-mode-map (kbd "<f4>") 'dired-find-file)

@@ -1,7 +1,11 @@
 ;;; w3m-session  -*- mode: emacs-lisp; coding: iso-2022-7bit -*-
 ;; This file is generated automatically by emacs-w3m v1.4.437.
 
-(("Automatic saved sessions-1"
+(("Crash recovery sessions"
+  (20717 41576 774889)
+  (("about:" nil nil "About emacs-w3m"))
+  nil)
+ ("Automatic saved sessions-1"
   (20714 10953 256093)
   (("about:" nil nil "About emacs-w3m") ("about:" (0) (("about:" (:title "About emacs-w3m") (0) :window-start 1 :position (1 . 0) :window-hscroll 0)) "About emacs-w3m"))
   0)

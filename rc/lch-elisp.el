@@ -32,6 +32,25 @@
 ;;; Code
 (message "=> lch-elisp: loading...")
 
+;;; Webjump
+;;   (require 'webjump-plus)
+;;   (setq webjump-sites
+;;         (append '(
+;;                   ("My Home Page" . "www.someisp.foo/users/joebobjr/")
+;;                   ("Pop's Site"   . "www.joebob-and-son.foo/")
+;;                   )
+;;                 webjump-plus-sites
+;;                 webjump-sample-sites))
+(global-set-key (kbd "C-x j") 'webjump)
+
+;; Add Urban Dictionary to webjump
+(eval-after-load "webjump"
+  '(add-to-list 'webjump-sites
+                '("Urban Dictionary" .
+                  [simple-query
+                   "www.urbandictionary.com"
+                   "http://www.urbandictionary.com/define.php?term="
+                   ""])))
 ;;; Popwin
 ;; Conflict with M-1 switch-to-shell
 ;; So have to comment out ("*shell*" :height)
@@ -104,6 +123,8 @@
 ;;; Elisp-slime-nav
 (require 'elisp-slime-nav)
 (add-hook 'emacs-lisp-mode-hook (lambda () (elisp-slime-nav-mode t)))
+(define-key global-map (kbd "M-.") 'elisp-slime-nav-find-elisp-thing-at-point)
+(define-key global-map (kbd "M-,") 'pop-tag-mark)
 
 ;;; Multiple-cursor
 (require 'multiple-cursors)

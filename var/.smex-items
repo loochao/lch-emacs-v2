@@ -1,22 +1,24 @@
 
 ;; ----- smex-history -----
 (
+ revert-buffer-with-coding-system
+ auto-fill-mode
  shell
  zone
- auto-fill-mode
  eval-region
  emacs-version
  cd
- lm
 )
 
 ;; ----- smex-data -----
 (
  (emacs-version . 1)
  (eval-region . 1)
- (auto-fill-mode . 1)
+ (auto-fill-mode . 3)
  (lch-ascii-table . 1)
  (my-digital-clock . 1)
  (zone . 1)
  (shell . 3)
+ (lch-sudo-edit . 4)
+ (revert-buffer-with-coding-system . 2)
 )

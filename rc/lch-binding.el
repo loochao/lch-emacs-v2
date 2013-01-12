@@ -137,7 +137,7 @@
 (define-key global-map (kbd "<f9> 2") (lambda() (interactive) (dired org-private-dir)))
 (define-key global-map (kbd "<f9> 3") (lambda() (interactive) (dired (concat org-source-dir "/public_html"))))
 (if (boundp 'dropbox-path)
-    (define-key global-map (kbd "<f9> 4") (lambda() (interactive) (dired dropbox-path))))
+        (define-key global-map (kbd "<f9> 4") (lambda() (interactive) (dired dropbox-path))))
 (define-key global-map (kbd "<f9> 5") (lambda() (interactive) (dired emacs-doc-dir)))
 
 (define-key global-map (kbd "<f9> a") (lambda() (interactive) (find-file (concat org-source-dir "/Art-Ent.org"))))
@@ -182,13 +182,13 @@
 
 (if lch-win32-p
   (progn
-    (define-key global-map (kbd "<f9> r") (lambda() (interactive) (find-file "e:/EDU/RSCH/Org/RSCH.org")))
-    (define-key global-map (kbd "<f9> w a") (lambda() (interactive) (find-file "d:/SYS/WINMNGR/AHK/AutoHotKey.ini")))
-    (define-key global-map (kbd "<f9> w e") (lambda() (interactive) (dired "e:/")))
-    (define-key global-map (kbd "<f9> w g") (lambda() (interactive) (dired "e:/Var/URoot/git/")))
-    (define-key global-map (kbd "<f9> w t") (lambda() (interactive) (dired "e:/Tmp/")))
-    (define-key global-map (kbd "<f9> w s") (lambda() (interactive) (dired "e:/Tmp/SPgm")))
-    (define-key global-map (kbd "<f9> w t") (lambda() (interactive) (find-file "e:/TMP/DOC/TEX/Untitled1.tex")))))
+        (define-key global-map (kbd "<f9> r") (lambda() (interactive) (find-file "e:/EDU/RSCH/Org/RSCH.org")))
+        (define-key global-map (kbd "<f9> w a") (lambda() (interactive) (find-file "d:/SYS/WINMNGR/AHK/AutoHotKey.ini")))
+        (define-key global-map (kbd "<f9> w e") (lambda() (interactive) (dired "e:/")))
+        (define-key global-map (kbd "<f9> w g") (lambda() (interactive) (dired "e:/Var/URoot/git/")))
+        (define-key global-map (kbd "<f9> w t") (lambda() (interactive) (dired "e:/Tmp/")))
+        (define-key global-map (kbd "<f9> w s") (lambda() (interactive) (dired "e:/Tmp/SPgm")))
+        (define-key global-map (kbd "<f9> w t") (lambda() (interactive) (find-file "e:/TMP/DOC/TEX/Untitled1.tex")))))
 
 
 ;;; F10 (conf-file-map)
@@ -205,7 +205,7 @@
 (define-key global-map (kbd "<f10> 0") (lambda() (interactive) (find-file "/sudo::/")))
 
 (if lch-win32-p (define-key global-map (kbd "<f10> a")
-                  (lambda() (interactive) (find-file "d:/SYS/WINMNGR/AHK/AutoHotKey.ini"))))
+                                  (lambda() (interactive) (find-file "d:/SYS/WINMNGR/AHK/AutoHotKey.ini"))))
 (define-key global-map (kbd "<f10> b") (lambda() (interactive) (find-file (concat emacs-dir "/rc/lch-binding.el"))))(define-key global-map (kbd "<f10> B") (lambda() (interactive) (find-file (concat emacs-dir "/rc/lch-bmk.el"))))
 (define-key global-map (kbd "<f10> c") (lambda() (interactive) (find-file (concat emacs-dir "/rc/lch-conf.el"))))
 (define-key global-map (kbd "<f10> d") (lambda() (interactive) (find-file "~/.emacs")))
@@ -226,7 +226,7 @@
 (define-key global-map (kbd "<f10> s") (lambda() (interactive) (find-file (concat emacs-dir "/rc/lch-skeleton.el"))))
 (define-key global-map (kbd "<f10> t") (lambda() (interactive) (find-file (concat emacs-dir "/rc/lch-ui-theme.el"))))
 (if (eq system-type 'windows-nt)
-    (define-key global-map (kbd "<f10> t") (lambda() (interactive) (find-file "d:/TCMD/wincmd.ini"))))
+        (define-key global-map (kbd "<f10> t") (lambda() (interactive) (find-file "d:/TCMD/wincmd.ini"))))
 (define-key global-map (kbd "<f10> u") (lambda() (interactive) (find-file (concat emacs-dir "/rc/lch-util.el"))))
 
 ;; F10+v Vimperator
@@ -322,8 +322,8 @@
 ;;; Ctrl Map
 (define-key global-map (kbd "C-6")
   '(lambda () (interactive)
-     (require 'lch-dired)
-     (call-interactively 'dired-jump)))
+         (require 'lch-dired)
+         (call-interactively 'dired-jump)))
 
 ;(define-key global-map (kbd "C-=") 'text-scale-increase)                     ;; => lch-util.el
 ;(define-key global-map (kbd "C--") 'text-scale-decrease)                     ;; => lch-util.el
@@ -348,7 +348,7 @@
 (define-key global-map (kbd "C-2") 'set-mark-command)
 
 (add-hook 'occur-mode-hook
-          (lambda () (setq truncate-lines t)))
+                  (lambda () (setq truncate-lines t)))
 ;; (define-key global-map (kbd "C-o")
 ;;              '(lambda () (interactive)
 ;;                 (call-interactively 'occur)
@@ -418,11 +418,10 @@
   '(progn
 ;     (define-key dired-mode-map (kbd "C-o") nil)
 ;     (define-key dired-mode-map (kbd "M-o") nil)
-     ))
+         ))
 ;;redefine help shortcut
 (define-key global-map (kbd "M-h") 'help-command)
 
-(define-key global-map (kbd "M-l") 'goto-line)
 
 ;; Fast vertical naviation
 (define-key global-map (kbd "M-U") (lambda () (interactive) (forward-line -10)))
@@ -447,59 +446,59 @@
   "Print the key bindings in a tabular form."
   (interactive "sEnter a modifier string:")
   (with-output-to-temp-buffer "*Key table*"
-    (let* ((i 0)
-           (keys (list "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
-                       "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
-                       "<return>" "<down>" "<up>" "<right>" "<left>"
-                       "<home>" "<end>" "<f1>" "<f2>" "<f3>" "<f4>" "<f5>"
-                       "<f6>" "<f7>" "<f8>" "<f9>" "<f10>" "<f11>" "<f12>"
-                       "1" "2" "3" "4" "5" "6" "7" "8" "9" "0"
-                       "`" "~" "!" "@" "#" "$" "%" "^" "&" "*" "(" ")" "-"
-                       "_" "=" "+" "\\" "|" "{" "[" "]" "}" ";" "'" ":"
-                       "\"" "<" ">" "," "." "/" "?"))
-           (n (length keys))
-           (modifiers (list "" "S-" "C-" "M-" "M-C-"))
-           (k))
-      (or (string= arg "") (setq modifiers (list arg)))
-      (setq k (length modifiers))
-      (princ (format " %-10.10s |" "Key"))
-      (let ((j 0))
-        (while (< j k)
-          (princ (format " %-28.28s |" (nth j modifiers)))
-          (setq j (1+ j))))
-      (princ "\n")
-      (princ (format "_%-10.10s_|" "__________"))
-      (let ((j 0))
-        (while (< j k)
-          (princ (format "_%-28.28s_|"
-                         "_______________________________"))
-          (setq j (1+ j))))
-      (princ "\n")
-      (while (< i n)
-        (princ (format " %-10.10s |" (nth i keys)))
-        (let ((j 0))
-          (while (< j k)
-            (let* ((binding
-                    (key-binding (read-kbd-macro (concat (nth j modifiers)
-                                                         (nth i keys)))))
-                   (binding-string "_"))
-              (when binding
-                (if (eq binding 'self-insert-command)
-                    (setq binding-string (concat "'" (nth i keys) "'"))
-                  (setq binding-string (format "%s" binding))))
-              (setq binding-string
-                    (substring binding-string 0 (min (length
-                                                      binding-string) 28)))
-              (princ (format " %-28.28s |" binding-string))
-              (setq j (1+ j)))))
-        (princ "\n")
-        (setq i (1+ i)))
-      (princ (format "_%-10.10s_|" "__________"))
-      (let ((j 0))
-        (while (< j k)
-          (princ (format "_%-28.28s_|"
-                         "_______________________________"))
-          (setq j (1+ j))))))
+        (let* ((i 0)
+                   (keys (list "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
+                                           "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
+                                           "<return>" "<down>" "<up>" "<right>" "<left>"
+                                           "<home>" "<end>" "<f1>" "<f2>" "<f3>" "<f4>" "<f5>"
+                                           "<f6>" "<f7>" "<f8>" "<f9>" "<f10>" "<f11>" "<f12>"
+                                           "1" "2" "3" "4" "5" "6" "7" "8" "9" "0"
+                                           "`" "~" "!" "@" "#" "$" "%" "^" "&" "*" "(" ")" "-"
+                                           "_" "=" "+" "\\" "|" "{" "[" "]" "}" ";" "'" ":"
+                                           "\"" "<" ">" "," "." "/" "?"))
+                   (n (length keys))
+                   (modifiers (list "" "S-" "C-" "M-" "M-C-"))
+                   (k))
+          (or (string= arg "") (setq modifiers (list arg)))
+          (setq k (length modifiers))
+          (princ (format " %-10.10s |" "Key"))
+          (let ((j 0))
+                (while (< j k)
+                  (princ (format " %-28.28s |" (nth j modifiers)))
+                  (setq j (1+ j))))
+          (princ "\n")
+          (princ (format "_%-10.10s_|" "__________"))
+          (let ((j 0))
+                (while (< j k)
+                  (princ (format "_%-28.28s_|"
+                                                 "_______________________________"))
+                  (setq j (1+ j))))
+          (princ "\n")
+          (while (< i n)
+                (princ (format " %-10.10s |" (nth i keys)))
+                (let ((j 0))
+                  (while (< j k)
+                        (let* ((binding
+                                        (key-binding (read-kbd-macro (concat (nth j modifiers)
+                                                                                                                 (nth i keys)))))
+                                   (binding-string "_"))
+                          (when binding
+                                (if (eq binding 'self-insert-command)
+                                        (setq binding-string (concat "'" (nth i keys) "'"))
+                                  (setq binding-string (format "%s" binding))))
+                          (setq binding-string
+                                        (substring binding-string 0 (min (length
+                                                                                                          binding-string) 28)))
+                          (princ (format " %-28.28s |" binding-string))
+                          (setq j (1+ j)))))
+                (princ "\n")
+                (setq i (1+ i)))
+          (princ (format "_%-10.10s_|" "__________"))
+          (let ((j 0))
+                (while (< j k)
+                  (princ (format "_%-28.28s_|"
+                                                 "_______________________________"))
+                  (setq j (1+ j))))))
   (delete-window)
 ;  (hscroll-mode)
   (setq truncate-lines t))
@@ -511,48 +510,48 @@
 
 (defmacro rloop (clauses &rest body)
   (if (null clauses)
-      `(progn ,@body)
-    `(loop ,@(car clauses) do (rloop ,(cdr clauses) ,@body))))
+          `(progn ,@body)
+        `(loop ,@(car clauses) do (rloop ,(cdr clauses) ,@body))))
 
 (defun all-bindings ()
   (interactive)
   (message "all-bindings: wait a few seconds please...")
   (let ((data
-         (with-output-to-string
-           (let ((bindings '()))
-             (rloop ((for C in '("" "C-"))       ; Control
-                     (for M in '("" "M-"))       ; Meta
-                     (for A in '("" "A-"))       ; Alt
-                     (for S in '("" "S-"))       ; Shift
-                     (for H in '("" "H-"))       ; Hyper
-                     (for s in '("" "s-"))       ; super
-                     (for x from 32 to 127))
-                    (let* ((k (format "%s%s%s%s%s%s%c" C M A S H s x))
-                           (key (ignore-errors (read-kbd-macro k))))
-                      (when key
-                        (push
-                         (list k
-                               (format "%-12s  %-12s  %S\n" k key
-                                       (or
-                                        ;; (string-key-binding key)
-                                        ;; What is this string-key-binding?
-                                        (key-binding key))))
-                         bindings))))
-             (dolist (item
-                      (sort bindings
-                            (lambda (a b)
-                              (or (< (length (first a))
-                                     (length (first b)))
-                                  (and (= (length (first a))
-                                          (length (first b)))
-                                       (string< (first a)
-                                                (first b)))))))
-               (princ (second item)))))))
-    (switch-to-buffer (format "Keybindings in %s" (buffer-name)))
-    (erase-buffer)
-    (insert data)
-    (goto-char (point-min))
-    (values)))
+                 (with-output-to-string
+                   (let ((bindings '()))
+                         (rloop ((for C in '("" "C-"))       ; Control
+                                         (for M in '("" "M-"))       ; Meta
+                                         (for A in '("" "A-"))       ; Alt
+                                         (for S in '("" "S-"))       ; Shift
+                                         (for H in '("" "H-"))       ; Hyper
+                                         (for s in '("" "s-"))       ; super
+                                         (for x from 32 to 127))
+                                        (let* ((k (format "%s%s%s%s%s%s%c" C M A S H s x))
+                                                   (key (ignore-errors (read-kbd-macro k))))
+                                          (when key
+                                                (push
+                                                 (list k
+                                                           (format "%-12s  %-12s  %S\n" k key
+                                                                           (or
+                                                                                ;; (string-key-binding key)
+                                                                                ;; What is this string-key-binding?
+                                                                                (key-binding key))))
+                                                 bindings))))
+                         (dolist (item
+                                          (sort bindings
+                                                        (lambda (a b)
+                                                          (or (< (length (first a))
+                                                                         (length (first b)))
+                                                                  (and (= (length (first a))
+                                                                                  (length (first b)))
+                                                                           (string< (first a)
+                                                                                                (first b)))))))
+                           (princ (second item)))))))
+        (switch-to-buffer (format "Keybindings in %s" (buffer-name)))
+        (erase-buffer)
+        (insert data)
+        (goto-char (point-min))
+        (values)))
 
 ;;; Provide.
 (provide 'lch-binding)
